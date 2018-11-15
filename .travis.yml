@@ -4,6 +4,8 @@ cache:
   directories:
   - "/tmp/texlive"
   - "$HOME/.texlive"
+script:
+- source ./support/compile.sh
 after_success:
 - git config --global user.email "builds@travis-ci.com"
 - git config --global user.name "Travis CI"
