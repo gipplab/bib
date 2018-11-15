@@ -23,7 +23,7 @@ deploy:
   api_key:
     secure: V76lRoSbyAH/rVg+gzXeWwAoJJbpGyr8P2uEeVjMoJr+2JvbNT1R3ntnut8vvCBPlVNbWIFkrAiDasTi48xaDKhNhaPhSnRhlSDBoPo2yWXrVESoZmZXhq07kuVRcFBzyNFzDBCbAh7KPJoBQEcIB+ewY8eDL8eAYu0FhQ93zXjKk+9u7Z6QyY/FaTuswVtIwS00wz0pJu/f//k1MzNzb428s5zhtnQzk+g4NiAqaxAB8pveXXm+dsift6yV7gGC/IImqyyZI2pBkkqwX4FVVGhVXqvQB8owhipRPrZnEd6KHCYgmVjO+u08nBpEyDWVk2/eo/iBQ/SA7bXhIefzW7uP7WX1tYkn4L6iEnZXDmAVSfgQt9xuYeZVmJVNNn16BfIondtXA3i+b0c73DJN2qEsLSHGxKK8fdY+Rx6LDFWn7vLtx3jxUW/aQxdtoNoR12EmHNs8ADUau3GB2FnMvMgdEmI7j6VNPB1nJKY0w1nrNOSHDGnYOgqRAt4Khj8RGHySVR+q2nJdTx4CwyQN2BX5LNLzyct/+/c3v5jUrwXY2LxDZGk3PtgbdRky/gM4RYmGoiJ5rXoIEkUFL0Z22EJq5+X8Hsi7tL7uwA2gIEBS+19xTW3zsj8m27fuSyVvBCGyPSDcuORpv2ryZQr8GyESKlTXOIdWJ26A+tUMc8g=
   file:
-  - src/tex/AllRefs.pdf
+  - main.pdf
   - gipp.bib
   on:
     repo: ag-gipp/bib
