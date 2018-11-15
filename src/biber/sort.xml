@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <output_fieldcase>lower</output_fieldcase>
+    <output_indent>2</output_indent>
+    <output_align>true</output_align>
+    <output_encoding>ascii</output_encoding>
+    <fixinits>1</fixinits>
+    <tool>1</tool>
+    <output_file>references.bib</output_file>
+    <sortingtemplate name="tool">
+        <sort order="1">
+            <sortitem order="1">year</sortitem>
+        </sort>
+        <sort order="2">
+            <sortitem order="1">author</sortitem>
+        </sort>
+        <sort order="3">
+            <sortitem order="1">title</sortitem>
+        </sort>
+    </sortingtemplate>
+    <sourcemap>
+        <maps datatype="bibtex" level="user">
+        <map map_overwrite="1">
+            <map_step map_field_set="SHORTTITLE" map_field_null="1"/>
+            <map_step map_field_set="maintitle" map_field_null="1"/>
+            <map_step map_field_set="abstract" map_field_null="1"/>
+        </map>
+        </maps>
+    </sourcemap>
+</config>

@@ -1,0 +1,58 @@
+\documentclass{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[style=authoryear,sorting=ydnt,dashed=false]{biblatex}
+\usepackage[ascii]{inputenc}
+\usepackage{url}
+
+\renewbibmacro*{date}{}
+\renewbibmacro*{date+extrayear}{}
+\renewbibmacro*{issue+date}{}
+\newcommand*{\bibyear}{}
+
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+      \map{
+        \step[fieldsource=preprint]
+        \step[fieldset=usera,origfieldval]
+    }
+  }
+}
+
+\DeclareFieldFormat{usera}{\href{#1}{preprint}}
+
+\AtEveryBibitem{%
+    \csappto{blx@bbx@\thefield{entrytype}}{% put at end of entry
+        \iffieldundef{usera}{%
+          \space{Preprint availible on request!}}{%
+          \space\printfield{usera}
+        }
+    }
+}
+
+
+\defbibenvironment{bibliography}
+  {\list
+     {\iffieldequals{year}{\bibyear}
+        {}
+        {\printfield{year}%
+         \savefield{year}{\bibyear}}}
+     {\setlength{\topsep}{0pt}% layout parameters based on moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+\firstname{Moritz}
+\familyname{Schubotz}
+\addbibresource{../../gipp.bib}
+
+\begin{document}
+\makecvtitle
+\nocite{*}
+\printbibliography[title={Publications},keyword=schubotzCV]
+\end{document}
