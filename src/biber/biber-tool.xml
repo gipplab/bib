@@ -605,8 +605,17 @@
       <field fieldtype="field" format="xsv" datatype="option" skip_output="true">relatedoptions</field>
       <field fieldtype="field" datatype="range">pages</field>
       <field fieldtype="field" datatype="code">execute</field>
+      <field fieldtype="field" datatype="literal">owner</field>
+      <field fieldtype="field" datatype="literal">review</field>
+      <field fieldtype="field" datatype="literal">preprint</field>
+      <field fieldtype="field" datatype="literal">biburl</field>
+
     </fields>
     <entryfields>
+      <field>preprint</field>
+      <field>biburl</field>
+      <field>owner</field>
+      <field>review</field>
       <field>abstract</field>
       <field>annotation</field>
       <field>authortype</field>
