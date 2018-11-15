@@ -13,8 +13,7 @@ after_success:
 - echo -n $GIT_TAG > version
 - git commit -m "Set build VERSION number" version
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GITHUBKEY@github.com/ag-gipp/bib $GIT_TAG > /dev/null
-  2>&1
+- git push --quiet https://$GITHUBKEY@github.com/ag-gipp/bib $GIT_TAG > /dev/null 2>&1
 branches:
   except:
   - "/^build-[0-9a-z\\-]*/"
@@ -23,6 +22,8 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: SnHaDubdZ5VOV7uUASuSNSzsfD7bsBEW29nHn1c/0XJ0ceqNsSslv8FGaLc+t5NLutoGHsq7114AdtVC897bWFxRxtJSq9TfNDpzcfdsMxwLToq5VWg4kgUiolTRDPZmC1P4jQGatBGVzCXZcGTQHBNfNp8ijp02rqElyQfld6rvex8Q3Cz3ikaYxhVIIoNoec17a9DqxjV4ZmHdElFVIE4pInST13QXzcr55JBfeh64aj2TQAMAqVMe3QsODMbONnP5qd4MD3n682L3kfVjNtgWJcagVnXNnFD8+JnePlA7EYALgi2mTZHljA94hnlM9CFJRSLNhPiGkj1uBXxcJsVEUXKT/YDsCkHyMb1ZWaQEjGIVRkZVQaR0xurnbaZhqliEi4tgw5sHzYvJnnt/FKetcQbHrCadmWRE5KDYySm1ZmYTXgFXx2xPx6BDHL4dKxWVXcKlatFiCDKK27FUQXjBci0pPrm7f/d/ArBB049ahHy0R916nZzss6GNq+i945zNyUhy8Pw8ai0mVG2LICLkeQXY1r0kAjgXIaQQa0dYWV18e2X39CuxHnEkC0tlxbCjJWC3uv1MdQCzCEo68MCbY5Rw+HQe9udh9QJI1TGjIwJ92zIJX4eWs2+RBFX/P9PMsEZHlq2nvtwp6MKO8T/+6Wg9MtnFqjC6DwmIhUc=
-  file: src/tex/AllRefs.pdf
+  file:
+  - src/tex/AllRefs.pdf
+  - gipp.bib
   on:
     repo: ag-gipp/bib
