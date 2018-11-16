@@ -6,7 +6,6 @@ cache:
   - "$HOME/.texlive"
 script:
 - source ./support/compile.sh
-- git push https://$GITHUBKEY@github.com/ag-gipp/bib $TRAVIS_BRANCH
 
 after_success:
 - git config --global user.email "builds@travis-ci.com"
@@ -15,7 +14,7 @@ after_success:
 - echo -n $GIT_TAG > version
 - git commit -m "Set build VERSION number" version
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GITHUBKEY@github.com/ag-gipp/bib $GIT_TAG > /dev/null 2>&1
+- git push https://$GITHUBKEY@github.com/ag-gipp/bib $GIT_TAG
 branches:
   except:
   - "/^build-[0-9a-z\\-]*/"
