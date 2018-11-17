@@ -25,3 +25,6 @@ deploy:
 env:
   global:
     secure: eAJppYPl3FzB2+ntMmSLRh45pJpGSSUx/pWLl0sNbGy8bhVLBFMa9DiURVWJ1YKpKDPhjy/7hYn0BmAq8/fDkpp5DMdZu5E0dCk5Ay+AsZR4aikpWyhGJXHc2WEmxbHF/xTV0/9G/jmAhlznRw0CR6E9S5RB0PFOunBlRDmMPSeICL+V5K/2Yc/7Ha/ljZS/gJlSIwZcVHhlaZSLxdi/CRFSx7VgoTIEgzRBYb82y7VbfwpYC0lTknv5Opg82mpbSIb7AgNzGCjLnoHtXntsGQIS8Jcq/oUyNYPT1wocwH/UPNq29/IKQuczEZzxZp/nJq8D4xNmryRd4iNiL7TdA2nqPz7oxdXZTJZRSWP3EZYw5iubYnN8KeoFrRMMFhT91KrRR6wdUq1WoH0bR7I3EwAR/9VuJ1azAFfA1w/wfDeQuuxmHl5kqNerIXRA/gQIpbDNdRz6piic04PFmXTfy5rRCVc6RHj6+sSaZedokkLq2NG7FgOaFGxaYDPWopWKcPoS0L0vArKHjw/moifYW6mDW3zu0DffUeF8sSXtTCbP99tp8hMUmyFPGCTit4MMECu5zTgSraO3E+lle8KxTvw592juCyELXWRsQvXuoMmt8L/mUFpnapHApLA48yBHDBGYW8Cj0xWEacui/utXGFTVyEFY0wKOnuQxELIvXrI=
+before_install:
+- openssl aes-256-cbc -K $encrypted_125c18bb9738_key -iv $encrypted_125c18bb9738_iv
+  -in bibbot.asc.enc -out bibbot.asc -d
