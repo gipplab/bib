@@ -10,3 +10,6 @@ this will create a new file
 gipp_bibertool.bib
 compare the contents of both files and overwrite `gipp.bib` with
 `gipp_bibertool.bib`.
+
+## Automatic release configuration
+See the [travis manual](https://docs.travis-ci.com/user/deployment/releases/) to understand the release section of the [travis config](.travis.yml)
