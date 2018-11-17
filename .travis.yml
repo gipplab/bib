@@ -5,7 +5,8 @@ install:
 - source ./support/texlive_install.sh
 - pip install PyGithub
 cache:
-  directories:
+- pip
+- directories:
   - "/tmp/texlive"
   - "$HOME/.texlive"
 script:
