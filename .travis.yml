@@ -14,7 +14,6 @@ after_success:
 - echo -n $GIT_TAG > version
 - git commit -m "Set build VERSION number" version
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push https://$GITHUBKEY@github.com/ag-gipp/bib $GIT_TAG
 branches:
   except:
   - "/^build-[0-9a-z\\-]*/"
