@@ -18,6 +18,6 @@ For the interaction with GitHub independently from travis, we create
 a [personal access token](https://github.com/settings/tokens) and make 
 it available as environment variable 
 ```bash
-travis encrypt $GITHUB_TOKEN=<paste PAT> --add
+travis encrypt GITHUB_TOKEN=<paste PAT> --add
 ```
 
