@@ -6,7 +6,6 @@ cache:
   - "$HOME/.texlive"
 script:
 - source ./support/compile.sh
-
 after_success:
 - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
@@ -23,3 +22,6 @@ deploy:
   - gipp.bib
   on:
     repo: ag-gipp/bib
+env:
+  global:
+    secure: eAJppYPl3FzB2+ntMmSLRh45pJpGSSUx/pWLl0sNbGy8bhVLBFMa9DiURVWJ1YKpKDPhjy/7hYn0BmAq8/fDkpp5DMdZu5E0dCk5Ay+AsZR4aikpWyhGJXHc2WEmxbHF/xTV0/9G/jmAhlznRw0CR6E9S5RB0PFOunBlRDmMPSeICL+V5K/2Yc/7Ha/ljZS/gJlSIwZcVHhlaZSLxdi/CRFSx7VgoTIEgzRBYb82y7VbfwpYC0lTknv5Opg82mpbSIb7AgNzGCjLnoHtXntsGQIS8Jcq/oUyNYPT1wocwH/UPNq29/IKQuczEZzxZp/nJq8D4xNmryRd4iNiL7TdA2nqPz7oxdXZTJZRSWP3EZYw5iubYnN8KeoFrRMMFhT91KrRR6wdUq1WoH0bR7I3EwAR/9VuJ1azAFfA1w/wfDeQuuxmHl5kqNerIXRA/gQIpbDNdRz6piic04PFmXTfy5rRCVc6RHj6+sSaZedokkLq2NG7FgOaFGxaYDPWopWKcPoS0L0vArKHjw/moifYW6mDW3zu0DffUeF8sSXtTCbP99tp8hMUmyFPGCTit4MMECu5zTgSraO3E+lle8KxTvw592juCyELXWRsQvXuoMmt8L/mUFpnapHApLA48yBHDBGYW8Cj0xWEacui/utXGFTVyEFY0wKOnuQxELIvXrI=
