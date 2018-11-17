@@ -28,7 +28,7 @@ else:
 
 if __name__ == '__main__':
     try:
-        logfilename = '../src/tex/allRefs.log'
+        logfilename = 'src/tex/allRefs.log'
         if len(sys.argv) == 3:
             extra_file_ext = sys.argv[2].split(" ")
         data = open(logfilename, 'rb').read()
@@ -46,14 +46,14 @@ if __name__ == '__main__':
         for warn in warnings:
             matchObj = re.match( r'(.*?).tex:(\d+): Package natbib Warning: Citation `(.*?)\' on page (\d+) undefined on input line (\d+).', warn, re.M|re.I)
             if matchObj:
-                label = "\n- [ ] [" + matchObj.group(3) + "](https://github.com/usnistgov/DRMF/blob/drmf/" + matchObj.group(1) + ".tex#L" + matchObj.group(2) + ")"
+                label = "\n- [ ] [" + matchObj.group(3) + "](https://github.com/ag-gipp/bib/blob/src/tex/" + matchObj.group(1) + ".tex#L" + matchObj.group(2) + ")"
                 if (lastfile != matchObj.group(1) ):
                     issue_content += "\n## " + matchObj.group(1) + " \n"
                     lastfile = matchObj.group(1);
                 issue_content += label
                 unrefs[matchObj.group(3)] = label
         # od = collections.OrderedDict(sorted(unrefs.items()))
-        if token:
+        if (token and issue_content):
             g = Github(token)
             repo = g.get_repo("ag-gipp/bib")
             repo.create_issue("Issue title", issue_content)

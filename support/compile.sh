@@ -5,3 +5,4 @@ cd src/tex
 latexmk
 cp allRefs.pdf ../../main.pdf
 cd ../..
+python3 support/issue.sh
