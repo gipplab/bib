@@ -1,0 +1,3 @@
+[submodule "support/xstlprocJ"]
+	path = support/xstlprocJ
+	url = https://github.com/physikerwelt/xstlprocJ.git

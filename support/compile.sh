@@ -6,3 +6,4 @@ latexmk
 cp allRefs.pdf ../../main.pdf
 cd ../..
 python3 support/issue.py
+support/pubHtml

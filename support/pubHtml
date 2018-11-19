@@ -1,0 +1,3 @@
+biber --tool --configfile=src/biber/filter.xml gipp.bib
+biber --output-format=biblatexml --configfile=src/biber/clean.xml --clrmacros --tool schubotz.bib
+./support/xstlprocJ/xsltprocJ src/xsl/transform.xsl references.xml > publist.html

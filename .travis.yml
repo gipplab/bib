@@ -4,6 +4,10 @@ python:
 install:
 - source ./support/texlive_install.sh
 - pip install PyGithub
+addons:
+  apt:
+    packages:
+    - maven
 cache:
 - pip
 - directories:
@@ -25,6 +29,7 @@ deploy:
   file:
   - main.pdf
   - gipp.bib
+  - publist.html
   on:
     repo: ag-gipp/bib
 env:
