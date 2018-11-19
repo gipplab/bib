@@ -44,19 +44,21 @@ if __name__ == '__main__':
         lastfile = ''
         issue_content = ''
         for warn in warnings:
-            matchObj = re.match( r'(.*?).tex:(\d+): Package natbib Warning: Citation `(.*?)\' on page (\d+) undefined on input line (\d+).', warn, re.M|re.I)
+            #print(warn)
+            matchObj = re.match( r'(.*?).tex:(\d+): (.*?) Warning: Citation \'(.*?)\' on page (\d+) undefined on input line (\d+).', warn, re.M|re.I)
             if matchObj:
-                label = "\n- [ ] [" + matchObj.group(3) + "](https://github.com/ag-gipp/bib/blob/src/tex/" + matchObj.group(1) + ".tex#L" + matchObj.group(2) + ")"
+                label = "\n- [ ] [" + matchObj.group(4) + "](https://github.com/ag-gipp/bib/blob/master/" + matchObj.group(1) + ".tex#L" + matchObj.group(2) + ")"
+                print(label)
                 if (lastfile != matchObj.group(1) ):
                     issue_content += "\n## " + matchObj.group(1) + " \n"
                     lastfile = matchObj.group(1);
                 issue_content += label
-                unrefs[matchObj.group(3)] = label
+                unrefs[matchObj.group(4)] = label
         # od = collections.OrderedDict(sorted(unrefs.items()))
         if (token and issue_content):
             g = Github(token)
             repo = g.get_repo("ag-gipp/bib")
-            repo.create_issue("Issue title", issue_content)
+            repo.create_issue("Undefined references", issue_content)
         # print(unrefs)
         print("")
     except Exception as e:
