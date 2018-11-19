@@ -9,6 +9,21 @@ mincitenames=2,
 ]{biblatex}
 \addbibresource{../../gipp.bib}
 \begin{document}
+  \section{JabRef workaround}
+
+   Do your change in Jabref
+
+   Make a pull request
+
+   Wait for BibBot to correct the formatting
+
+   Merge the PR
+
+   Option a (squash merge) you will need to do a fresh checkout afterwards
+
+   Option b (rebase merge or merge commit) the history will contain the intermediate chage cause by jabref.
+   This will cause problems with git blame, since the lines you change won't be attributed to you.
+
   This document is supposed to use \verb \nocite{*} \verb to cite all bibtex entries.
   However, currently some bibtex entries simply do not work. Thus only selected bibtex entries are printed.
 \nocite{*}
