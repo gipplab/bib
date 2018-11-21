@@ -29,6 +29,7 @@ deploy:
   file:
   - main.pdf
   - gipp.bib
+  - mendeley.bib
   - publist.html
   on:
     repo: ag-gipp/bib
