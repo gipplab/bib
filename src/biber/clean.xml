@@ -27,6 +27,7 @@
             </map>
             <map map_overwrite="1">
                 <map_step map_field_source="doi" map_match="http(s)?://dx.doi.org/" map_replace=""/>
+                <map_step map_field_source="doi" map_match="\\_" map_replace="_"/>
             </map>
             <map map_overwrite="0">
                 <map_step map_field_source="publisher"/>
