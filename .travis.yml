@@ -30,7 +30,7 @@ deploy:
   - main.pdf
   - gipp.bib
   - mendeley.bib
-  - publist.html
+  - docs/publist.html
   on:
     repo: ag-gipp/bib
 env:
