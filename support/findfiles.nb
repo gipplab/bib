@@ -1,0 +1,1039 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     56719,       1029]
+NotebookOptionsPosition[     55756,        993]
+NotebookOutlinePosition[     56104,       1008]
+CellTagsIndexPosition[     56061,       1005]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+   "newFiles", "=", 
+    "\"\<C:\\\\Users\\\\Moritz\\\\Dropbox\\\\Literature\\\\\>\""}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "gitBase", "=", " ", 
+    "\"\<C:\\\\git\\\\isg-ref-local\\\\\>\""}]}]}]], "Input",
+ CellChangeTimes->{{3.6921643963170204`*^9, 3.692164414378451*^9}, {
+  3.6921644758933163`*^9, 3.692164486265643*^9}, {3.692164529007674*^9, 
+  3.692164533590163*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Moritz\\\\Dropbox\\\\Literature\\\\\"\>"], \
+"Output",
+ CellChangeTimes->{3.6921644392219687`*^9, 3.692164488426174*^9, 
+  3.692164650261917*^9}],
+
+Cell[BoxData["\<\"C:\\\\git\\\\isg-ref-local\\\\\"\>"], "Output",
+ CellChangeTimes->{3.6921644392219687`*^9, 3.692164488426174*^9, 
+  3.692164650265919*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"files", "=", 
+   RowBox[{"FileNameTake", "/@", 
+    RowBox[{"FileNames", "[", 
+     RowBox[{"\"\<*.pdf\>\"", ",", "newFiles"}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.692161021395713*^9, 3.6921610915629044`*^9}, 
+   3.692162730843644*^9, {3.692164413293046*^9, 3.6921644352722855`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Refs", "=", 
+   RowBox[{
+   "Import", "[", "\"\<C:\\\\Users\\\\Moritz\\\\Downloads\\\\pdfs.csv\>\"", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6921610949653883`*^9, 3.692161119088417*^9}, 
+   3.6921627274444532`*^9, {3.692162759814645*^9, 3.692162848825411*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"matches", "=", 
+   RowBox[{"Select", "[", 
+    RowBox[{"Refs", ",", " ", 
+     RowBox[{
+      RowBox[{"MemberQ", "[", 
+       RowBox[{"files", ",", " ", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "3", "]"}], "]"}]}], "]"}], " ", "&"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"matches", "//", "Length"}]}], "Input",
+ CellChangeTimes->{{3.6921630478616533`*^9, 3.6921630881828637`*^9}, {
+  3.692163185273576*^9, 3.6921632861463213`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CopyFile", "[", 
+    RowBox[{
+     RowBox[{"newFiles", "<>", 
+      RowBox[{"#", "[", 
+       RowBox[{"[", "3", "]"}], "]"}]}], ",", 
+     RowBox[{"gitBase", "<>", "\"\<pdf\\\\\>\"", "<>", 
+      RowBox[{"#", "[", 
+       RowBox[{"[", "3", "]"}], "]"}]}]}], "]"}], "&"}], "/@", 
+  "matches"}]], "Input",
+ CellChangeTimes->{{3.692163367474003*^9, 3.6921634664302826`*^9}, {
+  3.692163512724395*^9, 3.6921635393919086`*^9}, {3.692163828217478*^9, 
+  3.6921638969494534`*^9}, {3.6921644648090553`*^9, 3.6921644659304094`*^9}, {
+  3.692164501791712*^9, 3.692164525041215*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\New Recommendation \
+Techniques for Multicriteria Rating.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Incorporating Contextual \
+Information in Recommender Systems Using a Multidimensional Approach.pdf\"\>",
+    ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Context-aware recommender \
+systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User profiling in \
+personalization applications through rule discovery and validation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A subspace clustering \
+framework for research group collaboration.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Research Paper Recommender \
+Systems - A Subspace Clustering Approach.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic Subspace \
+Clustering of High Dimensional Data for Data Mining Applications.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic subspace \
+clustering of high dimensional data for data mining applications- \
+patent.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\I like it... I like it not \
+-- Evaluating User Ratings Noise in Recommender Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Rate it again -- Increasing \
+recommendation accuracy by user re-rating.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\amazon \
+recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Novel Approaches to \
+Acquisition and Maintenance of User Model.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recent Developments in \
+Document Clustering.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Information extraction as \
+link prediction -- using curated citation networks.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\ifWeb -- a Prototype of \
+User Model-Based Intelligent Agent for Document Filtering and Navigation in \
+the World Wide Web.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Understanding and \
+supporting search for scholarly knowledge.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Query recommendation using \
+query logs in search engines.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Three options for citation \
+tracking - Google Scholar, Scopus and Web of Science.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Multi-step Classification \
+Approaches to Cumulative Citation Recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\ARSYS - Article Recommender \
+System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Technical paper \
+recommendation -- A study in combining multiple information sources.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Towards Pedagogy-Oriented \
+Paper Recommendations and Adaptive Annotations for a Web-Based Learning \
+System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Federal Statistical Office \
+- Number of first-year students down by 3.5% in 2006.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Research paper \
+recommendations based on mind maps.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Information Retrieval in \
+Mind Maps zum Verbessern von Suchapplikationen.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Retrieving Data from Mind \
+Maps to Enhance Search Applications.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Potential of \
+Collaborative Document Evaluation for Science - published by \
+springer.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Google Scholar's Ranking \
+Algorithm -- An Introductory Overview.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\On_the_Robustness_of_Google_\
+Scholar_against_Spam--preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Enhancing Search \
+Applications by Utilizing Mind Maps.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Collaborative Document \
+Evaluation - An Alternative Approach to Classic Peer Review.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Docear -- An Academic \
+Literature Suite --  preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mr. dLib - A Machine \
+Readable Digital Library -- preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\SciPlore_MindMapping_--_in_\
+brief--preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\SciPlore Xtract -- \
+Extracting Titles from Scientific PDF Documents by Analyzing Style \
+Information (Font Size)-preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Could_mind_maps_be_used_to_\
+improve_academic_search_engines--preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Information_Retrieval_on_\
+Mind_Maps_-_What_could_it_be_good_for--preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Academic Search Engine \
+Optimization (ASEO).pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An Exploratory Analysis of \
+Mind Maps.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Color-and texture-based \
+image segmentation using EM and its application to content-based image \
+retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Social Bookmark and \
+Publication Management System BibSonomy.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Who should I cite -- \
+learning literature search models from citation behavior.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Probabilistic User Modeling \
+in the Presence of Drifting Concepts.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An Analysis of Factors Used \
+in Search Engine Ranking.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User Modeling for Adaptive \
+News Access.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Can all tags be used for \
+search.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A brief survey on user \
+modelling in HCI.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommending scientific \
+articles using citeulike.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An architecture for the \
+aggregation and analysis of scholarly usage data.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Accounting for Taste -- \
+Using Profile Similarity to Improve Recommender Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Empirical Analysis of \
+Predictive Algorithms for Collaborative Filtering.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Anatomy of a \
+Large-Scale Hypertextual Web Search Engine.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Assembling Actor-based \
+Mind-Maps from Text Stream.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User models for adaptive \
+hypermedia and adaptive educational systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Hybrid Web Recommender \
+Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\tony and barry buzan - the \
+mind map book.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Make the Most of Your Mind \
+-- original book of mind maps.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Can't See the Forest for \
+the Trees -- A Citation Recommendation System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\AI in CAI -- An \
+Artificial-Intelligence Approach to Computer-Assisted Instruction.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User model interoperability \
+-- a survey.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Modeling user's opinion \
+relevance to recommending research papers.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Concept-based document \
+recommendations for citeseer authors.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Eigen-trend -- trend \
+analysis in the blogosphere based on singular value decompositions.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User Modeling and \
+User-Adapted Interaction.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Structured Peer-to-Peer \
+Search to build a bibliographic paper recommendation system.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Usage of tagging for \
+research paper recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Document Normalization \
+Revisited.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Pivoted document length \
+normalization.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\aseo feedback - \
+airweb.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\aseo feedback - \
+airweb2009.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Towards next generation \
+citeseer -- A flexible architecture for digital library deployment.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Query Reformulation Using \
+Anchor Text.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Similar researcher search \
+in academic environments.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Supporting Personalized \
+User Concept Spaces and Recommendations for a Publication Sharing \
+System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Scientific Reference Mining \
+using Semantic Information through Topic Modeling.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Working Knowledge -- How \
+Organizations Manage What They Know.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Indexing by Latent Semantic \
+Analysis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Enhanced web document \
+summarization using hyperlinks.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Federal Statistical Office \
+- Thirst for education_ number of students growing rapidly in China.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Digging Friendship - Paper \
+Recommendation in Social Network.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Query Recommendation for \
+Children.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Evaluating Interface \
+Variants on Personality Acquisition for Recommender Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatically building \
+research reading lists.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mixed-membership models of \
+scientific publications.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Koba4MS -- Selling complex \
+products and services using knowledge-based recommender technologies.pdf\"\>",
+    ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Literature review \
+structure.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mibiblio -- personal spaces \
+in a digital library universe.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Keyphrase-Based Paper \
+Recommender System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A comparison of static, \
+adaptive, and adaptable menus.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Conducting Research \
+Literature Reviews - From the Internet to Paper.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The citeproc-js Citation \
+Processor.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\mind map -- Your Guide to \
+Prosperity and Fulfillment.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Structured answers for a \
+large structured document collection.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Writing Literature Reviews \
+- A Guide for Students of the Social and Behavioral Sciences.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Exploiting hierarchical \
+domain structure to compute similarity.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Health Sciences Literature \
+Review Made Easy - The Matrix Method.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Developing recommendation \
+services for a digital library with uncertain and changing data.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Realizing comprehensive \
+user profile as the core element of adaptive and personalized communication \
+environments and systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Educational and Scientific \
+Recommender Systems - Designing the Information Channels of the Virtual \
+University.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Identifying related \
+documents for research paper recommender by CPA and COA.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Citation Proximity Analysis \
+(CPA) - A new approach for identifying related work based on Co-Citation \
+Analysis -- preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Scienstein_-_A_Research_\
+Paper_Recommender_System --preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Comparative Evaluation of \
+Text- and Citation-based Plagiarism Detection Approaches using GuttenPlag - \
+preprint.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Interest drifts in user \
+profiling -- A relevance-based approach and analysis of scenarios.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Using collaborative \
+filtering to weave an information tapestry.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\google financial results \
+2010.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\About Google \
+Scholar.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\search-engine-optimization-\
+starter-guide.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Google Scholar- Support for \
+Scholarly Publishers.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Research Paper Recommender \
+Systems - A Random-Walk Based Approach.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Probabilistisches \
+Information Retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommender Systems for \
+Libraries.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\vokabeltausch feedback zu \
+aseo.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A unified approach to \
+building hybrid recommender systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\scienceroll aseo feedback - \
+user comment  mc gun.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Phrase-based document \
+similarity based on an index graph model.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic document metadata \
+extraction using support vector machines.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Web Access for Elderly \
+Citizens.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Doing a Literature Review - \
+Releasing the Social Science Research Imagination.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Position-Aligned \
+translation model for citation recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Citation recommendation \
+without author supervision.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Context-aware citation \
+recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mind-mapping - A successful \
+technique for organizing a literature review.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An algorithmic framework \
+for performing collaborative filtering.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Understanding and Improving \
+Automated Collaborative Filtering Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Trust Based Recommendations \
+in Multi Layer Networks.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Trust-Based Recommendations \
+for Publications - A Multi-Layer Network Approach.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Trust-enhanced visibility \
+for personalized document recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A linguistically motivated \
+probabilistic model of information retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Learning to personalize.pdf\
+\"\>", ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An investigation into \
+the concept of mind mapping and the use of mind mapping software to support \
+and improve student academic performance.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic extraction of \
+titles from general documents using machine learning.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\TSSP -- A Reinforcement \
+Algorithm to Find Related Papers.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommending Citations -- \
+Translating Papers into References.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Combining Social Networks \
+and Content for Recommendation in a Literature Digital Library.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A graph-based recommender \
+system for digital library.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A detailed analysis of \
+English stemming algorithms.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\'I would like to thank my \
+supervisor' Acknowledgements in graduate dissertations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\scienceroll aseo feedback - \
+user comment  ian.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Tag recommendations in \
+folksonomies.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommending academic \
+papers via users' reading purposes.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Framework for Tag-Based \
+Research Paper Recommender System -- An IR Approach.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A statistical \
+interpretation of term specificity and its application in retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Generating Query \
+Substitutions.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Pictures of Relevance -- A \
+Geometric Analysis of Relevance.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Fast Recommendation on \
+Bibliographic Networks.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Fast Recommendation on \
+Bibliographic Networks with Sparse-Matrix Ordering and Partitioning.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Result Diversification in \
+Automatic Citation Recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Diversifying Citation \
+Recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommendation on Academic \
+Networks using Direction Aware Citation Analysis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Novel Personalized Paper \
+Search System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Utilizing context in \
+generative bayesian models for linked corpus.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\You Never Walk Alone -- \
+Recommending Academic Events Based on Social Network Analysis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User modeling -- Recent \
+work, prospects and hazards.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User Modeling in Dialog \
+Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Conceptual Recommender \
+System for CiteSeer x.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommender systems -- from \
+algorithms to user experience.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Context Aware Citation \
+Recommendation System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Variations on Language \
+Modeling for Information Retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Einsatz von \
+Recommendersystemen in Bibliotheken.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Generation of user profiles \
+for information filtering - research agenda.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Ike Antkare, one of the \
+great stars in the scientific firmament.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Do You Trust Your \
+Recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Relational retrieval using \
+a combination of path-constrained random walks.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A System for Automatic \
+Personalized Tracking of Scientific Literature on the Web.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Autonomous citation \
+matching.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Autonomous citation \
+indexing and literature browsing using citation context 2004.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Autonomous citation \
+indexing and literature browsing using citation context.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Are your citations \
+clean.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Personalized Academic \
+Research Paper Recommendation System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Exploring the academic \
+invisible web.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\CiteSeerx -- an \
+architecture and web service design for an academic document search \
+engine.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Ranking of Library and \
+Information Science Researchers -- Comparison of Data Sources for Correlating \
+Citation Data and Expert Judgments.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Paper Recommender for \
+Scientific Literatures Based on Semantic Concept Similarity.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Finding relevant papers \
+based on citation relations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Is searching full text more \
+effective than searching abstracts.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Linkedin _ Talent \
+Solutions.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Content-based Recommender \
+Systems -- State of the Art and Trends.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Development of a stemming \
+algorithm.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommending citations with \
+translation model.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Business Intelligence \
+System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The automatic creation of \
+literature abstracts.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Bringing PageRank to the \
+citation analysis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Literature Review -- \
+Six Steps to Success.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Emailvalet -- Learning user \
+preferences for wireless email.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Dimian-Direct Manipulation \
+and Interaction in Pen Based Mind Mapping.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Effect of Banner \
+Advertising on Internet Purchasing.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A system dynamics approach \
+to study virtual communities.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Collaborative tag \
+recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Social tagging \
+systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\On relevance, probabilistic \
+indexing and information retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Metadata Impact on Research \
+Paper Similarity.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A System based on Multiple \
+Criteria Analysis for Scientific Paper Recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Iems -- Helping Users \
+Manage Email.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Expertise recommender -- a \
+flexible recommendation system and architecture.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Don't look stupid -- \
+avoiding pitfalls when recommending research papers.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Explanation in Recommender \
+Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\How to use JabRef (BibTeX) \
+with Microsoft Word 2003.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Benefits - \
+MindMeister.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Content-boosted \
+collaborative filtering for improved recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\scienceroll aseo \
+feedback.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mind Map(R) -- A New Way to \
+Teach Patients and Staff.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Ontological user profiling \
+in recommender systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mindjet Press - MindManager \
+2012.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\mindmanager-about.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\list of mind mapping \
+tools.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Optimised Research Paper \
+Recommender System Using Social Tagging.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Einsatz von BibTip als \
+Recommendersystem.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Monster_2011_Annual \
+Report_10_K_Form.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Understanding mind maps in \
+a week.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Multi-criteria \
+Collaborative Filtering Approach for Research Paper Recommendation in \
+Papyres.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An implementation of a \
+knowledge recommendation system based on similarity among users' profiles.pdf\
+\"\>", ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Joint latent topic \
+models for text and citations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A source independent \
+framework for research paper recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\netcraft internet \
+statistics 2010.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Implicit Feedback for \
+Recommender Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Direction Awareness in \
+Citation Recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\list of mind mapping tools \
+at dmoz.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Paper classification for \
+recommendation on research support system papits.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A feature selection for \
+text categorization on research support system Papits.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Research paper \
+recommendation with topic analysis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Using Viewing Time to Infer \
+User Preference in Recommender Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\BIBTEXing.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\a framework for \
+collaborative, content-based and demographic filtering.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Learning and revising user \
+profiles -- The identification of interesting web sites.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Accurate Information \
+extraction from research papers using conditional random fields (2004 Peng \
+McCallum).pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Collaborative Filtering by \
+Personality Diagnosis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommender Systems \
+Research - A Connection-Centric Survey.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Enabling interoperability \
+for autonomous digital libraries - an API to CiteSeer services.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Service-Oriented \
+Architecture for Digital Libraries.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Software tool for creating \
+outlines and mind maps that generates subtopics automatically.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Using Access Data for Paper \
+Recommendations on arxiv.org.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\mind mapping your way to a \
+better career.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\DL-AgentRecom-A multi-agent \
+based recommendation system for scientific documents.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An algorithm for suffix \
+stripping.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A critical analysis of \
+vector space model for information retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\DataSift Launches Powerful \
+Twitter Data Analysis And Business Intelligence Platform _ \
+TechCrunch.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Finding Related Papers in \
+Literature Digital Libraries.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\TF-ICF -- A new term \
+weighting scheme for clustering dynamic data streams.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Travel Recommender \
+Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\User modeling via \
+stereotypes.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Literature Review -- A \
+Step-by-Step Guide for Students.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Using terms from citations \
+for IR -- some first results.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Understanding inverse \
+document frequency -- on theoretical arguments for IDF.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The probability ranking \
+principle in IR.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Relevance weighting of \
+search terms.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Some simple effective \
+approximations to the 2-Poisson model for probabilistic weighted \
+retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Probabilistic Relevance \
+Framework -- BM25 and Beyond.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Okapi at TREC-3.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\TalkMine -- a soft \
+computing approach to adaptive knowledge recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Talkmine and the adaptive \
+recommendation project.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Supervised Learning \
+Method for Context-Aware Citation Recommendation in a Large Corpus.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\SAGE offers kind of ASEO \
+tips for authors.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Comparison of How \
+Demographic Data Affects Recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An evaluation program for \
+associative indexing.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic text processing \
+-- The transformation, analysis and retrieval of information.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mathematics and information \
+retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A theory of indexing \
+1974.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The SMART retrieval system \
+- experiments in automatic document processing.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic information \
+organization and retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Associative Document \
+Retrieval Techniques Using Bibliographic Information.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\An evaluation of term \
+dependence models in information retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Computer evaluation of \
+indexing and text processing.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The SMART automatic \
+document retrieval systems - an illustration.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Introduction to modern \
+information retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A theory of term importance \
+in automatic text analysis.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic discovery of \
+synonyms and lexicalizations from the Web.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Semi-markov conditional \
+random fields for information extraction.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Report on the TREC-4 \
+Experiment -- Combining Probablistic and Vector Space Schemes.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Collaborative Filtering \
+Recommender Systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Google AdWords Click \
+Through Rates -- 2% is Average But Double Digits is Great.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Utilising User Texts to \
+Improve Recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Collaborative Inference of \
+Sentiments fromTexts.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\ActiveCite -- An \
+interactive system for automatic citation suggestion.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Identifying the original \
+contribution of a document via language modeling.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Implicit user modeling for \
+personalized search.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Classification of document \
+page images based on visual similarity of layout structures.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The importance of stop word \
+removal on recall values in text categorization.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\mindomo - Personalized \
+Advertisement - details.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Document Length \
+Normalization.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Personalisation and \
+recommender systems in digital libraries.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Real-time automatic tag \
+recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Ontological Technologies \
+for User Modeling.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\downloadcounts freemind \
+all.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\downloadcounts freemind \
+stable windows.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\freemind-stats2008.pdf\"\>",
+    ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Vector images in document \
+retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Finding Science with \
+Science -- Evaluating a Domain and Scientific Ontology User Interface for the \
+Discovery of Scientific Resources.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommending citations for \
+academic papers.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\webometrics aseo \
+feedback.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Survey of Collaborative \
+Filtering Techniques.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Scholarly paper \
+recommendation via user's recent research interests.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Telling a Research Story -- \
+Writing a Literature Review.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Some mathematics of \
+information storage and retrieval.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\zotero vs....pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Discriminative Approach \
+to Topic-Based Citation Recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Utilizing Artificial \
+Learners to Help Overcome the Cold-Start Problem in a Pedagogically Oriented \
+Paper Recommendation System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Smart Recommendation for an \
+Evolving E-Learning System.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mining Implicit Ratings for \
+Focused Collaborative Filtering for Paper Recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The design and study of \
+pedagogical paper recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Multidimensional Paper \
+Recommender - Experiments and Evaluations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Pedagogical Value of \
+Papers -- a Collaborative-Filtering based Paper Recommender.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The Social Affordance of a \
+Paper.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\On the pedagogically guided \
+paper recommendation for an evolving web-based learning system.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Keyword clustering for user \
+interest profiling refinement within paper recommender systems.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommender system for \
+predicting student performance.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Scholarly Usage Based \
+Recommendations -- Evaluating bX for a Consortium.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Enhancing digital libraries \
+with TechLens.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The problem of concept \
+drift -- definitions and related work.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\OSUSUME -- cross-lingual \
+recommender system for research papers.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Conducting a literature \
+review -- unisa.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Harnessing p2p power in the \
+classroom.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Supporting peer-to-peer \
+user communities.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Lessons from Deploying \
+I-Help.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Hybrid, Multi-dimensional \
+Recommender for Journal Articles in a Scientific Digital Library.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Writing a Literature Review \
+-- vu college.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\i-ProSE -- Inferring User \
+Profiles in a Scientific Context.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\xmind email user \
+stats.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The string-to-string \
+correction problem.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Google Scholar coverage of \
+a multidisciplinary field.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Claper -- Recommend \
+classical papers to beginners.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A Paper Recommendation \
+Mechanism for the Research Support System Papits.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\techcrunch - Mendeley Snags \
+$2 Million In Early-Stage Funding For Research Paper Management Tool.pdf\"\>",
+    ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\The demographics of web \
+search.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Federal Statistical Office \
+- Proportion of female professors reaches 15.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Using ontology network \
+analysis for research document recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\I tag, you tag -- \
+translating tags for advanced user models.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Learning in the presence of \
+concept drift and hidden contexts.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\String Comparator Metrics \
+and Enhanced Decision Rules in the Fellegi-Sunter Model of Record Linkage.pdf\
+\"\>", ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Contexts in a paper \
+recommendation system with collaborative filtering.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Vector space model of \
+information retrieval -- a reevaluation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Enhancing citation \
+recommendation with various evidences.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Automatic generation of \
+personalized annotation tags for Twitter users.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Exploring Social \
+Annotations for the Semantic Web.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Exploring folksonomy for \
+personalized search.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\CARES -- a ranking-oriented \
+CADAL recommender system.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Research on Personalized \
+Recommendation System of Scientific and Technological Periodical Based on \
+Automatic Summarization.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A New Ontology-Supported \
+and Hybrid Recommending Information System for Scholars.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Recommending scientific \
+literatures in a collaborative tagging environment.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Finding similar queries to \
+satisfy searches based on query traces.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\SemCiR -- A citation \
+recommendation system based on a novel semantic distance measure.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A multi-criteria hybrid \
+citation recommendation system based on linked data.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A New Metric for Measuring \
+Relatedness of Scientific Papers Based on Non-Textual Features.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Citation Style Language \
+1.0.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\A research paper \
+recommender system based on spreading activation model.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Mining search engine query \
+logs for query recommendation.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Improved recommendation \
+based on collaborative tagging behaviors.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Learning multiple graphs \
+for document recommendations.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Improving recommendation \
+lists through topic diversification.pdf\"\>", 
+   ",", "\<\"C:\\\\git\\\\isg-ref-local\\\\pdf\\\\Predictive Statistical \
+Models for User Modeling.pdf\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.692163904003117*^9}]
+}, Closed]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"bibfile", "=", 
+   RowBox[{"ReadString", "[", 
+    RowBox[{"gitBase", "<>", "\"\<isg-ref.bib\>\""}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6921645721019473`*^9, 3.692164578504784*^9}, {
+   3.692164621899841*^9, 3.6921646408533707`*^9}, 3.6921649158345327`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"StringContainsQ", "[", 
+      RowBox[{"bibfile", ",", 
+       RowBox[{"\"\<@\>\"", "<>", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "<>", "\"\<{\>\"", "<>", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<,\>\""}]}], "]"}], ",", 
+     "\"\<\>\"", ",", "#"}], "]"}], "&"}], "/@", "matches"}]], "Input",
+ CellChangeTimes->{{3.6921648487813096`*^9, 3.69216487848431*^9}, {
+  3.6921649266843157`*^9, 3.692164971906314*^9}, {3.692165051443471*^9, 
+  3.692165060664775*^9}, {3.692165141324272*^9, 3.6921651419816236`*^9}, {
+  3.6921652215996385`*^9, 3.6921652275456443`*^9}, {3.692165273909031*^9, 
+  3.6921653894237785`*^9}, {3.692165478541977*^9, 3.6921655576570935`*^9}, {
+  3.6921658557686396`*^9, 3.692165921809766*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Misc\"\>", ",", "\<\"xmind11\"\>", 
+     ",", "\<\"xmind email user stats.pdf\"\>", ",", "\<\"\"\>"}], "}"}], 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+   ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.692165901297613*^9, 3.692165924143634*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"rules", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"\"\<@\>\"", "<>", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "<>", "\"\<{\>\"", "<>", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<,\>\""}], "->", 
+      RowBox[{"\"\<@\>\"", "<>", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "<>", "\"\<{\>\"", "<>", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "<>", "\"\<,\\n  File = {:\>\"", "<>", 
+       RowBox[{"#", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], "<>", "\"\<:PDF},\>\""}]}], "&"}], "/@",
+     "matches"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6921660468025312`*^9, 3.6921662848399816`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"newbib", "=", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{"bibfile", ",", "rules"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.692165642268448*^9, 3.692165656501447*^9}, {
+  3.692165947317825*^9, 3.6921659563108935`*^9}, {3.6921662916104956`*^9, 
+  3.692166326852989*^9}, {3.692166476529135*^9, 3.692166493419576*^9}}],
+
+Cell[BoxData[
+ RowBox[{"WriteString", "[", 
+  RowBox[{
+   RowBox[{"gitBase", "<>", "\"\<isg-ref.bib\>\""}], ",", "newbib"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.69216650123201*^9, 3.6921665442455745`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.692164995854332*^9, 3.692165003339961*^9}}],
+
+Cell[BoxData["350"], "Output",
+ CellChangeTimes->{3.69216500401033*^9}]
+}, Open  ]]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 453, 12, 69, "Input"],
+Cell[1036, 36, 178, 3, 30, "Output"],
+Cell[1217, 41, 156, 2, 30, "Output"]
+}, Open  ]],
+Cell[1388, 46, 332, 7, 30, "Input"],
+Cell[1723, 55, 308, 7, 30, "Input"],
+Cell[2034, 64, 493, 13, 50, "Input"],
+Cell[CellGroupData[{
+Cell[2552, 81, 619, 15, 30, "Input"],
+Cell[3174, 98, 43215, 717, 3831, "Output"]
+}, Closed]],
+Cell[46404, 818, 305, 6, 24, "Input"],
+Cell[CellGroupData[{
+Cell[46734, 828, 883, 19, 30, "Input"],
+Cell[47620, 849, 6553, 94, 69, "Output"]
+}, Open  ]],
+Cell[54188, 946, 753, 19, 30, "Input"],
+Cell[54944, 967, 362, 7, 30, "Input"],
+Cell[55309, 976, 211, 5, 63, "Input"],
+Cell[CellGroupData[{
+Cell[55545, 985, 121, 2, 30, "Input"],
+Cell[55669, 989, 71, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
