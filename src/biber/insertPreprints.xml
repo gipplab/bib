@@ -275,6 +275,13 @@
         <map_step map_field_source="key" map_field_target="sortkey"/>
         <map_step map_field_source="pdf" map_field_target="file"/>
       </map>
+      <map map_overwrite="0">
+        <map_step map_field_source="entrykey"/>
+        <map_step map_field_set="preprint" map_origfieldval="1" map_final="1"/>
+        <map_step map_field_source="preprint"
+                  map_match="(.)(.*)"
+                  map_replace="https://ag-gipp.github.io/bib/preprints/\L$1$2.pdf"/>
+      </map>
     </maps>
   </sourcemap>
   <!-- INHERITANCE -->
