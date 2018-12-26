@@ -6,12 +6,11 @@
                 encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
     <xsl:template match="/bltx:entries">
         <xsl:for-each-group select="bltx:entry" group-by="./bltx:date">
+            <xsl:element name="h4">
+                <xsl:value-of select="current-grouping-key()"/>
+            </xsl:element>
             <xsl:element name="ol">
-                <xsl:element name="h4">
-                    <xsl:value-of select="current-grouping-key()"/>
-                </xsl:element>
                 <xsl:for-each select="current-group()">
-
                     <xsl:element name="li">
                         <xsl:element name="strong">
                             <xsl:value-of select="./bltx:title/text()"/>
