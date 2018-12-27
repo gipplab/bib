@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 # ST2/ST3 compat
 from __future__ import print_function
-from parseTeXlog import *
-import re
-import sys
-import os
-import os.path
-import subprocess
+
 import urllib3
+
+from parseTeXlog import *
 
 urllib3.disable_warnings()
 from github import Github
