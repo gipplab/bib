@@ -1,4 +1,5 @@
 # bib [![Build Status](https://travis-ci.com/ag-gipp/bib.svg?branch=master)](https://travis-ci.com/ag-gipp/bib)
+This repo contains publications from ag-gipp.
 Biblography
 
 ## Reformat the [main bib file](gipp.bib) commit
