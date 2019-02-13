@@ -55,7 +55,7 @@
         <xsl:if test="./bltx:userb">
           <xsl:text> </xsl:text>
           <xsl:text>[Bibtex](</xsl:text>
-          <xsl:value-of select="./bltx:usera/text()"/>
+          <xsl:value-of select="./bltx:userb/text()"/>
           <xsl:text>)</xsl:text>
         </xsl:if>
         <xsl:text>&#xa;</xsl:text>
