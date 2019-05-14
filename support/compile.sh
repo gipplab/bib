@@ -8,4 +8,4 @@ cp allRefs.pdf ../../main.pdf
 cd ../..
 python3 support/issue.py
 support/pubHtml
-git diff -w docs/publist.html --exit-code || support/commitPub.sh
+git diff --exit-code -w docs/publist.html || support/commitPub.sh
