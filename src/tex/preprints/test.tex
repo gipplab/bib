@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{catchfile}
+\usepackage{expl3}
+\usepackage{xparse}
+\ExplSyntaxOn
+\cs_new_protected:Npn \mycom
+{
+\CatchFileDef \l_tmpa_tl {reference.bib} {}
+\regex_replace_all:nnN { @\w+\{(.*?),(.*) } { \1 } \l_tmpa_tl
+\tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+\usepackage[
+backend = biber,
+style = authoryear,
+giveninits = true,
+uniquename = init,
+natbib = true,
+url = false,
+isbn = false,
+doi = false,
+eprint = false,
+maxbibnames = 99,
+minbibnames = 3
+]{biblatex}
+\addbibresource{reference.bib}
+
+\begin{document}
+
+	B3: \fullcite{\makeatletter\begingroup\mycom\endgroup\makeatother}
+
+
+	%	C0: \expandafter\cite\expandafter\csname mycom \endcsname
+
+	\printbibliography
+\end{document}

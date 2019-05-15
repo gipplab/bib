@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+
+\def\foo{bar}
+\def\bar#1#2{The bar macro does this: #1+#1=#2}
+
+\begin{document}
+	\paragraph{Approach 1a.} % your attempt
+	\expandafter\csname \foo\endcsname{Katze}{Hund}
+
+	\paragraph{Approach 1b.} % attempt without \
+	\expandafter\csname foo\endcsname{Katze}{Hund}
+
+	\paragraph{Approach 2a.} % my attempt
+	\csname\expandafter\csname foo\endcsname\endcsname{Katze}{Hund}
+
+	\paragraph{Approach 2b.} % alternative
+	\expandafter\csname \csname foo\endcsname\endcsname{Katze}{Hund}
+\end{document}

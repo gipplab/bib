@@ -1,0 +1,59 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{comgipp}[2017/06/29 Package file for publications on
+gipp.com/pub]
+\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage{listings}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{fancyhdr}
+\RequirePackage{catchfile}
+\RequirePackage{expl3}
+\ExplSyntaxOn
+\cs_new_protected:Npn \mycom #1
+{
+\CatchFileDef \l_tmpa_tl {#1} {}
+\regex_replace_all:nnN { @\w+\{(.*?),(.*) } { \1 } \l_tmpa_tl
+\tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+%\RequirePackage{titling}
+%
+%
+\definecolor{knblue}{RGB}{0,169,224}
+\definecolor{turqois}{RGB}{19, 178, 241}
+\fancypagestyle{firststyle}
+{
+\fancyhead[C]{\vspace{-2cm}
+\begin{tcolorbox}[title=Preprint from \url{https://www.gipp.com/pub/},
+colbacktitle=knblue!35!white,
+coltitle=black] \theReferenceText
+\end{tcolorbox}
+}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{0cm}
+}
+
+
+
+\AtEndDocument{
+\onecolumn
+\lstset{%
+backgroundcolor=\color{knblue!20},
+basicstyle=\small\ttfamily,
+breaklines = true,
+keywordstyle=\color{red!75},
+%columns=fullflexible,
+}%
+\vfill
+\lstdefinelanguage{BibTeX}
+{keywords={%
+@article,@book,@collectedbook,@conference,@electronic,@ieeetranbstctl,%
+@inbook,@incollectedbook,@incollection,@injournal,@inproceedings,%
+@manual,@mastersthesis,@misc,@patent,@periodical,@phdthesis,@preamble,%
+@proceedings,@standard,@string,@techreport,@unpublished%
+},
+comment=[l][\itshape]{@comment},
+sensitive=false,
+}
+\lstinputlisting[language=BibTeX,caption=Use the following \texttt{BibTeX}
+code to cite this article]{reference.bib}
+}
