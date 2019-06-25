@@ -11,14 +11,24 @@
 [INFO] ----------------< de.tuberlin.dima.schubotz:xsltprocJ >-----------------
 [INFO] Building Commandline xslt 2.0 processing 1.0-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xsltprocJ ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+Progress (1): 2.2/57 kBProgress (1): 5.0/57 kBProgress (1): 7.7/57 kBProgress (1): 10/57 kB Progress (1): 13/57 kBProgress (1): 16/57 kBProgress (1): 19/57 kBProgress (1): 21/57 kBProgress (1): 24/57 kBProgress (1): 27/57 kBProgress (1): 30/57 kBProgress (1): 32/57 kBProgress (1): 36/57 kBProgress (1): 40/57 kBProgress (1): 45/57 kB                      Progress (1): 49/57 kBProgress (1): 53/57 kBProgress (1): 57 kB   Progress (2): 57 kB | 2.2/49 kBProgress (2): 57 kB | 5.0/49 kBProgress (2): 57 kB | 7.7/49 kBProgress (2): 57 kB | 10/49 kB Progress (2): 57 kB | 13/49 kB                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (57 kB at 90 kB/s)
+Progress (1): 16/49 kBProgress (1): 19/49 kBProgress (1): 21/49 kBProgress (1): 24/49 kBProgress (1): 27/49 kBProgress (1): 30/49 kBProgress (1): 32/49 kBProgress (1): 36/49 kBProgress (1): 40/49 kBProgress (1): 45/49 kBProgress (1): 49/49 kBProgress (1): 49 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (49 kB at 74 kB/s)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.955 s
-[INFO] Finished at: 2019-06-25T23:56:36Z
+[INFO] Total time:  1.976 s
+[INFO] Finished at: 2019-06-25T23:58:45Z
 [INFO] ------------------------------------------------------------------------
-[ERROR] Plugin org.apache.maven.plugins:maven-resources-plugin:2.6 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.6: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:2.6 from/to central (https://repo.maven.apache.org/maven2): Access denied to: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources) on project xsltprocJ: Execution default-resources of goal org.apache.maven.plugins:maven-resources-plugin:2.6:resources failed: Plugin org.apache.maven.plugins:maven-resources-plugin:2.6 or one of its dependencies could not be resolved: The following artifacts could not be resolved: org.apache.maven:maven-profile:jar:2.0.6, org.apache.maven:maven-plugin-registry:jar:2.0.6, org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6, org.apache.maven.reporting:maven-reporting-api:jar:2.0.6, org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4: Could not transfer artifact org.apache.maven:maven-profile:jar:2.0.6 from/to central (https://repo.maven.apache.org/maven2): Access denied to: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
