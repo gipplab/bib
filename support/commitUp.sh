@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 mv gipp_bibertool.bib gipp.bib
+echo "Travis: $TRAVIS, CI: $CI Travis build ID $TRAVIS_BUILD_ID"
 [ -z "$TRAVIS" ] && exit 1 || echo "skip commit. Travis environment variable not set."
 gpg --import bibbot.asc
 git config --global user.email "bibbot@ckurs.de"
