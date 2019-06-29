@@ -75,6 +75,14 @@
                                 <xsl:text>Bibtex</xsl:text>
                             </xsl:element>
                         </xsl:if>
+                        <xsl:if test="./bltx:userc">
+                            <xsl:text> </xsl:text>
+                            <xsl:element name="u">
+                                <xsl:text>Core Rank </xsl:text>
+                                <xsl:value-of select="./bltx:userc/text()"/>
+                                <xsl:text>.</xsl:text>
+                            </xsl:element>
+                        </xsl:if>
                     </xsl:element>
                 </xsl:for-each>
             </xsl:element>
