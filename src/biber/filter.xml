@@ -33,6 +33,10 @@
                 <map_step map_field_source="core"/>
                 <map_step map_field_set="userc" map_origfieldval="1"/>
             </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="homepage"/>
+                <map_step map_field_set="userd" map_origfieldval="1"/>
+            </map>
         </maps>
     </sourcemap>
     <sortingtemplate name="tool">

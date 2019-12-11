@@ -610,10 +610,12 @@
       <field fieldtype="field" datatype="literal">preprint</field>
       <field fieldtype="field" datatype="literal">biburl</field>
       <field fieldtype="field" datatype="literal">core</field>
+      <field fieldtype="field" datatype="literal">homepage</field>
 
     </fields>
     <entryfields>
       <field>preprint</field>
+      <field>homepage</field>
       <field>biburl</field>
       <field>core</field>
       <field>owner</field>
