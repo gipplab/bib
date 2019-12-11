@@ -75,6 +75,15 @@
                                 <xsl:text>Bibtex</xsl:text>
                             </xsl:element>
                         </xsl:if>
+                        <xsl:if test="./bltx:userd">
+                            <xsl:text> </xsl:text>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="./bltx:userf/text()"/>
+                                </xsl:attribute>
+                                <xsl:text>Homepage</xsl:text>
+                            </xsl:element>
+                        </xsl:if>
                         <xsl:if test="./bltx:userc">
                             <xsl:text> </xsl:text>
                             <xsl:element name="u">
