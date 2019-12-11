@@ -87,9 +87,29 @@
                         <xsl:if test="./bltx:userc">
                             <xsl:text> </xsl:text>
                             <xsl:element name="u">
-                                <xsl:text>Core Rank </xsl:text>
-                                <xsl:value-of select="./bltx:userc/text()"/>
-                                <xsl:text>.</xsl:text>
+                                <xsl:choose>
+                                    <xsl:when test="matches('((.*?)[^\\];){2}',./bltx:userc)">
+                                        <xsl:analyze-string select="./bltx:userc"
+                                                            regex="((.*?)[^\\];){2}(.*?)">
+                                            <xsl:matching-substring>
+                                                <city>
+                                                    <xsl:value-of select="regex-group(1)"/>
+                                                </city>
+                                                <state>
+                                                    <xsl:value-of select="regex-group(2)"/>
+                                                </state>
+                                                <zip>
+                                                    <xsl:value-of select="regex-group(3)"/>
+                                                </zip>
+                                            </xsl:matching-substring>
+                                        </xsl:analyze-string>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:text>Core Rank </xsl:text>
+                                        <xsl:value-of select="./bltx:userc/text()"/>
+                                        <xsl:text>.</xsl:text>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:element>
                         </xsl:if>
                     </xsl:element>
