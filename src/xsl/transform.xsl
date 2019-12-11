@@ -85,31 +85,30 @@
                             </xsl:element>
                         </xsl:if>
                         <xsl:if test="./bltx:userc">
+                            <xsl:variable name="coreRank">
+                                <xsl:value-of select="./bltx:userc/text()"/>
+                            </xsl:variable>
                             <xsl:text> </xsl:text>
                             <xsl:element name="u">
-                                <xsl:choose>
-                                    <xsl:when test="matches('((.*?)[^\\];){2}',./bltx:userc)">
-                                        <xsl:analyze-string select="./bltx:userc"
-                                                            regex="((.*?)[^\\];){2}(.*?)">
-                                            <xsl:matching-substring>
-                                                <city>
-                                                    <xsl:value-of select="regex-group(1)"/>
-                                                </city>
-                                                <state>
-                                                    <xsl:value-of select="regex-group(2)"/>
-                                                </state>
-                                                <zip>
-                                                    <xsl:value-of select="regex-group(3)"/>
-                                                </zip>
-                                            </xsl:matching-substring>
-                                        </xsl:analyze-string>
-                                    </xsl:when>
-                                    <xsl:otherwise>
+                                <!-- it seems currently not possible to handle escaping. XSLT 2 does not
+                                 seem to support negative look-behind regexp pattern cf.,
+                                 https://lists.w3.org/Archives/Public/xsl-editors/2004OctDec/0042.html-->
+                                <xsl:analyze-string select="$coreRank"
+                                                    regex="^((.*?);){{2}}(.*)$">
+                                    <xsl:matching-substring>
+                                        <xsl:element name="a">
+                                            <xsl:attribute name="href">
+                                                <xsl:value-of select="regex-group(7)"/>
+                                            </xsl:attribute>
+                                            <xsl:value-of select="regex-group(4)"/>
+                                        </xsl:element>
+                                    </xsl:matching-substring>
+                                    <xsl:non-matching-substring>
                                         <xsl:text>Core Rank </xsl:text>
-                                        <xsl:value-of select="./bltx:userc/text()"/>
+                                        <xsl:value-of select="$coreRank"/>
                                         <xsl:text>.</xsl:text>
-                                    </xsl:otherwise>
-                                </xsl:choose>
+                                    </xsl:non-matching-substring>
+                                </xsl:analyze-string>
                             </xsl:element>
                         </xsl:if>
                     </xsl:element>
