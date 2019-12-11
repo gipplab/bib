@@ -15,7 +15,7 @@
             <sortitem order="1">author</sortitem>
         </sort>
         <sort order="3">
-            <sortitem order="1">title</sortitem>
+            <sortitem order="1">core</sortitem>
         </sort>
     </sortingtemplate>
     <sourcemap>
