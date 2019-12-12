@@ -21,6 +21,7 @@
             </map>
             <!-- if you find { or } in the xml output add the field names to the list below -->
             <map map_overwrite="1" map_foreach="author,editor,translator,booktitle,title,publisher,series">
+                <map_step map_field_source="$MAPLOOP" map_match="\\emph" map_replace=""/>
                 <map_step map_field_source="$MAPLOOP" map_match="[\{\}]" map_replace=""/>
                 <map_step map_field_source="$MAPLOOP" map_match="\\&amp;" map_replace="&amp;"/>
                 <map_step map_field_source="$MAPLOOP" map_match="\\textdash" map_replace="-"/>
