@@ -44,7 +44,7 @@
             <sortitem order="1" >year</sortitem>
         </sort>
         <sort order="2" sort_direction="ascending">
-            <sortitem order="1" >userc</sortitem>
+            <sortitem order="1" pad_char="Z" >userc</sortitem>
         </sort>
     </sortingtemplate>
 </config>
