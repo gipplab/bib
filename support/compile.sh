@@ -8,5 +8,7 @@ docker run --rm -it --user="$(id -u):$(id -g)" -v "$(pwd)":/home adnrv/texlive:f
 cp allRefs.pdf ../../main.pdf
 cd ../..
 python3 support/issue.py
+echo "Generating the publist"
 support/pubHtml
-git diff --exit-code -w docs/publist.html || support/commitPub.sh
+# git diff --exit-code -w docs/publist.html ||
+support/commitPub.sh
