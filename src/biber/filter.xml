@@ -44,7 +44,7 @@
             <sortitem order="1" >year</sortitem>
         </sort>
         <sort order="2" sort_direction="ascending" final="1">
-            <sortitem order="1">core</sortitem>
+            <sortitem order="1">userc</sortitem>
         </sort>
         <sort order="3" sort_direction="ascending" final="1">
             <sortitem order="1">sortkey</sortitem>
