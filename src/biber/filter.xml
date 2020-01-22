@@ -37,15 +37,20 @@
                 <map_step map_field_source="homepage"/>
                 <map_step map_field_set="userd" map_origfieldval="1"/>
             </map>
+            <map map_overwrite="1">
+                <map_step map_field_set="sortkey" map_field_value="D"/>
+                <map_step map_field_source="core"/>
+                <map_step map_field_set="sortkey" map_origfieldval="0"/>
+            </map>
         </maps>
     </sourcemap>
     <sortingtemplate name="tool">
         <sort order="1" sort_direction="descending">
             <sortitem order="1" >year</sortitem>
         </sort>
-        <sort order="2" sort_direction="ascending" final="1">
+        <!--<sort order="2" sort_direction="ascending" final="1">
             <sortitem order="1">userc</sortitem>
-        </sort>
+        </sort>-->
         <sort order="3" sort_direction="ascending" final="1">
             <sortitem order="1">sortkey</sortitem>
         </sort>
