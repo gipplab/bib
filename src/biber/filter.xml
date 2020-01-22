@@ -45,7 +45,7 @@
         </sort>
         <sort order="2" sort_direction="ascending">
             <sortitem order="1">userc</sortitem>
-            <sortitem order="2">D</sortitem>
+            <sortitem order="2">0000</sortitem>
         </sort>
     </sortingtemplate>
 </config>
