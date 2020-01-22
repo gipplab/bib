@@ -1,5 +1,5 @@
-biber --tool --configfile=src/biber/filter.xml gipp.bib
-biber --output-format=biblatexml --configfile=src/biber/clean.xml --clrmacros --tool schubotz.bib
+docker run --rm -it --user="$(id -u):$(id -g)" -v "$(pwd)":/home adnrv/texlive:full biber --tool --configfile=src/biber/filter.xml gipp.bib
+docker run --rm -it --user="$(id -u):$(id -g)" -v "$(pwd)":/home adnrv/texlive:full biber --output-format=biblatexml --configfile=src/biber/clean.xml --clrmacros --tool schubotz.bib
 ./support/xstlprocJ/xsltprocJ src/xsl/transform.xsl references.xml > /dev/null 2>&1
 ./support/xstlprocJ/xsltprocJ src/xsl/transform.xsl references.xml > publist.html
 cat src/html/pub_header publist.html src/html/pub_footer > docs/publist.html
