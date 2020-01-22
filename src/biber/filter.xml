@@ -43,9 +43,11 @@
         <sort order="1" sort_direction="descending">
             <sortitem order="1" >year</sortitem>
         </sort>
-        <sort order="2" sort_direction="ascending">
-            <sortitem order="1">userc</sortitem>
-            <sortitem order="2">0000</sortitem>
+        <sort order="2" sort_direction="ascending" final="1">
+            <sortitem order="1">core</sortitem>
+        </sort>
+        <sort order="3" sort_direction="ascending" final="1">
+            <sortitem order="1">sortkey</sortitem>
         </sort>
     </sortingtemplate>
 </config>
