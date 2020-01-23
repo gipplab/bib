@@ -11,3 +11,5 @@ python3 support/issue.py
 echo "Generating the publist"
 support/pubHtml
 git diff --exit-code -w docs/publist.html || support/commitPub.sh
+support/pubHtmlDfg
+git diff --exit-code -w docs/pubDFG.html || support/commitPubDfg.sh

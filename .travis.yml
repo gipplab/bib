@@ -33,6 +33,7 @@ deploy:
   - gipp.bib
   - mendeley.bib
   - docs/publist.html
+  - docs/pubDFG.html
   on:
     repo: ag-gipp/bib
 env:

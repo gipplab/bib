@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <output_fieldcase>title</output_fieldcase>
+    <output_indent>2</output_indent>
+    <output_align>true</output_align>
+    <output_encoding>UTF-8</output_encoding>
+    <fixinits>1</fixinits>
+    <tool>1</tool>
+    <output_file>references.xml</output_file>
+    <sourcemap>
+        <maps datatype="bibtex" level="user">
+            <map map_overwrite="1">
+                <map_step map_field_set="SHORTTITLE" map_field_null="1"/>
+                <map_step map_field_set="maintitle" map_field_null="1"/>
+                <map_step map_field_set="abstract" map_field_null="1"/>
+                <map_step map_field_set="file" map_field_null="1"/>
+            </map>
+            <map map_overwrite="1">
+                <!-- remove month and day if set-->
+                <map_step map_field_source="date" map_match="(\d{4}).*" map_replace="$1"/>
+            </map>
+            <!-- if you find { or } in the xml output add the field names to the list below -->
+            <map map_overwrite="1" map_foreach="author,editor,translator,booktitle,title,publisher,series">
+                <map_step map_field_source="$MAPLOOP" map_match="\\emph" map_replace=""/>
+                <map_step map_field_source="$MAPLOOP" map_match="[\{\}]" map_replace=""/>
+                <map_step map_field_source="$MAPLOOP" map_match="\\&amp;" map_replace="&amp;"/>
+                <map_step map_field_source="$MAPLOOP" map_match="\\textdash" map_replace="-"/>
+            </map>
+            <map map_overwrite="1">
+                <map_step map_field_source="doi" map_match="http(s)?://dx.doi.org/" map_replace=""/>
+                <map_step map_field_source="doi" map_match="\\_" map_replace="_"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="publisher"/>
+                <map_step map_field_set="booktitle" map_origfieldval="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="journaltitle"/>
+                <map_step map_field_set="booktitle" map_origfieldval="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="institution"/>
+                <map_step map_field_set="booktitle" map_origfieldval="1"/>
+                <map_step map_field_source="type"/>
+                <map_step map_field_set="booktitle" map_append="1" map_origfieldval="1" />
+            </map>
+        </maps>
+    </sourcemap>
+</config>
