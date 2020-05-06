@@ -12,4 +12,4 @@ echo "Generating the publist"
 support/pubHtml
 git diff --exit-code -w docs/publist.html || support/commitPub.sh
 source support/pubHtmlDfg
-git diff --exit-code -w docs/pubDFG.html || support/commitPubDfg.sh
+git diff --exit-code -w docs/pubDFG.html || source support/commitPubDfg.sh
