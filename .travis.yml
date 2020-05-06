@@ -31,7 +31,6 @@ deploy:
   file:
   - main.pdf
   - gipp.bib
-  - mendeley.bib
   - docs/publist.html
   - docs/pubDFG.html
   on:
