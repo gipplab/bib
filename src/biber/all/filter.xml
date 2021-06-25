@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <output_fieldcase>lower</output_fieldcase>
+    <output_indent>2</output_indent>
+    <output_align>true</output_align>
+    <output_encoding>ascii</output_encoding>
+    <output_file>all.bib</output_file>
+    <tool>true</tool>
+    <sourcemap>
+        <maps datatype="bibtex" bmap_overwrite="1">
+            <map>
+                <map_step map_notfield="KEYWORDS" map_final="1"/>
+                <map_step map_entry_null="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="preprint"/>
+                <map_step map_field_set="usera" map_origfieldval="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="biburl"/>
+                <map_step map_field_set="userb" map_origfieldval="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="core"/>
+                <map_step map_field_set="userc" map_origfieldval="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="homepage"/>
+                <map_step map_field_set="userd" map_origfieldval="1"/>
+            </map>
+            <map map_overwrite="0">
+                <map_step map_field_source="core"/>
+                <map_step map_field_set="sortkey" map_origfieldval="1" map_final="1"/>
+                <map_step map_field_set="sortkey" map_field_value="D"/>
+            </map>
+        </maps>
+    </sourcemap>
+    <sortingtemplate name="tool">
+        <sort order="1" sort_direction="descending">
+            <sortitem order="1" >year</sortitem>
+        </sort>
+        <sort order="2" sort_direction="ascending">
+            <sortitem order="1">sortkey</sortitem>
+        </sort>
+    </sortingtemplate>
+</config>
