@@ -9,54 +9,54 @@
           <attribute name="id" />
           <attribute name="entrytype">
             <choice>
-              <value>set</value>
-              <value>suppcollection</value>
-              <value>review</value>
-              <value>thesis</value>
-              <value>bookinbook</value>
-              <value>report</value>
-              <value>movie</value>
-              <value>unpublished</value>
-              <value>standard</value>
-              <value>software</value>
-              <value>customf</value>
-              <value>jurisdiction</value>
               <value>audio</value>
-              <value>misc</value>
-              <value>commentary</value>
-              <value>book</value>
               <value>video</value>
-              <value>reference</value>
-              <value>letter</value>
-              <value>periodical</value>
-              <value>customd</value>
-              <value>inreference</value>
-              <value>mvreference</value>
-              <value>patent</value>
-              <value>suppbook</value>
-              <value>legal</value>
-              <value>collection</value>
-              <value>image</value>
-              <value>legislation</value>
-              <value>performance</value>
               <value>music</value>
-              <value>custome</value>
-              <value>customc</value>
-              <value>customa</value>
-              <value>inproceedings</value>
-              <value>artwork</value>
+              <value>jurisdiction</value>
+              <value>customd</value>
+              <value>image</value>
+              <value>software</value>
+              <value>performance</value>
               <value>manual</value>
+              <value>movie</value>
+              <value>bibnote</value>
+              <value>review</value>
+              <value>misc</value>
+              <value>customb</value>
+              <value>custome</value>
+              <value>artwork</value>
+              <value>unpublished</value>
+              <value>inbook</value>
+              <value>mvcollection</value>
               <value>booklet</value>
               <value>incollection</value>
-              <value>proceedings</value>
-              <value>article</value>
-              <value>mvcollection</value>
-              <value>online</value>
-              <value>inbook</value>
+              <value>thesis</value>
+              <value>inproceedings</value>
+              <value>report</value>
               <value>mvbook</value>
+              <value>letter</value>
+              <value>standard</value>
+              <value>suppcollection</value>
+              <value>collection</value>
+              <value>bookinbook</value>
+              <value>customa</value>
+              <value>article</value>
               <value>xdata</value>
-              <value>customb</value>
-              <value>bibnote</value>
+              <value>periodical</value>
+              <value>reference</value>
+              <value>mvreference</value>
+              <value>customf</value>
+              <value>book</value>
+              <value>inreference</value>
+              <value>online</value>
+              <value>customc</value>
+              <value>proceedings</value>
+              <value>suppbook</value>
+              <value>patent</value>
+              <value>commentary</value>
+              <value>legal</value>
+              <value>set</value>
+              <value>legislation</value>
             </choice>
           </attribute>
           <interleave>
@@ -66,26 +66,26 @@
             <ref name="namelist" />
             <!-- key lists -->
             <ref name="keylist" />
-            <!-- verbatim fields -->
-            <ref name="verbatimfield" />
             <!-- literal fields -->
             <ref name="literalfield" />
-            <!-- uri fields -->
-            <ref name="urifield" />
-            <!-- range fields -->
-            <ref name="rangefield" />
-            <!-- key fields -->
-            <ref name="keyfield" />
-            <!-- option fields -->
-            <ref name="optionfield" />
-            <!-- keyword fields -->
-            <ref name="keywordfield" />
             <!-- entrykey fields -->
             <ref name="entrykeyfield" />
+            <!-- option fields -->
+            <ref name="optionfield" />
             <!-- date fields -->
             <ref name="datefield" />
             <!-- code fields -->
             <ref name="codefield" />
+            <!-- keyword fields -->
+            <ref name="keywordfield" />
+            <!-- range fields -->
+            <ref name="rangefield" />
+            <!-- verbatim fields -->
+            <ref name="verbatimfield" />
+            <!-- uri fields -->
+            <ref name="urifield" />
+            <!-- key fields -->
+            <ref name="keyfield" />
             <ref name="mannotation" />
           </interleave>
         </element>
@@ -458,59 +458,6 @@
                 </oneOrMore>
               </element>
             </choice>
-          </choice>
-        </element>
-      </optional>
-    </interleave>
-  </define>
-  <!-- verbatim fields definition -->
-  <define name="verbatimfield">
-    <interleave>
-      <optional>
-        <element name="bltx:doi">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:eprint">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:file">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:verba">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:verbb">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:verbc">
-          <choice>
-            <ref name="xdata" />
-            <text />
           </choice>
         </element>
       </optional>
@@ -1073,194 +1020,6 @@
       </optional>
     </interleave>
   </define>
-  <!-- uri fields definition -->
-  <define name="urifield">
-    <interleave>
-      <optional>
-        <element name="bltx:url">
-          <choice>
-            <ref name="xdata" />
-            <data type="anyURI" />
-          </choice>
-        </element>
-      </optional>
-    </interleave>
-  </define>
-  <!-- range fields definition -->
-  <define name="rangefield">
-    <interleave>
-      <optional>
-        <element name="bltx:pages">
-          <choice>
-            <ref name="xdata" />
-            <element name="bltx:list">
-              <oneOrMore>
-                <element name="bltx:item">
-                  <choice>
-                    <ref name="xdata" />
-                    <group>
-                      <element name="bltx:start">
-                        <text />
-                      </element>
-                      <element name="bltx:end">
-                        <choice>
-                          <text />
-                          <empty />
-                        </choice>
-                      </element>
-                    </group>
-                  </choice>
-                </element>
-              </oneOrMore>
-            </element>
-          </choice>
-        </element>
-      </optional>
-    </interleave>
-  </define>
-  <!-- key fields definition -->
-  <define name="keyfield">
-    <interleave>
-      <optional>
-        <element name="bltx:authortype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:bookpagination">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:editoratype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:editorbtype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:editorctype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:editortype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:nameatype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:namebtype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:namectype">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:origlanguage">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:pagination">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:pubstate">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:type">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-    </interleave>
-  </define>
-  <!-- option fields definition -->
-  <define name="optionfield">
-    <interleave>
-      <optional>
-        <element name="bltx:options">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-      <optional>
-        <element name="bltx:relatedoptions">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-    </interleave>
-  </define>
-  <!-- keyword fields definition -->
-  <define name="keywordfield">
-    <interleave>
-      <optional>
-        <element name="bltx:keywords">
-          <choice>
-            <ref name="xdata" />
-            <text />
-          </choice>
-        </element>
-      </optional>
-    </interleave>
-  </define>
   <!-- entrykey fields definition -->
   <define name="entrykeyfield">
     <interleave>
@@ -1389,6 +1148,27 @@
       </optional>
     </interleave>
   </define>
+  <!-- option fields definition -->
+  <define name="optionfield">
+    <interleave>
+      <optional>
+        <element name="bltx:options">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:relatedoptions">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+    </interleave>
+  </define>
   <!-- date fields definition -->
   <define name="datefield">
     <zeroOrMore>
@@ -1426,6 +1206,226 @@
     <interleave>
       <optional>
         <element name="bltx:execute">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+  <!-- keyword fields definition -->
+  <define name="keywordfield">
+    <interleave>
+      <optional>
+        <element name="bltx:keywords">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+  <!-- range fields definition -->
+  <define name="rangefield">
+    <interleave>
+      <optional>
+        <element name="bltx:pages">
+          <choice>
+            <ref name="xdata" />
+            <element name="bltx:list">
+              <oneOrMore>
+                <element name="bltx:item">
+                  <choice>
+                    <ref name="xdata" />
+                    <group>
+                      <element name="bltx:start">
+                        <text />
+                      </element>
+                      <element name="bltx:end">
+                        <choice>
+                          <text />
+                          <empty />
+                        </choice>
+                      </element>
+                    </group>
+                  </choice>
+                </element>
+              </oneOrMore>
+            </element>
+          </choice>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+  <!-- verbatim fields definition -->
+  <define name="verbatimfield">
+    <interleave>
+      <optional>
+        <element name="bltx:doi">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:eprint">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:file">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:verba">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:verbb">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:verbc">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+  <!-- uri fields definition -->
+  <define name="urifield">
+    <interleave>
+      <optional>
+        <element name="bltx:url">
+          <choice>
+            <ref name="xdata" />
+            <data type="anyURI" />
+          </choice>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+  <!-- key fields definition -->
+  <define name="keyfield">
+    <interleave>
+      <optional>
+        <element name="bltx:authortype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:bookpagination">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:editoratype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:editorbtype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:editorctype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:editortype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:nameatype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:namebtype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:namectype">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:origlanguage">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:pagination">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:pubstate">
+          <choice>
+            <ref name="xdata" />
+            <text />
+          </choice>
+        </element>
+      </optional>
+      <optional>
+        <element name="bltx:type">
           <choice>
             <ref name="xdata" />
             <text />
