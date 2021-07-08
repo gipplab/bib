@@ -22,6 +22,7 @@
     <bltx:note>tex.core: A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/</bltx:note>
     <bltx:series>20th</bltx:series>
     <bltx:title>Introducing Peer Copy - A Fully Decentralized Peer-to-Peer File Transfer Tool</bltx:title>
+    <bltx:userc>A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/</bltx:userc>
     <bltx:pages>
       <bltx:list>
         <bltx:item>2</bltx:item>
@@ -94,6 +95,11 @@
     <bltx:date>2021</bltx:date>
   </bltx:entry>
   <bltx:entry id="IhleSMG20" entrytype="inproceedings">
+    <bltx:ids>
+      <bltx:list>
+        <bltx:item>IhleSMG20a</bltx:item>
+      </bltx:list>
+    </bltx:ids>
     <bltx:names type="author">
       <bltx:name>
         <bltx:namepart type="family" initial="I">Ihle</bltx:namepart>
@@ -170,6 +176,7 @@
     <bltx:booktitle>Proceedings of the Workshop on Web Archiving and Digital Libraries (WADL) co-located with the Annual International ACM/IEEE Joint Conference on Digital Libraries (JCDL)</bltx:booktitle>
     <bltx:note>tex.oldkey: Wortner2019 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/wortner2019.pdf tex.topic: blockchain</bltx:note>
     <bltx:title>Securing the Integrity of Time Series Data in Open Science Projects Using Blockchain-Based Trusted Timestamping</bltx:title>
+    <bltx:usera>https://www.gipp.com/wp-content/papercite-data/pdf/wortner2019.pdf</bltx:usera>
     <bltx:date>2019</bltx:date>
   </bltx:entry>
   <bltx:entry id="IhleS19" entrytype="incollection">
