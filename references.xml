@@ -19,13 +19,45 @@
       </bltx:name>
     </bltx:names>
     <bltx:langid>english</bltx:langid>
-    <bltx:series>IFIP '21</bltx:series>
+    <bltx:note>tex.core: A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/</bltx:note>
+    <bltx:series>20th</bltx:series>
     <bltx:title>Introducing Peer Copy - A Fully Decentralized Peer-to-Peer File Transfer Tool</bltx:title>
     <bltx:pages>
       <bltx:list>
         <bltx:item>2</bltx:item>
       </bltx:list>
     </bltx:pages>
+    <bltx:date>2021</bltx:date>
+  </bltx:entry>
+  <bltx:entry id="DeifussFabianISG21" entrytype="incollection">
+    <bltx:names type="author">
+      <bltx:name>
+        <bltx:namepart type="family" initial="D">Deifuß</bltx:namepart>
+        <bltx:namepart type="given" initial="F">Fabian</bltx:namepart>
+      </bltx:name>
+      <bltx:name>
+        <bltx:namepart type="family" initial="I">Ihle</bltx:namepart>
+        <bltx:namepart type="given" initial="C">Cornelius</bltx:namepart>
+      </bltx:name>
+      <bltx:name>
+        <bltx:namepart type="family" initial="S">Schubotz</bltx:namepart>
+        <bltx:namepart type="given" initial="M">Moritz</bltx:namepart>
+      </bltx:name>
+      <bltx:name>
+        <bltx:namepart type="family" initial="G">Gipp</bltx:namepart>
+        <bltx:namepart type="given" initial="B">Bela</bltx:namepart>
+      </bltx:name>
+    </bltx:names>
+    <bltx:publisher>
+      <bltx:list>
+        <bltx:item>Universität Regensburg</bltx:item>
+      </bltx:list>
+    </bltx:publisher>
+    <bltx:booktitle>Universität Regensburg</bltx:booktitle>
+    <bltx:doi>10.5283/EPUB.44954</bltx:doi>
+    <bltx:title>procd: A Privacy-preserving Robust Implementation to Discover Contacts in Social Networks</bltx:title>
+    <bltx:url>https://epub.uni-regensburg.de/id/eprint/44954</bltx:url>
+    <bltx:date>2021</bltx:date>
   </bltx:entry>
   <bltx:entry id="TottlebenISG21" entrytype="inproceedings">
     <bltx:names type="author">
@@ -60,37 +92,6 @@
     <bltx:booktitle>Proceedings of the ACM/IEEE joint conference on digital libraries in 2021</bltx:booktitle>
     <bltx:title>Academic Storage Cluster</bltx:title>
     <bltx:date>2021</bltx:date>
-  </bltx:entry>
-  <bltx:entry id="DeifussFabianISG21" entrytype="incollection">
-    <bltx:names type="author">
-      <bltx:name>
-        <bltx:namepart type="family" initial="D">Deifuß</bltx:namepart>
-        <bltx:namepart type="given" initial="F">Fabian</bltx:namepart>
-      </bltx:name>
-      <bltx:name>
-        <bltx:namepart type="family" initial="I">Ihle</bltx:namepart>
-        <bltx:namepart type="given" initial="C">Cornelius</bltx:namepart>
-      </bltx:name>
-      <bltx:name>
-        <bltx:namepart type="family" initial="S">Schubotz</bltx:namepart>
-        <bltx:namepart type="given" initial="M">Moritz</bltx:namepart>
-      </bltx:name>
-      <bltx:name>
-        <bltx:namepart type="family" initial="G">Gipp</bltx:namepart>
-        <bltx:namepart type="given" initial="B">Bela</bltx:namepart>
-      </bltx:name>
-    </bltx:names>
-    <bltx:publisher>
-      <bltx:list>
-        <bltx:item>Universität Regensburg</bltx:item>
-      </bltx:list>
-    </bltx:publisher>
-    <bltx:booktitle>Universität Regensburg</bltx:booktitle>
-    <bltx:doi>10.5283/EPUB.44954</bltx:doi>
-    <bltx:title>procd: A Privacy-preserving Robust Implementation to Discover Contacts in Social Networks</bltx:title>
-    <bltx:url>https://epub.uni-regensburg.de/id/eprint/44954</bltx:url>
-    <bltx:date>2021</bltx:date>
-    <bltx:date type="url">2021-07-07</bltx:date>
   </bltx:entry>
   <bltx:entry id="IhleSMG20" entrytype="inproceedings">
     <bltx:names type="author">
@@ -218,6 +219,5 @@
       </bltx:list>
     </bltx:pages>
     <bltx:date>2019</bltx:date>
-    <bltx:date type="url">2021-02-12</bltx:date>
   </bltx:entry>
 </bltx:entries>
