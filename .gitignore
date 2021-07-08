@@ -413,3 +413,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+all.bib
+all.rng
+all.html
