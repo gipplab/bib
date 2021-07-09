@@ -14,6 +14,7 @@
                 <map_step map_field_set="maintitle" map_field_null="1"/>
                 <map_step map_field_set="abstract" map_field_null="1"/>
                 <map_step map_field_set="file" map_field_null="1"/>
+                <map_step map_field_set="urldate" map_field_null="1"/>
             </map>
             <map map_overwrite="1">
                 <!-- remove month and day if set-->
