@@ -12,17 +12,6 @@
 	core = {A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/},
 }
 
-@inproceedings{TottlebenISG21,
-	location = {New York, {NY}, {USA}},
-	title = {Academic Storage Cluster},
-	abstract = {Decentralized storage is still rarely used in an academic and educational environment, although it offers better availability than conventional systems. It still happens that data is not available at a certain time due to heavy load or maintenance on the university servers. In such cases, a decentralized solution can help keep the data available and distribute the load among several peers. In our experiment, we created a cluster of containers in Docker to evaluate a private {IPFS} cluster for an academic data store focusing on availability, {GET}/{PUT} performance, and storage needs. As sample data, we used {PDF} files to analyze the data transport in our peer-to-peer network with Wireshark. We found that a bandwidth of at least 100 kbps is required for {IPFS} to function but recommend at least 1000 kbps for smooth operation. Also, the hard disk and memory size should be adapted to the data. Other limiting factors such as {CPU} processing power and delay in the internet connection did not affect the operation of the {IPFS} cluster.},
-	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2021},
-	publisher = {Association for Computing Machinery},
-	author = {von Tottleben, Alexander and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
-	date = {2021},
-	keywords = {!ci, !ci\_author, decentralized\_open\_science, ⛔ No {DOI} found},
-}
-
 @incollection{DeifussFabianISG21,
 	location = {Glückstadt},
 	title = {procd: A privacy-preserving robust implementation to discover contacts in social networks},
@@ -32,13 +21,24 @@
 	abstract = {Current instant messengers store the users? phone book contacts typically unencrypted or hashed on a central server. In case of a server?s corruption, all contacts are either directly available in plaintext or can be unmasked using a simple dictionary attack. To solve this problem, we present procd [p?o?st], a python implementation for privacy preserving contact discovery. procd is a trustless solution that requires neither plaintext numbers nor hashes of single phone numbers to retrieve contacts. Instead, we transfer hashed combinations of multiple phone numbers, which increases the effort for dictionary attacks to an unfeasible level using today?s hardware.},
 	pages = {363--368},
 	booktitle = {Information between data and knowledge},
-	publisher = {Werner Hülsbusch},
+	publisher = {Proceedings of the 16th International Symposium of Information Science ({ISI} 2021)},
 	author = {Deifuß, Fabian and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
 	date = {2021},
 	doi = {10.5283/EPUB.44954},
 	note = {tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
 	keywords = {!ci, !ci\_author, decentralized\_open\_science, private contact discovery, private information retrieval, private set intersection, secure multiparty computation},
 	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
+}
+
+@inproceedings{TottlebenISG21,
+	location = {New York, {NY}, {USA}},
+	title = {Academic Storage Cluster},
+	abstract = {Decentralized storage is still rarely used in an academic and educational environment, although it offers better availability than conventional systems. It still happens that data is not available at a certain time due to heavy load or maintenance on the university servers. In such cases, a decentralized solution can help keep the data available and distribute the load among several peers. In our experiment, we created a cluster of containers in Docker to evaluate a private {IPFS} cluster for an academic data store focusing on availability, {GET}/{PUT} performance, and storage needs. As sample data, we used {PDF} files to analyze the data transport in our peer-to-peer network with Wireshark. We found that a bandwidth of at least 100 kbps is required for {IPFS} to function but recommend at least 1000 kbps for smooth operation. Also, the hard disk and memory size should be adapted to the data. Other limiting factors such as {CPU} processing power and delay in the internet connection did not affect the operation of the {IPFS} cluster.},
+	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2021},
+	publisher = {Association for Computing Machinery},
+	author = {von Tottleben, Alexander and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	keywords = {!ci, !ci\_author, decentralized\_open\_science, ⛔ No {DOI} found},
 }
 
 @inproceedings{IhleSMG20,
