@@ -1,4 +1,4 @@
-# bib ![Build Status](https://github.com/ag-gipp/bib/actions/workflows/build.yml/badge.svg)
+# bib ![Build Status](https://github.com/gipplab/bib/actions/workflows/build.yml/badge.svg)
 This repo contains publications from ag-gipp.
 Biblography
 
