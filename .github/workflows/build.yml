@@ -1,0 +1,79 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches-ignore:
+      - 'build-**'
+  pull_request:
+    branches-ignore:
+      - 'build-**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for creating releases and pushing tags
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python 3.6
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.6'
+        cache: 'pip'
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y maven
+        pip install PyGithub
+    
+    - name: Cache TeX Live
+      uses: actions/cache@v4
+      with:
+        path: |
+          /tmp/texlive
+          ~/.texlive
+        key: texlive-${{ runner.os }}
+    
+    - name: Install TeX Live
+      run: source ./support/texlive_install.sh
+    
+    - name: Decrypt GPG key
+      if: github.event_name == 'push'
+      env:
+        encrypted_125c18bb9738_key: ${{ secrets.ENCRYPTED_125C18BB9738_KEY }}
+        encrypted_125c18bb9738_iv: ${{ secrets.ENCRYPTED_125C18BB9738_IV }}
+      run: |
+        openssl aes-256-cbc -K $encrypted_125c18bb9738_key -iv $encrypted_125c18bb9738_iv \
+          -in bibbot.asc.enc -out bibbot.asc -d
+    
+    - name: Compile
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: source ./support/compile.sh
+    
+    - name: Create Git Tag and Deploy Info
+      if: success() && github.event_name == 'push'
+      id: tag_info
+      run: |
+        export GIT_TAG=build-${{ github.ref_name }}-$(date -u "+%Y-%m-%d")-${{ github.run_number }}
+        echo "tag_name=$GIT_TAG" >> $GITHUB_OUTPUT
+        git tag $GIT_TAG -a -m "Generated tag from GitHub Actions build ${{ github.run_number }}"
+    
+    - name: Deploy to GitHub Releases
+      if: success() && github.event_name == 'push' && github.repository == 'gipplab/bib'
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          main.pdf
+          gipp.bib
+          docs/publist.html
+          docs/pubDFG.html
+        tag_name: ${{ steps.tag_info.outputs.tag_name }}
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
-echo "Travis: $TRAVIS, CI: $CI Travis build ID $TRAVIS_BUILD_ID"
-[ -z "$TRAVIS" ] && exit 1 || echo "skip commit. Travis environment variable not set."
+echo "CI: $CI, GitHub Actions: $GITHUB_ACTIONS, Run ID: $GITHUB_RUN_ID"
+# Support both Travis and GitHub Actions
+if [ -z "$TRAVIS" ] && [ -z "$GITHUB_ACTIONS" ]; then
+  echo "skip commit. CI environment variable not set."
+  exit 1
+fi
 gpg --import bibbot.asc
 git config --global user.email "bibbot@ckurs.de"
 git config --global user.name "BibBot"
 git config --global user.signingkey "1617C27854592471"
 git commit -S -m "Update publication list" docs/publist.html
-git remote add http https://${GITHUB_TOKEN}@github.com/ag-gipp/bib.git
-git push http HEAD:$TRAVIS_BRANCH
+# Use GitHub Actions branch reference if available, otherwise use Travis
+BRANCH=${GITHUB_REF_NAME:-$TRAVIS_BRANCH}
+git remote add http https://${GITHUB_TOKEN}@github.com/gipplab/bib.git
+git push http HEAD:$BRANCH
 exit 1
