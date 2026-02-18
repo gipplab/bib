@@ -40,6 +40,7 @@ jobs:
       run: source ./support/texlive_install.sh
     
     - name: Decrypt GPG key
+      if: github.event_name == 'push'
       env:
         encrypted_125c18bb9738_key: ${{ secrets.ENCRYPTED_125C18BB9738_KEY }}
         encrypted_125c18bb9738_iv: ${{ secrets.ENCRYPTED_125C18BB9738_IV }}
@@ -53,7 +54,7 @@ jobs:
       run: source ./support/compile.sh
     
     - name: Create Git Tag and Deploy Info
-      if: success()
+      if: success() && github.event_name == 'push'
       id: tag_info
       run: |
         export GIT_TAG=build-${{ github.ref_name }}-$(date -u "+%Y-%m-%d")-${{ github.run_number }}
@@ -61,7 +62,7 @@ jobs:
         git tag $GIT_TAG -a -m "Generated tag from GitHub Actions build ${{ github.run_number }}"
     
     - name: Deploy to GitHub Releases
-      if: success() && github.event_name == 'push' && github.repository == 'ag-gipp/bib'
+      if: success() && github.event_name == 'push' && github.repository == 'gipplab/bib'
       uses: softprops/action-gh-release@v2
       with:
         files: |
