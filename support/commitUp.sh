@@ -13,6 +13,6 @@ git config --global user.signingkey "1617C27854592471"
 git commit -S -m "Reformat bib file" gipp.bib
 # Use GitHub Actions branch reference if available, otherwise use Travis
 BRANCH=${GITHUB_REF_NAME:-$TRAVIS_BRANCH}
-git remote add http https://${GITHUB_TOKEN}@github.com/ag-gipp/bib.git
+git remote add http https://${GITHUB_TOKEN}@github.com/gipplab/bib.git
 git push http HEAD:$BRANCH
 exit 1

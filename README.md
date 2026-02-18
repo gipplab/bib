@@ -15,7 +15,9 @@ compare the contents of both files and overwrite `gipp.bib` with
 ## Automatic release configuration
 See the [GitHub Actions documentation](https://docs.github.com/en/actions/deployment/releasing/releasing-automatically-with-github-actions) to understand the release section of the [GitHub Actions workflow](.github/workflows/build.yml)
 
-For the interaction with GitHub independently from GitHub Actions, we create
-a [personal access token](https://github.com/settings/tokens) and make 
-it available as repository secret named `GITHUB_TOKEN`.
+The GITHUB_TOKEN is automatically provided by GitHub Actions and does not need manual configuration.
+
+For GPG-signed commits, the following repository secrets need to be added:
+- `ENCRYPTED_125C18BB9738_KEY` - Encryption key for the GPG key
+- `ENCRYPTED_125C18BB9738_IV` - Initialization vector for the GPG key
 
