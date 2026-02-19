@@ -1,128 +1,678 @@
 
-@inproceedings{ScharpfSG21,
+@article{RossenovaSS23,
+	title = {The Case for a Common, Reusable Knowledge Graph Infrastructure for {NFDI}},
+	volume = {1},
+	issn = {2941-296X},
+	url = {https://www.tib-op.org/ojs/index.php/CoRDI/article/view/266},
+	doi = {10.52825/cordi.v1i.266},
+	abstract = {The Strategic Research and Innovation Agenda ({SRIA}) of the European Commission identifies Knowledge Graphs ({KGs}) as one of the most important technologies for building an interoperability framework and enabling data exchange among users across countries, sectors, and disciplines [1]. {KG} is a graph-structured knowledge base containing a terminology (vocabulary or ontology) and data entities interrelated via the terminology [2]. {KGs} are based on semantic web technologies ({RDF}, {SPARQL}, etc.) and often used for agile data integration. {KGs} also play an essential role within Germany as a vehicle to connect research data and research-related entities and make those accessible – examples include the {GESIS} Knowledge Graph Infrastructure, {TIB} Open Research Knowledge Graph, and {GND}.network. Furthermore, the Wikidata knowledge graph, maintained by Wikimedia Germany, contains a large number of research-related entities and is widely used in scientific knowledge management in addition to being an important advocacy tool for open data [3]. Extending domain-specific ontology-supported {KGs} with the multidisciplinary, crowdsourced knowledge in Wikidata {KG} would enable significant applications. The linking between expert knowledge systems and world knowledge empowers lay persons to benefit from high-quality research data and ultimately contributes to increasing confidence in scientific research in society.},
+	journaltitle = {Proceedings of the Conference on Research Data Infrastructure},
+	shortjournal = {Proc Conf Res Data Infrastr},
+	author = {Rossenova, Lozana and Schubotz, Moritz and Shigapov, Renat},
+	urldate = {2023-10-20},
+	date = {2023-09-07},
+	keywords = {!ms\_author},
+}
+
+
+@inproceedings{Scharpf2023b,
+	title = {{PhysWikiQuiz} - An {AI}-Aided Collaborative Physics Exam Question Generation and Test System for Teachers and Students},
+	booktitle = {Interactive Events at the 24th International Conference on Artificial Intelligence in Education ({AIED}) 2023},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Spitz, Andreas and Greiner-Petter, Andre and Gipp, Bela},
+	date = {2023-07},
+	note = {Place: Tokyo, Japan and virtual (synchronous hybrid)
+tex.topic: mathir},
+	keywords = {!ms\_author, no-doi},
+
+}
+
+@inproceedings{Satpute2023,
+	title = {{TEIMMA}: The First Content Reuse Annotator for Text, Images, and Math},
+	doi = {10.1109/JCDL57899.2023.00056},
+	booktitle = {2023 {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
+	author = {Satpute, Ankit and Greiner-Petter, Andre and Schubotz, Moritz and Meuschke, Norman and Aizawa, Akiko and Teschke, Olaf and Gipp, Bela},
+	date = {2023-06},
+	note = {Place: Santa Fe, New Mexico, {USA}
+tex.topic: pd
+{QID}: Q122926591},
+	keywords = {!ms\_author},
+
+}
+
+@article{GreinerPetterSBS22,
+	title = {Do the Math: Making Mathematics in Wikipedia Computable},
+	volume = {45},
+	issn = {0162-8828, 2160-9292, 1939-3539},
+	url = {https://ieeexplore.ieee.org/document/9847017/},
+	doi = {10.1109/TPAMI.2022.3195261},
+	shorttitle = {Do the Math},
+	abstract = {Wikipedia combines the power of {AI} solutions and human reviewers to safeguard article quality. Quality control objectives include detecting malicious edits, fixing typos, and spotting inconsistent formatting. However, no automated quality control mechanisms currently exist for mathematical formulae. Spell checkers are widely used to highlight textual errors, yet no equivalent tool exists to detect algebraically incorrect formulae. Our paper addresses this shortcoming by making mathematical formulae computable.
+
+We present a method that (1) gathers the semantic information surrounding the context of each mathematical formulae, (2) provides access to the information in a graph-structured dependency hierarchy, and (3) performs automatic plausibility checks on equations. We evaluate the performance of our approach on 6,337 mathematical expressions contained in 104 Wikipedia articles on the topic of orthogonal polynomials and special functions. Our system, {LaCASt}, verified 358 out of 1,516 equations as error-free. {LaCASt} successfully translated 27\% of the mathematical expressions and outperformed existing translation approaches by 16\%. Additionally, {LaCASt} achieved an F1 score of .495 for annotating mathematical expressions with relevant textual descriptions, which is a significant step towards advancing searchability, readability, and accessibility of mathematical formulae in Wikipedia. 
+
+A prototype of {LaCASt} and the semantically enhanced Wikipedia articles are available at: https://tpami.wmflabs.org.},
+	pages = {1--12},
+	number = {4},
+	journaltitle = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence},
+	shortjournal = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+	author = {Greiner-Petter, Andre and Schubotz, Moritz and Breitinger, Corinna and Scharpf, Philipp and Aizawa, Akiko and Gipp, Bela},
+	urldate = {2022-10-03},
+	date = {2023-04},
+	note = {tex.keywords: top
+{QID}: Q115649438},
+	keywords = {!ms\_author},
+
+	keywords = {top},
+}
+
+@report{GippGSM23,
+	title = {Final Report for the {DFG}-Project Methods and Tools to Advance the Retrieval of Mathematical Knowledge from Digital Libraries for Search-, Recommendation- and Assistance-Systems},
+	rights = {Creative Commons Attribution 4.0 International, Open Access},
+	doi = {10.5281/ZENODO.7924634},
+	abstract = {This project investigated new approaches and technologies to enhance the accessibility of mathematical content and its semantic information for a broad range of information retrieval applications. To achieve this goal, the project addressed three main research challenges: (1) syntactic analysis of mathematical expressions, (2) semantic enrichment of mathematical expressions, and (3) evaluation using quality metrics and demonstrators. To make our research useful for the research community, we published tools that enable researchers to process mathematical expressions more effectively and efficiently. The project has made significant research contributions to various Mathematical Information Retrieval ({MathIR}) tasks and systems, including plagiarism detection and recommendation systems, search engines, the first mathematical type assistance system, math question answering and tutoring systems, automatic plausibility checks for mathematical expressions on Wikipedia, automatic computability of mathematical content via Computer Algebra Systems ({CAS}), and others. Although our project focused on {MathIR} tasks, its impact on other natural language research was significant, leading to a more extensive range of demonstrators than originally expected. Many of these demonstrators introduced novel applications, such as the tutoring system {PhysWikiQuiz} or {LaCASt}, which automatically verifies the correctness of math formulae on Wikipedia or the Digital Library of Mathematical Functions ({DLMF}) via commercial {CAS}. During the project, we published 29 peer-reviewed articles in international venues, including prestigious conferences like the Joint Conference on Digital Libraries ({JCDL}) and The Web Conference ({WWW}) ({CORE} rank A*), as well as journals such as {IEEE} Transactions on Pattern Analysis and Machine Intelligence ({TPAMI}) ({IF}: 24.314) and Scientometrics ({IF}: 3.801). Our Wikipedia demonstrator was also featured in public media. Furthermore, we actively presented our contributions, especially demonstrators, to the research community in multiple workshops. This project has strengthened our international collaborations, particularly with colleagues at the National Institute of Standards and Technology ({NIST}) in the {US} and the National Institute of Informatics ({NII}) in Japan. Several subprojects were partially developed in course projects and theses at the Universities of Konstanz, Wuppertal, and Göttingen, exposing junior researchers to cutting-edge technologies and sensitizing students and researchers to the outstanding issues in {MathIR} technologies. We firmly believe that this project will have a lasting effect on following {MathIR} technologies. Several of the subprojects initiated as part of this grant are ongoing and motivating follow-up {DFG} projects, such as Analyzing Mathematics to Detect Disguised Academic Plagiarism (project no. 437179652).},
+	institution = {University of Goettingen},
+	author = {Gipp, Bela and Greiner-Petter, André and Schubotz, Moritz and Meuschke, Norman},
+	urldate = {2023-05-15},
+	date = {2023-03-27},
+	langid = {english},
+	keywords = {!ms\_author, no-doi},
+}
+
+
+@article{HeckSRS23,
+	title = {Bootstrapping the Open Science culture: The fellowship approach},
+	volume = {9},
+	issn = {2367-7163},
+	url = {https://riojournal.com/article/103675/},
+	doi = {10.3897/rio.9.e103675},
+	shorttitle = {Bootstrapping the Open Science culture},
+	pages = {e103675},
+	journaltitle = {Research Ideas and Outcomes},
+	shortjournal = {{RIO}},
+	author = {Heck, Tamara and Steinhardt, Isabel and Rahal, Rima-Maria and Schubotz, Moritz and Scholl, Dominik and Behrens, Sarah},
+	urldate = {2023-10-03},
+	date = {2023-03-21},
+	note = {{QID}: Q117236770},
+	keywords = {!ms\_author},
+
+}
+
+@report{GippGSM23,
+	title = {Methods and Tools to Advance the Retrieval of Mathematical Knowledge from Digital Libraries for Search-, Recommendation- and Assistance-Systems},
+	type = {Final Report for {DFG}-funded Project},
+	author = {Gipp, Bela and Greiner-Petter, André and Schubotz, Moritz and Meuschke, Norman},
+	date = {2023-03},
+	keywords = {!ms\_author, no-doi},
+}
+
+
+@article{IhleTSM23,
+	title = {Incentive Mechanisms in Peer-to-Peer Networks — A Systematic Literature Review},
+	issn = {0360-0300, 1557-7341},
+	url = {https://dl.acm.org/doi/10.1145/3578581},
+	doi = {10.1145/3578581},
+	abstract = {Centralized networks inevitably exhibit single points of failure that malicious actors regularly target. Decentralized networks are more resilient if numerous participants contribute to the network’s functionality. Most decentralized networks employ incentive mechanisms to coordinate the participation and cooperation of peers and thereby ensure the functionality and security of the network. This article systematically reviews incentive mechanisms for decentralized networks and networked systems by covering 165 prior literature reviews and 178 primary research papers published between 1993 and October 2022. Of the considered sources, we analyze eleven literature reviews and 105 primary research papers in detail by categorizing and comparing the distinctive properties of the presented incentive mechanisms. The reviewed incentive mechanisms establish fairness and reward participation and cooperative behavior. We review work that substitutes central authority through independent and subjective mechanisms run in isolation at each participating peer and work that applies multiparty computation. We use monetary, reputation, and service rewards as categories to differentiate the implementations and evaluate each incentive mechanism’s data management, attack resistance, and contribution model. Further, we highlight research gaps and deficiencies in reproducibility and comparability. Finally, we summarize our assessments and provide recommendations to apply incentive mechanisms to decentralized networks that share computational resources.},
+	pages = {3578581},
+	journaltitle = {{ACM} Computing Surveys},
+	shortjournal = {{ACM} Comput. Surv.},
+	author = {Ihle, Cornelius and Trautwein, Dennis and Schubotz, Moritz and Meuschke, Norman and Gipp, Bela},
+	urldate = {2023-04-25},
+	date = {2023-01-24},
+	langid = {english},
+	note = {{QID}: Q122926585},
+	keywords = {!ms\_author},
+
+}
+
+@article{ScharpfSCB23,
+	title = {Discovery and Recognition of Formula Concepts using Machine Learning},
+	volume = {128},
+	issn = {0138-9130, 1588-2861},
+	url = {https://link.springer.com/10.1007/s11192-023-04667-9},
+	doi = {10.1007/s11192-023-04667-9},
+	abstract = {Abstract
+            Citation-based Information Retrieval ({IR}) methods for scientific documents have proven effective for {IR} applications, such as Plagiarism Detection or Literature Recommender Systems in academic disciplines that use many references. In science, technology, engineering, and mathematics, researchers often employ mathematical concepts through formula notation to refer to prior knowledge. Our long-term goal is to generalize citation-based {IR} methods and apply this generalized method to both classical references and mathematical concepts. In this paper, we suggest how mathematical formulas could be cited and define a Formula Concept Retrieval task with two subtasks: Formula Concept Discovery ({FCD}) and Formula Concept Recognition ({FCR}). While {FCD} aims at the definition and exploration of a ‘Formula Concept’ that names bundled equivalent representations of a formula, {FCR} is designed to match a given formula to a prior assigned unique mathematical concept identifier. We present machine learning-based approaches to address the {FCD} and {FCR} tasks. We then evaluate these approaches on a standardized test collection ({NTCIR} {arXiv} dataset). Our {FCD} approach yields a precision of 68\% for retrieving equivalent representations of frequent formulas and a recall of 72\% for extracting the formula name from the surrounding text. {FCD} and {FCR} enable the citation of formulas within mathematical documents and facilitate semantic search and question answering, as well as document similarity assessments for plagiarism detection or recommender systems.},
+	pages = {4971--5025},
+	number = {9},
+	journaltitle = {Scientometrics},
+	shortjournal = {Scientometrics},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Cohl, Howard S. and Breitinger, Corinna and Gipp, Bela},
+	urldate = {2024-03-13},
+	date = {2023-09},
+	langid = {english},
+	note = {{QID}: Q122926584
+tex.ids= Scharpf2023
+tex.topic: mathir},
+	keywords = {!ms\_author},
+
+}
+
+@inproceedings{PetersenSGG23,
+	location = {Toronto, Canada},
+	title = {Neural Machine Translation for Mathematical Formulae},
+	url = {https://aclanthology.org/2023.acl-long.645},
+	doi = {10.18653/v1/2023.acl-long.645},
+	pages = {11534--11550},
+	booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), {ACL} 2023, Toronto, Canada, July 9-14, 2023},
+	publisher = {Association for Computational Linguistics},
+	author = {Petersen, Felix and Schubotz, Moritz and Greiner-Petter, André and Gipp, Bela},
+	editor = {Rogers, Anna and Boyd-Graber, Jordan L. and Okazaki, Naoaki},
+	date = {2023},
+	langid = {english},
+	note = {{QID}: Q122926589
+tex.ids= {PetersenSGG}23
+tex.bibsource: dblp computer science bibliography, https://dblp.org
+tex.biburl: https://dblp.org/rec/conf/acl/{PetersenSGG}23.bib
+tex.timestamp: Thu, 10 Aug 2023 12:35:43 +0200},
+	keywords = {!ms\_author},
+
+}
+
+@article{AzzouzThuderozST22,
+	title = {Sustaining the {swMATH} project: Integration into {zbMATH} Open interface and Open Data perspectives},
+	issn = {2747-7894, 2747-7908},
+	url = {https://euromathsoc.org/magazine/articles/118},
+	doi = {10.4171/mag/118},
+	shorttitle = {Sustaining the {swMATH} project},
+	pages = {62--64},
+	number = {126},
+	journaltitle = {European Mathematical Society Magazine},
+	shortjournal = {Eur. Math. Soc. Mag.},
+	author = {Azzouz-Thuderoz, Maxence and Schubotz, Moritz and Teschke, Olaf},
+	urldate = {2023-07-27},
+	date = {2022-12-14},
+	note = {{QID}: Q122926735},
+	keywords = {!ms\_author},
+
+}
+
+@inproceedings{TrautweinRTC22a,
+	location = {Amsterdam, Netherlands},
+	title = {Design and Evaluation of {IPFS}: A Storage Layer for the Decentralized Web},
+	doi = {10.1145/3544216.3544232},
+	booktitle = {{ACM} {SIGCOMM} 2022 Conference ({SIGCOMM} '22)},
+	publisher = {{ACM}},
+	author = {Trautwein, Dennis and Raman, Aravindh and Tyson, Gareth and Castro, Ignacio and Scott, Will and Schubotz, Moritz and Gipp, Bela and Psaras, Yiannis},
+	date = {2022-08},
+	note = {tex.topic: blockchain
+{QID}: Q122926731},
+	keywords = {!ms\_author},
+
+	topic = {blockchain},
+}
+
+@inproceedings{Ihle2022,
+	location = {Bologna, Italy},
+	title = {Towards Portable Identities in the Matrix Protocol},
+	doi = {10.1109/ICDCSW56584.2022.00025},
+	booktitle = {2022 {IEEE} 42nd International Conference on Distributed Computing Systems Workshops ({ICDCSW})},
+	publisher = {{IEEE}},
+	author = {Ihle, Cornelius and Deifuss, Fabian and Schubotz, Moritz and Gipp, Bela},
+	date = {2022-07},
+	note = {tex.topic: misc
+{QID}: Q122926736},
+	keywords = {!ms\_author},
+
+	topic = {misc},
+}
+
+@inproceedings{ScharpfSG22,
+	location = {Cologne Germany},
+	title = {Mining mathematical documents for question answering via unsupervised formula labeling},
+	isbn = {978-1-4503-9345-4},
+	url = {https://dl.acm.org/doi/10.1145/3529372.3530925},
+	doi = {10.1145/3529372.3530925},
+	eventtitle = {{JCDL} '22: The {ACM}/{IEEE} Joint Conference on Digital Libraries in 2022},
+	pages = {1--11},
+	booktitle = {Proceedings of the 22nd {ACM}/{IEEE} Joint Conference on Digital Libraries},
+	publisher = {{ACM}},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
+	urldate = {2022-10-24},
+	date = {2022-06-20},
+	langid = {english},
+	note = {tex.keywords: top
+{QID}: Q122926704},
+	keywords = {!ms\_author},
+
+	keywords = {top},
+}
+
+@inproceedings{GreinerPetterCYS22,
+	location = {Munich, Germany},
+	title = {Comparative Verification of the Digital Library of Mathematical Functions and Computer Algebra Systems},
+	url = {https://arxiv.org/abs/2201.09488},
+	doi = {10.1007/978-3-030-99524-9_5},
+	series = {Lecture Notes in Computer Science},
+	abstract = {Digital mathematical libraries assemble the knowledge of years of mathematical research. Numerous disciplines (e.g., physics, engineering, pure and applied mathematics) rely heavily on compendia gathered findings. Likewise, modern research applications rely more and more on computational solutions, which are often calculated and verified by computer algebra systems. Hence, the correctness, accuracy, and reliability of both digital mathematical libraries and computer algebra systems is a crucial attribute for modern research.
+
+In this paper, we present a novel approach to verify a digital mathematical library and two computer algebra systems with one another by converting mathematical expressions from one system to the other. We use our previously developed conversion tool (referred to as {LaCASt}) to translate formulae from the {NIST} Digital Library of Mathematical Functions to the computer algebra systems Maple and Mathematica. The contributions of our presented work are as follows: (1) we present the most comprehensive verification of computer algebra systems and digital mathematical libraries with one another; (2) we significantly enhance the performance of the underlying translator in terms of coverage and accuracy; and (3) we provide open access to translations for Maple and Mathematica of the formulae in the {NIST} Digital Library of Mathematical Functions.},
+	eventtitle = {{TACAS}},
+	pages = {87--105},
+	booktitle = {Tools and Algorithms for the Construction and Analysis of Systems - 28th International Conference, ({TACAS})},
+	publisher = {Springer},
+	author = {Greiner-Petter, André and Cohl, Howard S. and Youssef, Abdou and Schubotz, Moritz and Trost, Avi and Dey, Rajen and Aizawa, Akiko and Gipp, Bela},
+	date = {2022-04},
+	note = {tex.keywords: top
+{QID}: Q122926706},
+	keywords = {!ms\_author},
+
+	keywords = {top},
+}
+
+@article{Schubotz2022,
+	title = {Caching and Reproducibility: Making Data Science Experiments Faster and {FAIRer}},
+	volume = {7},
+	url = {https://www.frontiersin.org/article/10.3389/frma.2022.861944},
+	doi = {10.3389/frma.2022.861944},
+	journaltitle = {Frontiers in Research Metrics and Analytics},
+	author = {Schubotz, Moritz and Satpute, Ankit and Greiner-Petter, Andre and Aizawa, Akiko and Gipp, Bela},
+	date = {2022},
+	note = {tex.topic: misc
+{QID}: Q112683183},
+	keywords = {!ms\_author},
+
+	topic = {misc},
+}
+
+@inproceedings{ScharpfSSG22,
+	location = {Virtual Event China},
+	title = {Collaborative and {AI}-aided Exam Question Generation using Wikidata in Education},
+	volume = {3262},
+	url = {http://ceur-ws.org/Vol-3262/paper13.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	eventtitle = {Wikidata Workshop @ {ISWC}},
+	booktitle = {Proceedings of the 3rd Wikidata Workshop 2022 co-located with the 21st International Semantic Web Conference ({ISWC})},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Spitz, Andreas and Greiner-Petter, André and Gipp, Bela},
+	date = {2022},
+	keywords = {!ms\_author, no-doi, ⛔ No {DOI} found},
+}
+
+
+@inproceedings{Stegmueller2021,
+	location = {Illinois, {USA}},
+	title = {Detecting Cross-Language Plagiarism using Open Knowledge Graphs},
+	doi = {10.6084/m9.figshare.17212340.v3},
+	booktitle = {2nd Workshop on Extraction and Evaluation of Knowledge Entities from Scientific Documents ({EEKE}2021) at the {ACM}/{IEEE} Joint Conference on Digital Libraries 2021 ({JCDL}2021), Online},
+	publisher = {{ACM}},
+	author = {Stegmueller, Johannes and Bauer-Marquart, Fabian and Meuschke, Norman and Ruas, Terry and Schubotz, Moritz and Gipp, Bela},
+	date = {2021-09},
+	note = {tex.topic: pd
+{QID}: Q122926738},
+	keywords = {!ms\_author},
+
+	topic = {pd},
+}
+
+@inproceedings{Beck2021,
+	title = {Strategies to Record, Annotate and Visualize and Parallel Structures in {XML} Documents},
+	booktitle = {Proceedings of the {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
+	author = {Beck, Marco and Schubotz, Moritz and Stange, Vincent and Meuschke, Norman and Gipp, Bela},
+	date = {2021-09},
+	note = {tex.topic: misc},
+	keywords = {!ms\_author, !nm\_author, no-doi},
+
+	topic = {misc},
+}
+
+@article{SchubotzT21,
+	title = {{zbMATH} Open: Towards standardized machine interfaces to expose bibliographic metadata},
+	issn = {2747-7894, 2747-7908},
+	url = {https://ems.press/doi/10.4171/mag/12},
+	doi = {10.4171/mag/12},
+	shorttitle = {{zbMATH} Open},
+	pages = {50--53},
+	number = {119},
+	journaltitle = {European Mathematical Society Magazine},
+	shortjournal = {Eur. Math. Soc. Mag.},
+	author = {Schubotz, Moritz and Teschke, Olaf},
+	urldate = {2023-10-03},
+	date = {2021-06-14},
+	note = {{QID}: Q122746482},
+	keywords = {!ms\_author},
+
+}
+
+@inproceedings{TrautweinSG21,
+	location = {Espoo and Helsinki, Finland},
+	title = {Introducing Peer Copy - A Fully Decentralized Peer-to-Peer File Transfer Tool},
+	doi = {10.23919/IFIPNetworking52078.2021.9472842},
+	booktitle = {2021 {IFIP} Networking Conference ({IFIP} Networking)},
+	publisher = {{IEEE}},
+	author = {Trautwein, Dennis and Schubotz, Moritz and Gipp, Bela},
+	date = {2021-06},
+	note = {tex.topic: blockchain
+{QID}: Q122926733},
+	keywords = {!dt, !ms\_author, decentralized\_open\_science},
+
+	topic = {blockchain},
+}
+
+@inproceedings{ScharpfSG21b,
+	location = {Ljubljana Slovenia},
 	title = {Fast Linking of Mathematical Wikidata Entities in Wikipedia Articles Using Annotation Recommendation},
+	isbn = {978-1-4503-8313-4},
 	url = {https://doi.org/10.1145/3442442.3452348},
 	doi = {10.1145/3442442.3452348},
+	eventtitle = {{WWW} '21: The Web Conference 2021},
 	pages = {602--609},
 	booktitle = {Companion of The Web Conference 2021, Virtual Event / Ljubljana, Slovenia, April 19-23, 2021},
 	publisher = {{ACM} / {IW}3C2},
 	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
 	editor = {Leskovec, Jure and Grobelnik, Marko and Najork, Marc and Tang, Jie and Zia, Leila},
-	date = {2021},
-	note = {tex.bibsource: dblp computer science bibliography, https://dblp.org
-tex.biburl: https://dblp.org/rec/conf/www/{ScharpfSG}21.bib
-tex.timestamp: Mon, 07 Jun 2021 14:34:36 +0200
-tex.preprint: https://arxiv.org/pdf/2104.05111.pdf},
+	date = {2021-04-19},
+	langid = {english},
+	note = {tex.ids= {ScharpfSG}21b
+{QID}: Q122926724},
 	keywords = {!ms\_author, {SchubotzCV}},
 
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	biburl = {https://dblp.org/rec/conf/www/ScharpfSG21.bib},
-	timestamp = {Mon, 07 Jun 2021 14:34:36 +0200},
-	preprint = {https://arxiv.org/pdf/2104.05111.pdf},
 }
 
-@inproceedings{OstendorffRSG20,
-	title = {Pairwise Multi-Class Document Classification for Semantic Relations Between Wikipedia Articles},
-	booktitle = {Proceedings of the Annual International {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
-	author = {Ostendorff, Malte and Ruas, Terry and Schubotz, Moritz and Gipp, Bela},
-	date = {2020-08},
-	note = {tex.oldkey: Ostendorff2020
-tex.topic: wiki},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_preprint, jabref\_imp2},
+@misc{moritz_schubotz_2021_4646668,
+	title = {{zbMATH} is open: a practical guide to open an information service},
+	url = {https://doi.org/10.5281/zenodo.4646668},
+	doi = {10.5281/zenodo.4646668},
+	publisher = {Zenodo},
+	author = {Schubotz, Moritz and Trautwein, Dennis and Teschke, Olaf},
+	date = {2021-03},
+	keywords = {!ms\_author, no-doi},
+}
 
-	oldkey = {Ostendorff2020},
+
+@article{CohlTS21,
+	title = {Connecting Islands: Bridging {zbMATH} and {DLMF} with Scholix, a blueprint for connecting expert knowledge systems},
+	issn = {2747-7894, 2747-7908},
+	url = {https://ems.press/doi/10.4171/mag/35},
+	doi = {10.4171/mag/35},
+	shorttitle = {Connecting Islands},
+	pages = {66--67},
+	number = {120},
+	journaltitle = {European Mathematical Society Magazine},
+	shortjournal = {Eur. Math. Soc. Mag.},
+	author = {Cohl, Howard S. and Teschke, Olaf and Schubotz, Moritz},
+	urldate = {2023-04-15},
+	date = {2021-07},
+	note = {{QID}: Q122926730},
+	keywords = {!ms\_author},
+
+}
+
+@inproceedings{10.1007/978-3-030-81097-9_12,
+	location = {Cham},
+	title = {10 Years Later: The Mathematics Subject Classification and Linked Open Data},
+	isbn = {978-3-030-81097-9},
+	abstract = {Ten years ago, the Mathematics Subject Classification {MSC} 2010 was released, and a corresponding machine-readable Linked Open Data collection was published using the Simple Knowledge Organization System ({SKOS}). Now, the new {MSC} 2020 is out.},
+	pages = {153--158},
+	booktitle = {Intelligent Computer Mathematics},
+	publisher = {Springer International Publishing},
+	author = {Arndt, Susanne and Ion, Patrick and Runnwerth, Mila and Schubotz, Moritz and Teschke, Olaf},
+	editor = {Kamareddine, Fairouz and Sacerdoti Coen, Claudio},
+	date = {2021},
+	keywords = {!ms\_author, no-doi},
+}
+
+
+@incollection{HamborgMSS21,
+	title = {{NewsDeps}: Visualizing the Origin of Information in News Articles},
+	isbn = {978-3-658-32957-0},
+	doi = {10.1007/978-3-658-32957-0},
+	booktitle = {Wahrheit und Fake im postfaktisch-digitalen Zeitalter},
+	publisher = {Springer Vieweg},
+	author = {Hamborg, Felix and Meschenmoser, Philipp and Schubotz, Moritz and Scharpf, Philipp and Gipp, Bela},
+	editor = {Klimczak, Peter and Zoglauer, Thomas},
+	date = {2021},
+	note = {tex.topic: newsanalysis},
+	keywords = {!ms\_author, no-doi},
+
+	topic = {newsanalysis},
+}
+
+@inproceedings{TrautweinSG21b,
+	title = {Leveraging Node Heterogeneity to Improve Content Discovery and Content Retrieval in Peer-To-Peer Networks},
+	isbn = {978-1-4503-9133-7},
+	doi = {10.1145/3488658.3493781},
+	booktitle = {{CoNEXT} Student Workshop 2021 ({CoNEXT}-{SW}'21), December 7, 2021, Virtual Event, Germany},
+	author = {Trautwein, Dennis and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	note = {tex.topic: blockchain
+{QID}: Q122926740},
+	keywords = {!ms\_author},
+
+	topic = {blockchain},
+}
+
+@inproceedings{Petrera2021,
+	title = {{zbMATH} Open: {API} Solutions and Research Challenges},
+	volume = {2976},
+	url = {http://ceur-ws.org/Vol-2976/paper-1.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	pages = {4--13},
+	booktitle = {Proceedings of the Workshop on Digital Infrastructures for Scholarly Content Objects ({DISCO} 2021) co-located with {ACM}/{IEEE} Joint Conference on Digital Libraries 2021 ({JCDL} 2021), Online (due to the global pandemic), September 30, 2021},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Petrera, Matteo and Trautwein, Dennis and Beckenbach, Isabel and Ehsani, Dariush and Müller, Fabian and Teschke, Olaf and Gipp, Bela and Schubotz, Moritz},
+	editor = {Balke, Wolf-Tilo and de Waard, Anita and Fu, Yuanxi and Hua, Bolin and Schneider, Jodi and Song, Ningyuan and Wang, Xiaoguang},
+	date = {2021},
+	note = {tex.topic: mathir},
+	keywords = {!ms\_author, no-doi, ⛔ No {DOI} found},
+
+	topic = {mathir},
+}
+
+@inproceedings{ScharpfSG21a,
+	title = {Mathematics in Wikidata},
+	volume = {2982},
+	url = {http://ceur-ws.org/Vol-2982/paper-1.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	eventtitle = {Wikidata Workshop (Wikidata 2021)},
+	booktitle = {Proceedings of the 2nd Wikidata Workshop (Wikidata 2021) co-located with the 20th International Semantic Web Conference \{({ISWC}\} 2021)},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	keywords = {!ms\_author, no-doi, ⛔ No {DOI} found},
+}
+
+
+@inproceedings{TottlebenISG21,
+	location = {New York, {NY}, {USA}},
+	title = {Academic Storage Cluster},
+	doi = {10.1109/jcdl52503.2021.00034},
+	abstract = {Decentralized storage is still rarely used in an academic and educational environment, although it offers better availability than conventional systems. It still happens that data is not available at a certain time due to heavy load or maintenance on the university servers. In such cases, a decentralized solution can help keep the data available and distribute the load among several peers. In our experiment, we created a cluster of containers in Docker to evaluate a private {IPFS} cluster for an academic data store focusing on availability, {GET}/{PUT} performance, and storage needs. As sample data, we used {PDF} files to analyze the data transport in our peer-to-peer network with Wireshark. We found that a bandwidth of at least 100 kbps is required for {IPFS} to function but recommend at least 1000 kbps for smooth operation. Also, the hard disk and memory size should be adapted to the data. Other limiting factors such as {CPU} processing power and delay in the internet connection did not affect the operation of the {IPFS} cluster.},
+	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2021},
+	publisher = {Association for Computing Machinery},
+	author = {von Tottleben, Alexander and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	note = {{QID}: Q122926700},
+	keywords = {!ci, !ci\_author, !ms\_author, decentralized\_open\_science},
+
+}
+
+@incollection{DeifussFabianISG21,
+	location = {Glückstadt},
+	title = {procd: A privacy-preserving robust implementation to discover contacts in social networks},
+	volume = {74},
+	url = {https://epub.uni-regensburg.de/44954/},
+	doi = {10.5283/EPUB.44954},
+	series = {Schriften zur informationswissenschaft},
+	abstract = {Current instant messengers store the users? phone book contacts typically unencrypted or hashed on a central server. In case of a server?s corruption, all contacts are either directly available in plaintext or can be unmasked using a simple dictionary attack. To solve this problem, we present procd [p?o?st], a python implementation for privacy preserving contact discovery. procd is a trustless solution that requires neither plaintext numbers nor hashes of single phone numbers to retrieve contacts. Instead, we transfer hashed combinations of multiple phone numbers, which increases the effort for dictionary attacks to an unfeasible level using today?s hardware.},
+	pages = {363--368},
+	booktitle = {Information between data and knowledge},
+	publisher = {Proceedings of the 16th International Symposium of Information Science ({ISI} 2021)},
+	author = {Deifuß, Fabian and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	note = {tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
+	keywords = {!ci, !ci\_author, !ms\_author, decentralized\_open\_science, no-doi, private contact discovery, private information retrieval, private set intersection, secure multiparty computation},
+
+	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
+}
+
+@inproceedings{SchubotzGMT20a,
+	location = {Wuhan, China},
+	title = {Mathematical Formulae in Wikimedia Projects 2020},
+	doi = {10.1145/3383583.3398557},
+	booktitle = {Proceedings of the {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
+	publisher = {{IEEE}},
+	author = {Schubotz, Moritz and Greiner-Petter, Andre and Meuschke, Norman and Teschke, Olaf and Gipp, Bela},
+	date = {2020-08},
+	note = {tex.topic: wiki
+{QID}: Q122926734},
+	keywords = {!ms\_author, !nm\_author},
+
 	topic = {wiki},
 }
 
+@inproceedings{OstendorffRSG20,
+	location = {Virtual Event China},
+	title = {Pairwise Multi-Class Document Classification for Semantic Relations between Wikipedia Articles},
+	isbn = {978-1-4503-7585-6},
+	url = {https://dl.acm.org/doi/10.1145/3383583.3398525},
+	doi = {10.1145/3383583.3398525},
+	pages = {127--136},
+	booktitle = {Proceedings of the {ACM}/{IEEE} Joint Conference on Digital Libraries in 2020},
+	publisher = {{ACM}},
+	author = {Ostendorff, Malte and Ruas, Terry and Schubotz, Moritz and Rehm, Georg and Gipp, Bela},
+	urldate = {2021-10-20},
+	date = {2020-08},
+	langid = {english},
+	note = {tex.ids= {OstendorffRSG}20
+tex.oldkey: Ostendorff2020
+tex.topic: wiki
+{QID}: Q105592627},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_preprint, jabref\_imp2},
+
+}
+
 @article{GreinerPetterYRM20,
-	title = {Math-word embedding in math search and semantic extraction},
+	title = {Math-Word Embedding in Math Search and Semantic Extraction},
+	volume = {125},
 	issn = {0138-9130, 1588-2861},
-	url = {http://link.springer.com/10.1007/s11192-020-03502-9},
+	url = {https://link.springer.com/10.1007/s11192-020-03502-9},
 	doi = {10.1007/s11192-020-03502-9},
+	abstract = {Word embedding, which represents individual words with semantically fixed-length vectors, has made it possible to successfully apply deep learning to natural language processing tasks such as semantic role-modeling, question answering, and machine translation. As math text consists of natural text, as well as math expressions that similarly exhibit linear correlation and contextual characteristics, word embedding techniques can also be applied to math documents. However, while mathematics is a precise and accurate science, it is usually expressed through imprecise and less accurate descriptions, contributing to the relative dearth of machine learning applications for information retrieval in this domain. Generally, mathematical documents communicate their knowledge with an ambiguous, context-dependent, and non-formal language. Given recent advances in word embedding, it is worthwhile to explore their use and effectiveness in math information retrieval tasks, such as math language processing and semantic knowledge extraction. In this paper, we explore math embedding by testing it on several different scenarios, namely, (1) math-term similarity, (2) analogy, (3) numerical concept-modeling based on the centroid of the keywords that characterize a concept, (4) math search using query expansions, and (5) semantic extraction, i.e., extracting descriptive phrases for math expressions. Due to the lack of benchmarks, our investigations were performed using the {arXiv} collection of {STEM} documents and carefully selected illustrations on the Digital Library of Mathematical Functions ({DLMF}: {NIST} digital library of mathematical functions. Release 1.0.20 of 2018-09-1, 2018). Our results show that math embedding holds much promise for similarity, analogy, and search tasks. However, we also observed the need for more robust math embedding approaches. Moreover, we explore and discuss fundamental issues that we believe thwart the progress in mathematical information retrieval in the direction of machine learning.},
+	pages = {3017--3046},
+	number = {3},
 	journaltitle = {Scientometrics},
 	shortjournal = {Scientometrics},
 	author = {Greiner-Petter, André and Youssef, Abdou and Ruas, Terry and Miller, Bruce R. and Schubotz, Moritz and Aizawa, Akiko and Gipp, Bela},
-	urldate = {2020-06-16},
-	date = {2020-06-09},
+	urldate = {2021-06-30},
+	date = {2020-06},
 	langid = {english},
+	note = {tex.ids= {GreinerPetterYRM}20
+{QID}: Q122926719},
 	keywords = {!ag\_author, !bg\_author, !ms\_author, !tr\_author, math search, mathematical information retrieval, nlp, nlp\_embeddings},
 
 }
 
 @inproceedings{ScharpfSYH20,
+	location = {Virtual Event China},
 	title = {Classification and Clustering of {arXiv} Documents, Sections, and Abstracts Comparing Encodings of Natural and Mathematical Language},
 	rights = {All rights reserved},
-	booktitle = {Proceedings of the {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
+	isbn = {978-1-4503-7585-6},
+	url = {https://dl.acm.org/doi/10.1145/3383583.3398529},
+	doi = {10.1145/3383583.3398529},
+	eventtitle = {{JCDL} '20: The {ACM}/{IEEE} Joint Conference on Digital Libraries in 2020},
+	pages = {137--146},
+	booktitle = {Proceedings of the {ACM}/{IEEE} Joint Conference on Digital Libraries in 2020},
+	publisher = {{ACM}},
 	author = {Scharpf, Philipp and Schubotz, Moritz and Youssef, Abdou and Hamborg, Felix and Meuschke, Norman and Gipp, Bela},
 	date = {2020-06},
-	note = {tex.ids: {ScharpfSYH}20a
+	langid = {english},
+	note = {tex.ids= {ScharpfSYH}20a
+tex.keywords: top
 tex.oldkey: Scharpf2020
-tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !fh, !fh\_author, !ms, !ms\_author, !nm, !nm\_author, \#nosource, jabref\_imp1\_clean},
+tex.topic: mathir
+{QID}: Q122926716},
+	keywords = {!bg, !bg\_author, !fh, !fh\_author, !ms, !ms\_author, !nm, !nm\_author, \#nosource, classification, document classification, jabref\_imp1\_clean},
 
-	ids = {ScharpfSYH20a},
-	oldkey = {Scharpf2020},
-	topic = {mathir},
 }
 
-@inproceedings{SchubotzGMT20,
-	title = {Mathematical Formulae in Wikimedia Projects 2020},
-	url = {http://arxiv.org/abs/2003.09417},
-	doi = {10.1145/3383583.3398557},
-	abstract = {This poster summarizes our contributions to Wikimedia's processing pipeline for mathematical formulae. We describe how we have supported the transition from rendering formulae as course-grained {PNG} images in 2001 to providing modern semantically enriched language-independent {MathML} formulae in 2020. Additionally, we describe our plans to improve the accessibility and discoverability of mathematical knowledge in Wikimedia projects further.},
-	booktitle = {Proceedings of the {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
-	author = {Schubotz, Moritz and Greiner-Petter, André and Meuschke, Norman and Teschke, Olaf and Gipp, Bela},
-	urldate = {2020-06-11},
-	date = {2020-05-06},
-	eprinttype = {arxiv},
-	eprint = {2003.09417},
-	keywords = {!ms\_author, !nm\_author},
+@inproceedings{SchwarzkopfFPS20,
+	location = {Berlin, Germany},
+	title = {Empowering next generation open scholarship with an open science fellows program},
+	rights = {Creative Commons Attribution 4.0 International, Open Access},
+	url = {https://zenodo.org/record/3776755},
+	doi = {10.5281/ZENODO.3776755},
+	abstract = {This poster will present the main actions, the management framework and outcomes{\textless}br{\textgreater} of a scholarship program for next generation researchers, that works towards{\textless}br{\textgreater} changing the knowledge creation process so as to create natively free/open{\textless}br{\textgreater} knowledge. Over the past three years, we have developed and constantly improved{\textless}br{\textgreater} our mechanisms of capacity and community building. We hope that by demonstrating{\textless}br{\textgreater} success stories we encourage other parties to use this scholarship program as a{\textless}br{\textgreater} blueprint for other institutional, national or international activities. We will also address{\textless}br{\textgreater} the challenges of sustainable set up and stabilization, as well as creating a knowledge{\textless}br{\textgreater} hub for capacity building. The main approach of this program is to mentor researchers by acknowledged{\textless}br{\textgreater} experts in Open Science over a period of eight months. Since 2016, the program{\textless}br{\textgreater} supported over 50 junior researchers in learning how to open up their research{\textless}br{\textgreater} projects, and how to best combine requirements of traditional scholarly routines{\textless}br{\textgreater} (such as publishing in high impact journals) with those encouraged by open science{\textless}br{\textgreater} principles (e.g., sharing research data, dissemination). The fellows also act as{\textless}br{\textgreater} ambassadors for Open Science and free knowledge in their research communities{\textless}br{\textgreater} (e.g. via personal contacts, within institutional training formats, or talks at academic{\textless}br{\textgreater} societies). In addition to a financial grant, the fellows receive holistic support: they build a{\textless}br{\textgreater} network of peers, engage with one another, and receive mentoring by experts in{\textless}br{\textgreater} Open Science. They also get the chance to present their projects in non-academic{\textless}br{\textgreater} environments. While they work on their Open Science projects, they also participate{\textless}br{\textgreater} in a series of hands-on workshops (e.g. book sprints), to improve their ‘open’ skills and{\textless}br{\textgreater} abilities. The evaluation of our program indicates that our model seems to be effective for{\textless}br{\textgreater} making impact and that it has helped the fellows advancing their research: So far, we{\textless}br{\textgreater} have supported 50 researchers from various academic disciplines and the vast{\textless}br{\textgreater} majority stated that they could increase their knowledge about open science{\textless}br{\textgreater} significantly by participating in the program. Moreover, the scholarship tackles a crucial aspect of academic careers: The{\textless}br{\textgreater} competitive nature of the scientific reward and funding system often hinders broad{\textless}br{\textgreater} application of open science principles. The program’s combination of financial{\textless}br{\textgreater} support, strong community support and mentoring convincingly shows that the right{\textless}br{\textgreater} framework conditions make open science a success.},
+	eventtitle = {Open Science Conference},
+	publisher = {Zenodo},
+	author = {Schwarzkopf, Christopher and Fecher, Benedikt and Peters, Isabella and Schubotz, Moritz},
+	urldate = {2023-04-15},
+	date = {2020-04-30},
+	langid = {english},
+	note = {{QID}: Q122926732},
+	keywords = {!ms\_author},
 
 }
 
 @inproceedings{GreinerPetterSMB20,
-	title = {Discovering Mathematical Objects of Interest - a Study of Mathematical Notations},
+	location = {Taipei, Taiwan},
+	title = {Discovering Mathematical Objects of Interest — A Study of Mathematical Notations},
+	isbn = {978-1-4503-7023-3},
+	url = {https://arxiv.org/abs/2002.02712},
 	doi = {10.1145/3366423.3380218},
+	abstract = {Mathematical notation, i.e., the writing system used to communicate concepts in mathematics, encodes valuable information for a variety of information search and retrieval systems. Yet, mathematical notations remain mostly unutilized by today's systems. In this paper, we present the first in-depth study on the distributions of mathematical notation in two large scientific corpora: the open access {arXiv} (2.5B mathematical objects) and the mathematical reviewing service for pure and applied mathematics {zbMATH} (61M mathematical objects). Our study lays a foundation for future research projects on mathematical information retrieval for large scientific corpora. Further, we demonstrate the relevance of our results to a variety of use-cases. For example, to assist semantic extraction systems, to improve scientific search engines, and to facilitate specialized math recommendation systems.
+
+The contributions of our presented research are as follows: (1) we present the first distributional analysis of mathematical formulae on {arXiv} and {zbMATH}; (2) we retrieve relevant mathematical objects for given textual search queries (e.g., linking \$P\_\{n\}{\textasciicircum}\{({\textbackslash}alpha, {\textbackslash}beta)\}{\textbackslash}!{\textbackslash}left(x{\textbackslash}right)\$ with `Jacobi polynomial'); (3) we extend {zbMATH}'s search engine by providing relevant mathematical formulae; and (4) we exemplify the applicability of the results by presenting auto-completion for math inputs as the first contribution to math recommendation systems. To expedite future research projects, we have made available our source code and data.},
+	eventtitle = {{WWW} '20},
+	pages = {1445--1456},
 	booktitle = {Proceedings of the Web Conference 2020 ({WWW}'20), April 20–24, 2020, Taipei, Taiwan},
+	publisher = {{ACM}},
 	author = {Greiner-Petter, André and Schubotz, Moritz and Müller, Fabian and Breitinger, Corinna and Cohl, Howard S. and Aizawa, Akiko and Gipp, Bela},
 	date = {2020-04},
-	note = {tex.core: 0;Core Rank A*;http://portal.core.edu.au/conf-ranks/1548/
+	langid = {english},
+	note = {tex.ids= {GreinerPetterSMB}20a
+tex.core: 0;Core Rank A*;http://portal.core.edu.au/conf-ranks/1548/
+tex.keywords: top
 tex.oldkey: {GreinerPetter}2020
 tex.preprint: https://ag-gipp.github.io/bib/preprints/greinerpetter2020.pdf
-tex.topic: mathir},
+tex.topic: mathir
+{QID}: Q122926714},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
 
-	core = {0;Core Rank A*;http://portal.core.edu.au/conf-ranks/1548/},
-	oldkey = {GreinerPetter2020},
-	preprint = {https://ag-gipp.github.io/bib/preprints/greinerpetter2020.pdf},
-	topic = {mathir},
 }
 
-@incollection{FoltynekRSM20,
-	location = {Cham},
-	title = {Detecting Machine-Obfuscated Plagiarism},
-	volume = {12051 {LNCS}},
-	rights = {Creative Commons Attribution-{ShareAlike} 4.0 International License ({CC}-{BY}-{SA})},
-	isbn = {978-3-030-43686-5 978-3-030-43687-2},
-	url = {http://link.springer.com/10.1007/978-3-030-43687-2_68},
-	abstract = {Research on academic integrity has identified online paraphrasing tools as a severe threat to the effectiveness of plagiarism detection systems. To enable the automated identification of machine-paraphrased text, we make three contributions. First, we evaluate the effectiveness of six prominent word embedding models in combination with five classifiers for distinguishing human-written from machine-paraphrased text. The best performing classification approach achieves an accuracy of 99.0\% for documents and 83.4\% for paragraphs. Second, we show that the best approach outperforms human experts and established plagiarism detection systems for these classification tasks. Third, we provide a Web application that uses the best performing classification approach to indicate whether a text underwent machine-paraphrasing. The data and code of our study are openly available.},
-	pages = {816--827},
-	booktitle = {Sustainable Digital Communities},
-	publisher = {Springer International Publishing},
-	author = {Foltýnek, Tomáš and Ruas, Terry and Scharpf, Philipp and Meuschke, Norman and Schubotz, Moritz and Grosky, William and Gipp, Bela},
-	editor = {Sundqvist, Anneli and Berget, Gerd and Nolin, Jan and Skjerdingstad, Kjell Ivar},
-	date = {2020-03},
+@inproceedings{GreinerPetterSAG20,
+	location = {Braunschweig, Germany},
+	title = {Making Presentation Math Computable: Proposing a Context Sensitive Approach for Translating {LaTeX} to Computer Algebra Systems},
+	volume = {12097},
+	isbn = {978-3-030-52199-8},
+	url = {https://link.springer.com/content/pdf/10.1007%2F978-3-030-52200-1_33.pdf},
+	doi = {10.1007/978-3-030-52200-1_33},
+	series = {Lecture Notes in Computer Science},
+	shorttitle = {Making Presentation Math Computable},
+	abstract = {Scientists increasingly rely on computer algebra systems and digital mathematical libraries to compute, validate, or experiment with mathematical formulae. 
+However, the focus in digital mathematical libraries and scientific documents often lies more on an accurate presentation of the formulae rather than providing uniform access to the semantic information. 
+But, presentational math formats do not provide exclusive access to the underlying semantic meanings. 
+One has to derive the semantic information from the context.
+As a consequence, the workflow of experimenting and publishing in the Sciences often includes time-consuming, error-prone manual conversions between presentational and computational math formats.
+As a contribution to improve this workflow, we propose a context-sensitive approach that extracts semantic information from a given context, embeds the information into the given input, and converts the semantically enhanced expressions to computer algebra systems.},
+	eventtitle = {{ICMS}},
+	pages = {335--341},
+	booktitle = {International Congress of Mathematical Software ({ICMS})},
+	publisher = {Springer},
+	author = {Greiner-Petter, André and Schubotz, Moritz and Aizawa, Akiko and Gipp, Bela},
+	editor = {Bigatti, Anna Maria and Carette, Jacques and Davenport, James H. and Joswig, Michael and de Wolff, Timo},
+	urldate = {2021-07-30},
+	date = {2020},
 	langid = {english},
-	doi = {10.1007/978-3-030-43687-2_68},
-	note = {tex.ids: {FoltynekRSM}20a
-tex.oldkey: Foltynek2020
-tex.topic: pd},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean},
+	note = {{QID}: Q122926705},
+	keywords = {!ms\_author},
 
-	ids = {FoltynekRSM20a},
-	oldkey = {Foltynek2020},
-	topic = {pd},
 }
+
+@inproceedings{ScharpfSGO20,
+	location = {Thessaloniki, Greece},
+	title = {{ARQMath} Lab: An Incubator for Semantic Formula Search in {zbMATH} Open?},
+	volume = {2696},
+	url = {http://ceur-ws.org/Vol-2696/paper_200.pdf},
+	abstract = {The {zbMATH} database contains more than 4 million bibliographic entries. We aim to provide easy access to these entries. Therefore, we maintain dif-ferent index structures including a formula index. To optimize the findability of the entries in our database, we constantly investigate new approaches to satisfy the information needs of our users. We believe that the findings from the {ARQMath} evaluation will generate new insights into which index struc-tures are most suitable to satisfy mathematical information needs. Search en-gines, recommender systems, plagiarism checking software, and many other added-value services acting on databases such as the {arXiv} and {zbMATH} need to combine natural and formula language. One initial approach to ad-dress this challenge is to enrich the mostly unstructured document data via Entity Linking. The {ARQMath} Task at {CLEF} 2020 aims to tackle the problem of linking newly posted questions from Math Stack Exchange ({MSE}) to exist-ing ones that were already answered by the community. To deeply under-stand {MSE} information needs, answer-, and formula types, we performed manual runs for tasks 1 and 2. Furthermore, we explored several formula re-trieval methods for task 2, such as fuzzy string search, k-nearest neighbors, and our recently introduced approach to retrieve Mathematical Objects of In-terest ({MOI}) with textual search queries. The task results show that neither our automated methods nor our manual runs archived good scores in the competition. However, the perceived quality of the hits returned by the {MOI} search particularly motivates us to conduct further research about {MOI}.},
+	eventtitle = {{CLEF}},
+	booktitle = {Working Notes of ({CLEF}) 2020 - Conference and Labs of the Evaluation Forum},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Greiner-Petter, André and Ostendorff, Malte and Teschke, Olaf and Gipp, Bela},
+	date = {2020},
+	keywords = {!ms\_author, no-doi, ⛔ No {DOI} found},
+}
+
 
 @inproceedings{IhleSMG20,
 	location = {New York, {NY}, {USA}},
@@ -141,84 +691,36 @@ tex.topic: pd},
 tex.oldkey: Ihle2020
 tex.topic: pd
 tex.core: A*;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/
-tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf},
+tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf
+{QID}: Q122926697},
 	keywords = {!bg, !bg\_author, !ci, !ci\_author, !ms, !ms\_author, !nm, !nm\_author, \#nosource, decentralized\_open\_science, jabref\_imp1\_clean, plagiarism detection, private computation, similarity detection},
 
 	ids = {IhleSMG20a},
-	oldkey = {Ihle2020},
-	topic = {pd},
-	core = {A*;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf},
-}
-
-@inproceedings{SchubotzTSM19,
-	location = {Czech Republic},
-	title = {Forms of Plagiarism in Digital Mathematical Libraries},
-	volume = {11617 {LNCS}},
-	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
-	doi = {10.1007/978-3-030-23250-4_18},
-	abstract = {We report on an exploratory analysis of the forms of plagiarism observable in mathematical publications, which we identified by investigating editorial notes from {zbMATH}. While most cases we encountered were simple copies of earlier work, we also identified several forms of disguised plagiarism. We investigated 11 cases in detail and evaluate how current plagiarism detection systems perform in identifying these cases. Moreover, we describe the steps required to discover these and potentially undiscovered cases in the future.},
-	pages = {258--274},
-	booktitle = {Proceedings International Conference on Intelligent Computer Mathematics},
-	author = {Schubotz, Moritz and Teschke, Olaf and Stange, Vincent and Meuschke, Norman and Gipp, Bela},
-	date = {2019-07},
-	note = {tex.ids: {SchubotzTSM}19a
-tex.oldkey: Schubotz2019
-tex.preprint: https://ag-gipp.github.io/bib/preprints/schubotz2019.pdf
-tex.topic: pd},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, {DFG}1259-1, jabref\_imp1\_clean, old\_tex\_field\_preprint},
-
-	ids = {SchubotzTSM19a},
-	oldkey = {Schubotz2019},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schubotz2019.pdf},
-	topic = {pd},
-}
-
-@article{GreinerPetterSCG19,
-	title = {Semantic Preserving Bijective Mappings for Expressions Involving Special Functions in Computer Algebra Systems and Document Preparation Systems},
-	volume = {71},
-	issn = {2050-3806},
-	doi = {10.1108/ajim-08-2018-0185},
-	pages = {415--439},
-	number = {3},
-	journaltitle = {Aslib Journal of Information Management},
-	author = {Greiner-Petter, Andre and Schubotz, Moritz and Cohl, Howard S. and Gipp, Bela},
-	date = {2019-07},
-	note = {tex.biburl: https://www.emeraldinsight.com/action/{showCitFormats}?doi=10.1108\%2FAJIM-08-2018-0185
-tex.oldkey: {GreinerPetter}2019
-tex.preprint: https://ag-gipp.github.io/bib/preprints/greinerpetter2019.pdf
-tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
-
-	biburl = {https://www.emeraldinsight.com/action/showCitFormats?doi=10.1108%2FAJIM-08-2018-0185},
-	oldkey = {GreinerPetter2019},
-	preprint = {https://ag-gipp.github.io/bib/preprints/greinerpetter2019.pdf},
-	topic = {mathir},
 }
 
 @inproceedings{MeuschkeSSK19,
 	location = {Urbana-Champaign, Illinois, {USA}},
 	title = {Improving Academic Plagiarism Detection for {STEM} Documents by Analyzing Mathematical Content and Citations},
 	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
-	isbn = {978-1-72811-547-4},
+	isbn = {978-1-7281-1547-4},
+	url = {https://ieeexplore.ieee.org/document/8791126/},
 	doi = {10.1109/jcdl.2019.00026},
 	abstract = {Identifying academic plagiarism is a pressing task for educational and research institutions, publishers, and funding agencies. Current plagiarism detection systems reliably find instances of copied and moderately reworded text. However, reliably detecting concealed plagiarism, such as strong paraphrases, translations, and the reuse of nontextual content and ideas is an open research problem. In this paper, we extend our prior research on analyzing mathematical content and academic citations. Both are promising approaches for improving the detection ofconcealed academic plagiarism primarily in Science, Technology, Engineering and Mathematics ({STEM}). We make the following contributions: i) We present a two-stage detec- tion process that combines similarity assessments of mathematical content, academic citations, and text. ii) We introduce new similar- ity measures that consider the order of mathematical features and outperform the measures in our prior research. iii) We compare the effectiveness of the math-based, citation-based, and text-based detection approaches using confirmed cases of academic plagia- rism. iv) We demonstrate that the combined analysis of math-based and citation-based content features allows identifying potentially suspicious cases in a collection of 102K {STEM} documents. Overall, we show that analyzing the similarity of mathematical content and academic citations is a striking supplement for conventional text- based detection approaches for academic literature in the {STEM} disciplines. The data and code of our study are openly available at https://purl.org/{hybridPD}},
+	eventtitle = {2019 {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
 	pages = {120--129},
-	booktitle = {Proceedings of the Annual International {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
+	booktitle = {2019 {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL})},
+	publisher = {{IEEE}},
 	author = {Meuschke, Norman and Stange, Vincent and Schubotz, Moritz and Kramer, Michael and Gipp, Bela},
 	date = {2019-06},
-	note = {tex.ids: {MeuschkeSSK}19a
+	note = {tex.ids= {MeuschkeSSK}19a
 tex.core: 0;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/
+tex.keywords: top
 tex.oldkey: Meuschke2019
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/meuschke2019.pdf
-tex.topic: pd},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, 21InfWissHb, {DFG}1259-1, jabref\_imp1\_clean, old\_tex\_field\_preprint, pd\_litrev19},
+tex.topic: pd
+{QID}: Q122926720},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, 21InfWissHb, {DFG}1259-1, jabref\_imp1\_clean, old\_tex\_field\_preprint, pd\_litrev19, plagiarism detection},
 
-	ids = {MeuschkeSSK19a},
-	core = {0;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/},
-	oldkey = {Meuschke2019},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/meuschke2019.pdf},
-	topic = {pd},
 }
 
 @inproceedings{WortnerSLG19,
@@ -230,54 +732,77 @@ tex.topic: pd},
 	note = {tex.oldkey: Wortner2019
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/wortner2019.pdf
 tex.topic: blockchain},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, decentralized\_open\_science, jabref\_imp2, old\_tex\_field\_preprint},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, decentralized\_open\_science, jabref\_imp2, no-doi, old\_tex\_field\_preprint},
 
 	oldkey = {Wortner2019},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/wortner2019.pdf},
-	topic = {blockchain},
+}
+
+@article{GreinerPetterSCG19,
+	title = {Semantic Preserving Bijective Mappings for Expressions involving Special Functions between Computer Algebra Systems and Document Preparation Systems},
+	volume = {71},
+	issn = {2050-3806},
+	url = {https://arxiv.org/abs/1906.11485},
+	doi = {10.1108/AJIM-08-2018-0185},
+	abstract = {Modern mathematicians and scientists of math-related disciplines often use Document Preparation Systems ({DPS}) to write and Computer Algebra Systems ({CAS}) to calculate mathematical expressions. Usually, they translate the expressions manually between {DPS} and {CAS}. This process is time-consuming and error-prone. The purpose of this paper is to automate this translation. This paper uses Maple and Mathematica as the {CAS}, and {LaTeX} as the {DPS}.
+Bruce Miller at the National Institute of Standards and Technology ({NIST}) developed a collection of special {LaTeX} macros that create links from mathematical symbols to their definitions in the {NIST} Digital Library of Mathematical Functions ({DLMF}). The authors are using these macros to perform rule-based translations between the formulae in the {DLMF} and {CAS}. Moreover, the authors develop software to ease the creation of new rules and to discover inconsistencies.
+The authors created 396 mappings and translated 58.8 percent of {DLMF} formulae (2,405 expressions) successfully between Maple and {DLMF}. For a significant percentage, the special function definitions in Maple and the {DLMF} were different. An atomic symbol in one system maps to a composite expression in the other system. The translator was also successfully used for automatic verification of mathematical online compendia and {CAS}. The evaluation techniques discovered two errors in the {DLMF} and one defect in Maple.
+This paper introduces the first translation tool for special functions between {LaTeX} and {CAS}. The approach improves error-prone manual translations and can be used to verify mathematical online compendia and {CAS}.},
+	pages = {415--439},
+	number = {3},
+	journaltitle = {Aslib Journal of Information Management},
+	shortjournal = {{AJIM}},
+	author = {Greiner-Petter, André and Schubotz, Moritz and Cohl, Howard S. and Gipp, Bela},
+	urldate = {2021-09-06},
+	date = {2019-05-20},
+	langid = {english},
+	note = {tex.ids= {GreinerPetterSCG}19
+tex.biburl: https://www.emeraldinsight.com/action/{showCitFormats}?doi=10.1108\%2FAJIM-08-2018-0185
+tex.oldkey: {GreinerPetter}2019
+tex.preprint: https://ag-gipp.github.io/bib/preprints/greinerpetter2019.pdf
+tex.topic: mathir
+{QID}: Q122926728},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
+
+}
+
+@inproceedings{GreinerPetterRSA19,
+	location = {Paris, France},
+	title = {Why Machines Cannot Learn Mathematics, Yet},
+	volume = {2414},
+	url = {http://ceur-ws.org/Vol-2414/paper14.pdf},
+	abstract = {Nowadays, Machine Learning ({ML}) is seen as the universal solution to improve the effectiveness of information retrieval ({IR}) methods. However, while mathematics is a precise and accurate science, it is usually expressed by less accurate and imprecise descriptions. Generally, mathematical documents communicate their knowledge with an ambiguous, context-dependent, and non-formal language. In this work, we apply text embedding techniques to the {arXiv} collection of {STEM} documents and explore how these are unable to properly understand mathematics from that corpus, while proposing alternative to mitigate such situation.},
+	eventtitle = {{BIRNDL}@{SIGIR}},
+	booktitle = {Proceedings of the 4th Joint Workshop on Bibliometric-Enhanced Information Retrieval and Natural Language Processing for Digital Libraries ({BIRNDL}@{SIGIR})},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Greiner-Petter, André and Ruas, Terry and Schubotz, Moritz and Aizawa, Akiko and Grosky, William I. and Gipp, Bela},
+	date = {2019},
+	note = {tex.ids= {GreinerPetter}2019b, {GreinerPetterRSA}19
+tex.oldkey: {GreinerPetter}2019a
+tex.topic: mathir
+tex.url\_orig: http://ceur-ws.org/Vol-2414/paper14.pdf},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+
 }
 
 @inproceedings{ScharpfSCG19,
 	title = {Towards Formula Concept Discovery and Recognition},
 	volume = {2414},
 	url = {http://ceur-ws.org/Vol-2414/paper11.pdf},
-	series = {{CEUR} workshop proceedings},
+	series = {{CEUR} Workshop Proceedings},
+	eventtitle = {{BIRNDL}@{SIGIR}},
 	pages = {108--115},
 	booktitle = {Proceedings of the 4th Joint Workshop on Bibliometric-Enhanced Information Retrieval and Natural Language Processing for Digital Libraries ({BIRNDL} 2019) co-located with the 42nd Annual International {ACM} {SIGIR} Conference on Research and Development in Information Retrieval, Paris, France, July 25, 2019.},
 	publisher = {{CEUR}-{WS}.org},
 	author = {Scharpf, Philipp and Schubotz, Moritz and Cohl, Howard S. and Gipp, Bela},
 	editor = {Chandrasekaran, Muthu Kumar and Mayr, Philipp},
 	date = {2019},
-	note = {tex.ids: {ScharpfSCG}19a
+	note = {tex.ids= {ScharpfSCG}19a
 tex.biburl: https://dblp.org/rec/bib/conf/sigir/{ScharpfSCG}19
 tex.oldkey: Scharpf2019a
 tex.preprint: http://ceur-ws.org/Vol-2414/paper11.pdf
 tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !ms, !ms\_author, !ms\_cv, \#nosource, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	keywords = {!bg, !bg\_author, !ms, !ms\_author, !ms\_cv, \#nosource, {DFG}1259-1, grounding, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
-	ids = {ScharpfSCG19a},
-	biburl = {https://dblp.org/rec/bib/conf/sigir/ScharpfSCG19},
-	oldkey = {Scharpf2019a},
-	preprint = {http://ceur-ws.org/Vol-2414/paper11.pdf},
-	topic = {mathir},
-}
-
-@inproceedings{GreinerPetterRSA19,
-	location = {Paris, France},
-	title = {Why Machines Cannot Learn Mathematics, Yet},
-	booktitle = {4th Joint Workshop on Bibliometric-Enhanced Information Retrieval and Natural Language Processing for Digital Libraries co-located with the 42nd Annual International {ACM} {SIGIR} Conference on Research and Development in Information Retrieval},
-	author = {Greiner-Petter, Andre and Ruas, Terry and Schubotz, Moritz and Aizawa, Akiko and Grosky, William and Gipp, Bela},
-	date = {2019},
-	note = {tex.ids: {GreinerPetter}2019b, {GreinerPetterRSA}19
-tex.oldkey: {GreinerPetter}2019a
-tex.topic: mathir
-tex.url\_orig: http://ceur-ws.org/Vol-2414/paper14.pdf},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint, ⛔ No {DOI} found},
-
-	ids = {GreinerPetter2019b, GreinerPetterRSA19},
-	oldkey = {GreinerPetter2019a},
-	topic = {mathir},
-	url_orig = {http://ceur-ws.org/Vol-2414/paper14.pdf},
 }
 
 @inproceedings{ScharpfMSB19,
@@ -290,40 +815,17 @@ tex.url\_orig: http://ceur-ws.org/Vol-2414/paper14.pdf},
 	author = {Scharpf, Philipp and Mackerracher, Ian and Schubotz, Moritz and Beel, Jöran and Breitinger, Corinna and Gipp, Bela},
 	editor = {Bogers, Toine and Said, Alan and Brusilovsky, Peter and Tikk, Domonkos},
 	date = {2019},
-	note = {tex.biburl: https://dblp.org/rec/bib/conf/recsys/{ScharpfMSBBG}19
+	note = {tex.ids= {ScharpfMSB}19a
+tex.biburl: https://dblp.org/rec/bib/conf/recsys/{ScharpfMSBBG}19
 tex.core: B;Core Rank B;http://portal.core.edu.au/conf-ranks/28/
 tex.homepage: https://annomathtex.wmflabs.org/
+tex.keywords: top
 tex.oldkey: Scharpf2019b
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/scharpf2019b.pdf
-tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !jb, !jb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
+tex.topic: mathir
+{QID}: Q122926718},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !jb, !jb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, annotation, entity linking, jabref\_imp2, mathir, old\_tex\_field\_preprint, recommendation},
 
-	biburl = {https://dblp.org/rec/bib/conf/recsys/ScharpfMSBBG19},
-	core = {B;Core Rank B;http://portal.core.edu.au/conf-ranks/28/},
-	homepage = {https://annomathtex.wmflabs.org/},
-	oldkey = {Scharpf2019b},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/scharpf2019b.pdf},
-	topic = {mathir},
-}
-
-@article{HulekMST19,
-	title = {Mathematical Research Data – an Analysis Through {zbMATH} References.},
-	volume = {113},
-	issn = {1027-488X},
-	url = {https://www.ems-ph.org/journals/show_pdf.php?issn=1027-488X&vol=9&iss=113&rank=14},
-	doi = {10.4171/news/113/14},
-	pages = {54--57},
-	journaltitle = {European Mathematical Society. Newsletter},
-	author = {Hulek, Klaus and Müller, Fabian and Schubotz, Moritz and Teschke, Olaf},
-	date = {2019},
-	note = {tex.biburl: https://zbmath.org/bibtex/07111212.bib
-tex.oldkey: Hulek19
-tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich},
-	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
-
-	biburl = {https://zbmath.org/bibtex/07111212.bib},
-	oldkey = {Hulek19},
-	publisher = {European Mathematical Society (EMS) Publishing House, Zurich},
 }
 
 @article{LeibleSSG19,
@@ -340,13 +842,11 @@ tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich},
 	note = {tex.biburl: https://www.frontiersin.org/articles/10.3389/fbloc.2019.00016/{bibTex}
 tex.oldkey: Leible2019
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/leible2019.pdf
-tex.topic: blockchain},
+tex.topic: blockchain
+{QID}: Q81747275},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_preprint, jabref\_imp2},
 
 	biburl = {https://www.frontiersin.org/articles/10.3389/fbloc.2019.00016/bibTex},
-	oldkey = {Leible2019},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/leible2019.pdf},
-	topic = {blockchain},
 }
 
 @article{SchubotzT19,
@@ -361,12 +861,30 @@ tex.topic: blockchain},
 	date = {2019},
 	note = {tex.biburl: https://zbmath.org/bibtex/07065264.bib
 tex.oldkey: Schubotz2019b
-tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich},
+tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich
+{QID}: Q122926696},
 	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
 
 	biburl = {https://zbmath.org/bibtex/07065264.bib},
-	oldkey = {Schubotz2019b},
-	publisher = {European Mathematical Society (EMS) Publishing House, Zurich},
+}
+
+@article{HulekMST19,
+	title = {Mathematical Research Data – an Analysis Through {zbMATH} References.},
+	volume = {113},
+	issn = {1027-488X},
+	url = {https://www.ems-ph.org/journals/show_pdf.php?issn=1027-488X&vol=9&iss=113&rank=14},
+	doi = {10.4171/news/113/14},
+	pages = {54--57},
+	journaltitle = {European Mathematical Society. Newsletter},
+	author = {Hulek, Klaus and Müller, Fabian and Schubotz, Moritz and Teschke, Olaf},
+	date = {2019},
+	note = {tex.biburl: https://zbmath.org/bibtex/07111212.bib
+tex.oldkey: Hulek19
+tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich
+{QID}: Q122926701},
+	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+
+	biburl = {https://zbmath.org/bibtex/07111212.bib},
 }
 
 @inproceedings{LeibleSSG18,
@@ -377,12 +895,11 @@ tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich},
 	date = {2018-11},
 	note = {tex.biburl: https://zenodo.org/record/2454725/export/hx\#.{XCJgpMYo}8ax
 tex.oldkey: Leible2018
-tex.url\_orig: https://doi.org/10.5281/zenodo.2454725},
+tex.url\_orig: https://doi.org/10.5281/zenodo.2454725
+{QID}: Q122926674},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
 
 	biburl = {https://zenodo.org/record/2454725/export/hx#.XCJgpMYo8ax},
-	oldkey = {Leible2018},
-	url_orig = {https://doi.org/10.5281/zenodo.2454725},
 }
 
 @article{SchubotzBHG18,
@@ -393,12 +910,11 @@ tex.url\_orig: https://doi.org/10.5281/zenodo.2454725},
 	date = {2018-11},
 	note = {tex.biburl: https://zenodo.org/record/2453415/export/hx\#.{XCJhJ}8Yo8aw
 tex.oldkey: Schubotz2018d
-tex.url\_orig: https://doi.org/10.5281/zenodo.2453415},
+tex.url\_orig: https://doi.org/10.5281/zenodo.2453415
+{QID}: Q122926675},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
 
 	biburl = {https://zenodo.org/record/2453415/export/hx#.XCJhJ8Yo8aw},
-	oldkey = {Schubotz2018d},
-	url_orig = {https://doi.org/10.5281/zenodo.2453415},
 }
 
 @inproceedings{MeuschkeSSG18,
@@ -406,55 +922,26 @@ tex.url\_orig: https://doi.org/10.5281/zenodo.2453415},
 	title = {{HyPlag}: A Hybrid Approach to Academic Plagiarism Detection},
 	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
 	isbn = {978-1-4503-5657-2},
+	url = {https://dl.acm.org/doi/10.1145/3209978.3210177},
 	doi = {10.1145/3209978.3210177},
+	shorttitle = {{HyPlag}},
 	abstract = {Current plagiarism detection systems reliably find instances of copied and moderately altered text, but often fail to detect strong paraphrases, translations, and the reuse of non-textual content and ideas. To improve upon the detection capabilities for such concealed content reuse in academic publications, we make four contributions: i) We present the first plagiarism detection approach that combines the analysis of mathematical expressions, images, citations and text. ii) We describe the implementation of this hybrid detection approach in the research prototype {HyPlag}. iii) We present novel visualization and interaction concepts to aid users in reviewing content similarities identified by the hybrid detection approach. iv) We demonstrate the usefulness of the hybrid detection and result visualization approaches by using {HyPlag} to analyze a confirmed case of content reuse present in a retracted research publication.},
+	eventtitle = {{SIGIR} '18: The 41st International {ACM} {SIGIR} conference on research and development in Information Retrieval},
 	pages = {1321--1324},
 	booktitle = {Proceedings of the 41st International {ACM} {SIGIR} Conference on Research \& Development in Information Retrieval},
+	publisher = {{ACM}},
 	author = {Meuschke, Norman and Stange, Vincent and Schubotz, Moritz and Gipp, Bela},
 	date = {2018-06},
-	note = {tex.ids: {MeuschkeSSG}18a
+	langid = {english},
+	note = {tex.ids= {MeuschkeSSG}18a
 tex.biburl: https://dblp.uni-trier.de/rec/bibtex/conf/sigir/{MeuschkeSSG}18
 tex.core: A*
 tex.oldkey: Meuschke2018a
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/meuschke2018a.pdf
-tex.topic: pd},
+tex.topic: pd
+{QID}: Q122926721},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, 21InfWissHb, {DFG}1259-1, jabref\_imp1\_clean, old\_tex\_field\_preprint, pd},
 
-	ids = {MeuschkeSSG18a},
-	biburl = {https://dblp.uni-trier.de/rec/bibtex/conf/sigir/MeuschkeSSG18},
-	core = {A*},
-	oldkey = {Meuschke2018a},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/meuschke2018a.pdf},
-	topic = {pd},
-}
-
-@inproceedings{SchubotzGSM18,
-	location = {Fort Worth, {USA}},
-	title = {Improving the Representation and Conversion of Mathematical Formulae by Considering their Textual Context},
-	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
-	isbn = {978-1-4503-5178-2},
-	url = {http://doi.acm.org/10.1145/3197026.3197058},
-	doi = {10.1145/3197026.3197058},
-	abstract = {Mathematical formulae represent complex semantic information in a concise form. Especially in Science, Technology, Engineering, and Mathematics, mathematical formulae are crucial to communicate information, e.g., in scientific papers, and to perform computations using computer algebra systems. Enabling computers to access the information encoded in mathematical formulae requires machine-readable formats that can represent both the presentation and content, i.e., the semantics, of formulae. Exchanging such information between systems additionally requires conversion methods for mathematical representation formats. We analyze how the semantic enrichment of formulae improves the format conversion process and show that considering the textual context of formulae reduces the error rate of such conversions. Our main contributions are: (1) providing an openly available benchmark dataset for the mathematical format conversion task consisting of a newly created test collection, an extensive, manually curated gold standard and task-specific evaluation metrics; (2) performing a quantitative evaluation of state-of-the-art tools for mathematical format conversions; (3) presenting a new approach that considers the textual context of formulae to reduce the error rate for mathematical format conversions. Our benchmark dataset facilitates future research on mathematical format conversions as well as research on many problems in mathematical information retrieval. Because we annotated and linked all components of formulae, e.g., identifiers, operators and other entities, to Wikidata entries, the gold standard can, for instance, be used to train methods for formula concept discovery and recognition. Such methods can then be applied to improve mathematical information retrieval systems, e.g., for semantic formula search, recommendation of mathematical content, or detection of mathematical plagiarism.},
-	pages = {233--242},
-	booktitle = {Proceedings of the 18th {ACM}/{IEEE} on Joint Conference on Digital Libraries ({JCDL})},
-	publisher = {{ACM}},
-	author = {Schubotz, Moritz and Greiner-Petter, André and Scharpf, Philipp and Meuschke, Norman and Cohl, Howard S. and Gipp, Bela},
-	date = {2018-06},
-	note = {tex.ids: Schubotz2018c, {SchubotzGSM}18a
-tex.biburl: https://dblp.org/rec/bib/conf/jcdl/{SchubotzGSMCG}18
-tex.core: 0;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/
-tex.oldkey: {SchubotzGSMCG}18
-tex.preprint: https://arxiv.org/pdf/1804.04956.pdf
-tex.url\_orig: http://doi.acm.org/10.1145/3197026.3197058},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, {DFG}1259-1, jabref\_imp1\_clean, old\_tex\_field\_preprint},
-
-	ids = {Schubotz2018c, SchubotzGSM18a},
-	biburl = {https://dblp.org/rec/bib/conf/jcdl/SchubotzGSMCG18},
-	core = {0;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/},
-	oldkey = {SchubotzGSMCG18},
-	preprint = {https://arxiv.org/pdf/1804.04956.pdf},
-	url_orig = {http://doi.acm.org/10.1145/3197026.3197058},
 }
 
 @inproceedings{SchubotzSDN18,
@@ -467,72 +954,99 @@ tex.url\_orig: http://doi.acm.org/10.1145/3197026.3197058},
 	note = {tex.biburl: https://www.emeraldinsight.com/action/{showCitFormats}?doi=10.1108\%2FIDD-06-2018-0022
 tex.oldkey: Schubotz2018a
 tex.preprint: https://www.emeraldinsight.com/eprint/{FXthtRDDEGcMVzInHphu}/full
-tex.topic: mathir},
+tex.topic: mathir
+{QID}: Q105592656},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
 
 	biburl = {https://www.emeraldinsight.com/action/showCitFormats?doi=10.1108%2FIDD-06-2018-0022},
-	oldkey = {Schubotz2018a},
-	preprint = {https://www.emeraldinsight.com/eprint/FXthtRDDEGcMVzInHphu/full},
-	topic = {mathir},
+}
+
+@inproceedings{SchubotzGSM18,
+	location = {Fort Worth, Texas, {USA}},
+	title = {Improving the Representation and Conversion of Mathematical Formulae by Considering their Textual Context},
+	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
+	isbn = {978-1-4503-5178-2},
+	url = {https://arxiv.org/abs/1804.04956},
+	doi = {10.1145/3197026.3197058},
+	abstract = {Mathematical formulae represent complex semantic information in a concise form. Especially in Science, Technology, Engineering, and Mathematics, mathematical formulae are crucial to communicate information, e.g., in scientific papers, and to perform computations using computer algebra systems. Enabling computers to access the information encoded in mathematical formulae requires machine-readable formats that can represent both the presentation and content, i.e., the semantics, of formulae. Exchanging such information between systems additionally requires conversion methods for mathematical representation formats. We analyze how the semantic enrichment of formulae improves the format conversion process and show that considering the textual context of formulae reduces the error rate of such conversions. Our main contributions are: (1) providing an openly available benchmark dataset for the mathematical format conversion task consisting of a newly created test collection, an extensive, manually curated gold standard and task-specific evaluation metrics; (2) performing a quantitative evaluation of state-of-the-art tools for mathematical format conversions; (3) presenting a new approach that considers the textual context of formulae to reduce the error rate for mathematical format conversions. Our benchmark dataset facilitates future research on mathematical format conversions as well as research on many problems in mathematical information retrieval. Because we annotated and linked all components of formulae, e.g., identifiers, operators and other entities, to Wikidata entries, the gold standard can, for instance, be used to train methods for formula concept discovery and recognition. Such methods can then be applied to improve mathematical information retrieval systems, e.g., for semantic formula search, recommendation of mathematical content, or detection of mathematical plagiarism.},
+	eventtitle = {{JCDL}},
+	pages = {233--242},
+	booktitle = {Proceedings of the 18th {ACM}/{IEEE} on Joint Conference on Digital Libraries ({JCDL})},
+	publisher = {{ACM}},
+	author = {Schubotz, Moritz and Greiner-Petter, André and Scharpf, Philipp and Meuschke, Norman and Cohl, Howard S. and Gipp, Bela},
+	date = {2018-05-23},
+	langid = {english},
+	note = {tex.ids= Schubotz2018c, {SchubotzGSM}18a
+tex.biburl: https://dblp.org/rec/bib/conf/jcdl/{SchubotzGSMCG}18
+tex.core: 0;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/
+tex.keywords: top
+tex.oldkey: {SchubotzGSMCG}18
+tex.preprint: https://arxiv.org/pdf/1804.04956.pdf
+tex.url\_orig: http://doi.acm.org/10.1145/3197026.3197058
+{QID}: Q105592691},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, {DFG}1259-1, jabref\_imp1\_clean, old\_tex\_field\_preprint},
+
 }
 
 @inproceedings{PetersenSG18,
 	location = {Hagenberg, Austria},
-	title = {Towards Formula Translation Using Recursive Neural Networks},
-	url = {http://arxiv.org/abs/1811.04234},
-	booktitle = {Proceedings of the 11th Conference on Intelligent Computer Mathematics ({CICM})},
+	title = {Towards Formula Translation using Recursive Neural Networks},
+	volume = {2307},
+	url = {http://ceur-ws.org/Vol-2307/WiP3.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	booktitle = {Joint Proceedings of the {CME}-{EI}, {FMM}, {CAAT}, {FVPS}, M3SRD, {OpenMath} Workshops, Doctoral Program and Work in Progress at the Conference on Intelligent Computer Mathematics 2018 co-located with the 11th Conference on Intelligent Computer Mathematics ({CICM} 2018), Hagenberg, Austria, August 13-17, 2018},
+	publisher = {{CEUR}-{WS}.org},
 	author = {Petersen, Felix and Schubotz, Moritz and Gipp, Bela},
+	editor = {Hasan, Osman and Youssef, Abdou and Naumowicz, Adam and Farmer, William M. and Kaliszyk, Cezary and Gallois-Wong, Diane and Rabe, Florian and Reis, Gabriel Dos and Passmore, Grant O. and Davenport, James H. and Pfeiffer, Markus and Kohlhase, Michael and Autexier, Serge and Tahar, Sofiène and Koprucki, Thomas and Siddique, Umair and Neuper, Walther and Windsteiger, Wolfgang and Schreiner, Wolfgang and Sperber, Wolfram and Kovács, Zoltán},
+	urldate = {2021-09-23},
 	date = {2018},
-	note = {tex.biburl: https://dblp.org/rec/bib/journals/corr/abs-1811-04234
+	note = {tex.ids= {PetersenSG}18
+tex.biburl: https://dblp.org/rec/bib/journals/corr/abs-1811-04234
 tex.oldkey: Petersen2018
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/petersen2018.pdf
 tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
-	biburl = {https://dblp.org/rec/bib/journals/corr/abs-1811-04234},
-	oldkey = {Petersen2018},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/petersen2018.pdf},
-	topic = {mathir},
 }
 
-@inproceedings{ScharpfSG18,
-	title = {Representing Mathematical Formulae in Content {MathML} Using Wikidata},
-	volume = {2132},
-	url = {http://ceur-ws.org/Vol-2132/paper5.pdf},
-	series = {{CEUR} workshop proceedings},
-	pages = {46--59},
-	booktitle = {Proceedings of the 3rd joint workshop on bibliometric-enhanced information retrieval and natural language processing for digital libraries ({BIRNDL} 2018) co-located with the 41st international {ACM} {SIGIR} conference on research and development in information retrieval ({SIGIR} 2018), ann arbor, {USA}, july 12, 2018.},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
-	editor = {Mayr, Philipp and Chandrasekaran, Muthu Kumar and Jaidka, Kokil},
+@inproceedings{Schubotz18GI,
+	title = {Mathematische Formeln in Wikipedia},
+	doi = {10.17877/de290r-19676},
+	pages = {1635--1638},
+	booktitle = {Beiträge zum Mathematikunterricht 2018},
+	publisher = {Gesellschaft für Didaktik der Mathematik},
+	author = {Schubotz, Moritz},
+	editor = {der Mathematik der Universität Paderborn, Fachgruppe Didaktik},
 	date = {2018},
-	note = {tex.biburl: https://dblp.org/rec/bib/conf/sigir/{ScharpfSG}18
-tex.oldkey: Scharpf2018
-tex.preprint: https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf
-tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	langid = {german},
+	note = {tex.biburl: https://search.datacite.org/works/10.17877/{DE}290R-19676
+tex.oldkey: Schubotz2018
+tex.preprint: https://eldorado.tu-dortmund.de/bitstream/2003/37681/1/{BzMU}18$_{\textrm{S}}${CHUBOTZₘathwiki}.pdf
+tex.topic: mathir
+{QID}: Q122926677},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
 
-	biburl = {https://dblp.org/rec/bib/conf/sigir/ScharpfSG18},
-	oldkey = {Scharpf2018},
-	preprint = {https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf},
-	topic = {mathir},
+	biburl = {https://search.datacite.org/works/10.17877/DE290R-19676},
 }
 
 @inproceedings{Schubotz18CICM,
 	title = {Generating {OpenMath} Content Dictionaries from Wikidata},
+	volume = {2307},
+	url = {http://ceur-ws.org/Vol-2307/paper51.pdf},
 	doi = {10.5281/zenodo.1409946},
+	series = {{CEUR} Workshop Proceedings},
 	booktitle = {Joint Proceedings of the {CME}-{EI}, {FMM}, {CAAT}, {FVPS}, M3SRD, {OpenMath} Workshops, Doctoral Program and Work in Progress at the Conference on Intelligent Computer Mathematics 2018 co-located with the 11th Conference on Intelligent Computer Mathematics ({CICM} 2018)},
+	publisher = {{CEUR}-{WS}.org},
 	author = {Schubotz, Moritz},
 	editor = {Hasan, Osman and Youssef, Abdou and Naumowicz, Adam and Farmer, William and Kaliszyk, Cezary and Gallois-Wong, Diane and Rabe, Florian and Reis, Gabriel Dos and Passmore, Grant and Davenport, James and Pfeiffer, Markus and Kohlhase, Michael and Autexier, Serge and Tahar, Sofiene and Koprucki, Thomas and Siddique, Umair and Neuper, Walther and Windsteiger, Wolfgang and Schreiner, Wolfgang and Sperber, Wolfram and Kovács, Zoltán},
 	date = {2018},
-	note = {tex.oldkey: Schubotz2018b
+	note = {tex.ids= Schubotz18a
+tex.oldkey: Schubotz2018b
 tex.preprint: https://github.com/ag-gipp/18CicmWikidata/releases/download/build-master-2018-10-16-15/main.pdf
-tex.topic: blockchain},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
+tex.topic: blockchain
+{QID}: Q122926722},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint, openmath, wikidata},
 
-	oldkey = {Schubotz2018b},
-	preprint = {https://github.com/ag-gipp/18CicmWikidata/releases/download/build-master-2018-10-16-15/main.pdf},
-	topic = {blockchain},
 }
 
 @inproceedings{HamborgLSH18,
@@ -550,61 +1064,39 @@ tex.topic: blockchain},
 	note = {tex.biburl: https://dblp.org/rec/bib/conf/iconference/{HamborgLSHG}18
 tex.oldkey: Hamborg2018a
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018.pdf
-tex.topic: newsanalysis},
+tex.topic: newsanalysis
+{QID}: Q51231294},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
 
 	biburl = {https://dblp.org/rec/bib/conf/iconference/HamborgLSHG18},
-	oldkey = {Hamborg2018a},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018.pdf},
-	topic = {newsanalysis},
 }
 
-@inproceedings{Schubotz18GI,
-	title = {Mathematische Formeln in Wikipedia},
-	doi = {10.17877/de290r-19676},
-	pages = {1635--1638},
-	booktitle = {Beiträge zum Mathematikunterricht 2018},
-	publisher = {Gesellschaft für Didaktik der Mathematik},
-	author = {Schubotz, Moritz},
-	editor = {der Mathematik der Universität Paderborn, Fachgruppe Didaktik},
+@inproceedings{ScharpfSG18,
+	title = {Representing Mathematical Formulae in Content {MathML} Using Wikidata},
+	volume = {2132},
+	url = {http://ceur-ws.org/Vol-2132/paper5.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	eventtitle = {{BIRNDL}@{SIGIR}},
+	pages = {46--59},
+	booktitle = {Proceedings of the 3rd Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (\{{BIRNDL}\} 2018) co-located with the 41st International \{{ACM}\} \{{SIGIR}\} Conference on Research and Development in Information Retrieval (\{{SIGIR}\} 2018)},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
+	editor = {Mayr, Philipp and Chandrasekaran, Muthu Kumar and Jaidka, Kokil},
 	date = {2018},
-	langid = {german},
-	note = {tex.biburl: https://search.datacite.org/works/10.17877/{DE}290R-19676
-tex.oldkey: Schubotz2018
-tex.preprint: https://eldorado.tu-dortmund.de/bitstream/2003/37681/1/{BzMU}18$_{\textrm{S}}${CHUBOTZₘathwiki}.pdf
+	note = {tex.ids= {ScharpfSG}18a
+tex.biburl: https://dblp.org/rec/bib/conf/sigir/{ScharpfSG}18
+tex.oldkey: Scharpf2018
+tex.preprint: https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf
 tex.topic: mathir},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
-	biburl = {https://search.datacite.org/works/10.17877/DE290R-19676},
-	oldkey = {Schubotz2018},
-	preprint = {https://eldorado.tu-dortmund.de/bitstream/2003/37681/1/BzMU18<sub>S</sub>CHUBOTZₘathwiki.pdf},
-	topic = {mathir},
-}
-
-@article{HeckS18,
-	title = {{DiViDu} - an Open Source Solution for Dual Task Experiments with Integrated Divided Visual Field Paradigm},
-	volume = {6},
-	url = {https://doi.org/10.5334/jors.199},
-	doi = {10.5334/jors.199},
-	journaltitle = {Journal of Open Research Software},
-	author = {Heck, Nina and Schubotz, Moritz},
-	date = {2018},
-	note = {tex.ids: {HeckS}18
-tex.biburl: https://kops.uni-konstanz.de/handle/123456789/42726
-tex.oldkey: Heck2018
-tex.publisher: Ubiquity Press, Ltd.},
-	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
-
-	ids = {HeckS18},
-	biburl = {https://kops.uni-konstanz.de/handle/123456789/42726},
-	oldkey = {Heck2018},
-	publisher = {Ubiquity Press, Ltd.},
 }
 
 @incollection{GreinerPetterSCG18,
 	title = {{MathTools}: An open {API} for convenient {MathML} handling},
 	volume = {11006},
 	url = {https://www.gipp.com/wp-content/papercite-data/pdf/greinerpetter2018.pdf},
+	doi = {10.1007/978-3-319-96812-4_9},
 	series = {Lecture notes in computer science},
 	pages = {104--110},
 	booktitle = {Intelligent Computer Mathematics - 11th International Conference, {CICM} 2018, Hagenberg, Austria, August 13-17, 2018, Proceedings},
@@ -612,42 +1104,52 @@ tex.publisher: Ubiquity Press, Ltd.},
 	author = {Greiner-Petter, André and Schubotz, Moritz and Cohl, Howard S. and Gipp, Bela},
 	editor = {Rabe, Florian and Farmer, William M. and Passmore, Grant O. and Youssef, Abdou},
 	date = {2018},
-	doi = {10.1007/978-3-319-96812-4_9},
 	note = {tex.ids: {GreinerPetterSCG}18a
 tex.biburl: https://dblp.org/rec/bib/conf/mkm/Greiner-{PetterS}18
 tex.oldkey: Greiner-Petter2018
 tex.topic: mathir
 tex.url\_orig: https://doi.org/10.1007/978-3-319-96812-4\_9
 {seriesTitle}: Lecture Notes in Computer Science},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint},
 
 	ids = {GreinerPetterSCG18a},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/Greiner-PetterS18},
-	oldkey = {Greiner-Petter2018},
-	topic = {mathir},
-	url_orig = {https://doi.org/10.1007/978-3-319-96812-4_9},
 }
 
 @inproceedings{CohlGS18,
+	location = {Hagenberg, Austria},
 	title = {Automated Symbolic and Numerical Testing of {DLMF} Formulae Using Computer Algebra Systems},
 	volume = {11006},
+	isbn = {978-3-319-96811-7},
 	url = {http://hcohl.sdf.org/CICM2018_Chap4.pdf},
 	doi = {10.1007/978-3-319-96812-4_4},
-	series = {Lecture notes in computer science},
+	series = {Lecture Notes in Computer Science},
+	abstract = {We have developed an automated procedure for symbolic and numerical testing
+of formulae extracted from the {NIST} Digital Library of Mathematical Functions
+({DLMF}).  For the {NIST} Digital Repository of Mathematical Formulae, we have
+developed conversion tools from semantic {LaTeX} to the Computer Algebra System
+({CAS}) Maple which relies on Youssef's part-of-math tagger.  We convert a test data subset
+of 4,078 semantic {LaTeX} {DLMF} formulae
+to the native {CAS} representation and then apply an automated scheme for symbolic and numerical
+testing and verification.  Our framework is implemented using Java and Maple.
+We describe in detail the conversion process which is required so that the
+{CAS} can correctly interpret the mathematical representation of the formulae.
+We describe the improvement of the effectiveness of our automated scheme through
+incremental enhancement (making more precise) of the mathematical semantic markup
+for the formulae.},
+	eventtitle = {{CICM}},
 	pages = {39--52},
 	booktitle = {Intelligent Computer Mathematics - 11th International Conference, {CICM} 2018, Hagenberg, Austria, August 13-17, 2018, Proceedings},
-	publisher = {Springer},
+	publisher = {Springer International Publishing},
 	author = {Cohl, Howard S. and Greiner-Petter, André and Schubotz, Moritz},
 	editor = {Rabe, Florian and Farmer, William M. and Passmore, Grant O. and Youssef, Abdou},
 	date = {2018},
-	note = {tex.biburl: https://dblp.uni-trier.de/rec/bibtex/conf/mkm/{CohlGS}18
+	note = {tex.ids= {CohlGS}18a
+tex.biburl: https://dblp.uni-trier.de/rec/bibtex/conf/mkm/{CohlGS}18
 tex.oldkey: Cohl2018
-tex.url\_orig: https://doi.org/10.1007/978-3-319-96812-4₄},
+tex.url\_orig: https://doi.org/10.1007/978-3-319-96812-4₄
+{QID}: Q122926717},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
 
-	biburl = {https://dblp.uni-trier.de/rec/bibtex/conf/mkm/CohlGS18},
-	oldkey = {Cohl2018},
-	url_orig = {https://doi.org/10.1007/978-3-319-96812-4₄},
 }
 
 @inproceedings{HamborgBSL18,
@@ -664,14 +1166,29 @@ tex.url\_orig: https://doi.org/10.1007/978-3-319-96812-4₄},
 tex.core: A*
 tex.oldkey: Hamborg2018
 tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018a.pdf
-tex.topic: newsanalysis},
+tex.topic: newsanalysis
+{QID}: Q122926689},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
 
 	biburl = {https://dblp.uni-trier.de/rec/bibtex/conf/jcdl/HamborgBSLG18},
-	core = {A*},
-	oldkey = {Hamborg2018},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018a.pdf},
-	topic = {newsanalysis},
+}
+
+@article{HeckS18,
+	title = {{DiViDu} - an Open Source Solution for Dual Task Experiments with Integrated Divided Visual Field Paradigm},
+	volume = {6},
+	url = {https://doi.org/10.5334/jors.199},
+	doi = {10.5334/jors.199},
+	journaltitle = {Journal of Open Research Software},
+	author = {Heck, Nina and Schubotz, Moritz},
+	date = {2018},
+	note = {tex.ids: {HeckS}18
+tex.biburl: https://kops.uni-konstanz.de/handle/123456789/42726
+tex.oldkey: Heck2018
+tex.publisher: Ubiquity Press, Ltd.
+{QID}: Q51741144},
+	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+
+	ids = {HeckS18},
 }
 
 @inproceedings{MeuschkeSHS17,
@@ -694,16 +1211,11 @@ tex.core: A;Core Rank A;http://portal.core.edu.au/conf-ranks/25/
 tex.oldkey: Meuschke2017b
 tex.owner: norman
 tex.preprint: https://ag-gipp.github.io/bib/preprints/meuschke2017b.pdf
-tex.topic: pd},
+tex.topic: pd
+{QID}: Q51236478},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, 21InfWissHb, jabref\_imp1\_clean, old\_tex\_field\_preprint, pd\_litrev19},
 
 	ids = {MeuschkeSHS17a, MeuschkeSHS17b},
-	biburl = {https://dblp.org/rec/bib/conf/cikm/MeuschkeSHSG17},
-	core = {A;Core Rank A;http://portal.core.edu.au/conf-ranks/25/},
-	oldkey = {Meuschke2017b},
-	owner = {norman},
-	preprint = {https://ag-gipp.github.io/bib/preprints/meuschke2017b.pdf},
-	topic = {pd},
 }
 
 @inproceedings{SchwarzerBSM17,
@@ -722,14 +1234,11 @@ tex.topic: pd},
 tex.biburl: https://dblp.org/rec/bib/conf/recsys/{SchwarzerBSMG}17
 tex.oldkey: Schwarzer2017
 tex.preprint: https://ag-gipp.github.io/bib/preprints/schwarzer2017.pdf
-tex.topic: rec},
+tex.topic: rec
+{QID}: Q51236544},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
 
 	ids = {SchwarzerBSM17a},
-	biburl = {https://dblp.org/rec/bib/conf/recsys/SchwarzerBSMG17},
-	oldkey = {Schwarzer2017},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schwarzer2017.pdf},
-	topic = {rec},
 }
 
 @incollection{SchubotzKMH17,
@@ -739,6 +1248,7 @@ tex.topic: rec},
 	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
 	isbn = {978-3-319-65812-4 978-3-319-65813-1},
 	url = {http://link.springer.com/10.1007/978-3-319-65813-1_7},
+	doi = {10.1007/978-3-319-65813-1_7},
 	series = {Lecture Notes in Computer Science},
 	abstract = {Mathematical formulae in academic texts significantly contribute to the overall semantic content of such texts, especially in the fields of Science, Technology, Engineering and Mathematics. Knowing the definitions of the identifiers in mathematical formulae is essential to understand the semantics of the formulae. Similar to the sense-making process of human readers, mathematical information retrieval systems can analyze the text that surrounds formulae to extract the definitions of identifiers occurring in the formulae. Several approaches for extracting the definitions of mathematical identifiers from documents have been proposed in recent years. So far, these approaches have been evaluated using different collections and gold standard datasets, which prevented comparative performance assessments. To facilitate future research on the task of identifier definition extraction, we make three contributions. First, we provide an automated evaluation framework, which uses the dataset and gold standard of the {NTCIR}-11 Math Retrieval Wikipedia task. Second, we compare existing identifier extraction approaches using the developed evaluation framework. Third, we present a new identifier extraction approach that uses machine learning to combine the well-performing features of previous approaches. The new approach increases the precision of extracting identifier definitions from 17.85\% to 48.60\%, and increases the recall from 22.58\% to 28.06\%. The evaluation framework, the dataset and our source code are openly available at: https://ident.formulasearchengine.com.},
 	pages = {82--94},
@@ -747,20 +1257,14 @@ tex.topic: rec},
 	author = {Schubotz, Moritz and Krämer, Leonard and Meuschke, Norman and Hamborg, Felix and Gipp, Bela},
 	editor = {Jones, Gareth J.F. and Lawless, Séamus and Gonzalo, Julio and Kelly, Liadh and Goeuriot, Lorraine and Mandl, Thomas and Cappellato, Linda and Ferro, Nicola},
 	date = {2017-08},
-	doi = {10.1007/978-3-319-65813-1_7},
 	note = {Series Title: Lecture Notes in Computer Science
 tex.ids: {SchubotzKMH}17a
 tex.biburl: https://dblp.org/rec/bib/conf/clef/{SchubotzKMHG}17
 tex.oldkey: Schubotz2017
 tex.preprint: https://ag-gipp.github.io/bib/preprints/schubotz2017.pdf
 tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, no-doi, old\_tex\_field\_preprint},
 
-	ids = {SchubotzKMH17a},
-	biburl = {https://dblp.org/rec/bib/conf/clef/SchubotzKMHG17},
-	oldkey = {Schubotz2017},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schubotz2017.pdf},
-	topic = {mathir},
 }
 
 @incollection{SchubotzMHC17,
@@ -783,13 +1287,9 @@ tex.biburl: http://dblp.uni-trier.de/rec/bib/conf/mkm/{SchubotzMHCG}17
 tex.oldkey: vmext17
 tex.preprint: https://arxiv.org/pdf/1707.03540.pdf
 tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, no-doi, old\_tex\_field\_preprint},
 
 	ids = {SchubotzMHC17a, SchubotzMHC17b},
-	biburl = {http://dblp.uni-trier.de/rec/bib/conf/mkm/SchubotzMHCG17},
-	oldkey = {vmext17},
-	preprint = {https://arxiv.org/pdf/1707.03540.pdf},
-	topic = {mathir},
 }
 
 @inproceedings{MeuschkeSSG17,
@@ -807,13 +1307,11 @@ tex.topic: mathir},
 	note = {tex.ids: {MeuschkeSSG}17a
 tex.biburl: https://dblp.org/rec/bib/conf/jcdl/{MeuschkeSSG}17
 tex.oldkey: Meuschke2017
-tex.preprint: https://ag-gipp.github.io/bib/preprints/meuschke2017a.pdf},
+tex.preprint: https://ag-gipp.github.io/bib/preprints/meuschke2017a.pdf
+{QID}: Q60456604},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint, pd\_litrev19},
 
 	ids = {MeuschkeSSG17a},
-	biburl = {https://dblp.org/rec/bib/conf/jcdl/MeuschkeSSG17},
-	oldkey = {Meuschke2017},
-	preprint = {https://ag-gipp.github.io/bib/preprints/meuschke2017a.pdf},
 }
 
 @inproceedings{DahmSMG17,
@@ -831,13 +1329,11 @@ tex.preprint: https://ag-gipp.github.io/bib/preprints/meuschke2017a.pdf},
 	note = {tex.ids: {DahmSMG}17a
 tex.oldkey: Dahm2017
 tex.preprint: https://ag-gipp.github.io/bib/preprints/dahm2017.pdf
-tex.topic: wiki},
+tex.topic: wiki
+{QID}: Q51236663},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint, wikipedia},
 
 	ids = {DahmSMG17a},
-	oldkey = {Dahm2017},
-	preprint = {https://ag-gipp.github.io/bib/preprints/dahm2017.pdf},
-	topic = {wiki},
 }
 
 @inproceedings{CorneliS17,
@@ -850,12 +1346,9 @@ tex.topic: wiki},
 tex.biburl: https://www.research.ed.ac.uk/portal/en/publications/mathwikipediaorg-a-vision-for-a-collaborative-semiformal-language-independent-maths-encyclopedia(9588c61f-5234-4f9d-a036-c7c3daac9307).bibtex?download=true
 tex.oldkey: Corneli2017
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
 	ids = {CorneliS17},
-	biburl = {https://www.research.ed.ac.uk/portal/en/publications/mathwikipediaorg-a-vision-for-a-collaborative-semiformal-language-independent-maths-encyclopedia(9588c61f-5234-4f9d-a036-c7c3daac9307).bibtex?download=true},
-	oldkey = {Corneli2017},
-	owner = {Moritz},
 }
 
 @inproceedings{CohlSYG17,
@@ -874,30 +1367,26 @@ tex.owner: Moritz},
 tex.biburl: https://dblp.org/rec/bib/conf/mkm/{CohlSYGGSMBC}17
 tex.oldkey: Cohl2017
 tex.owner: Moritz
-tex.url\_orig: https://doi.org/10.1007/978-3-319-62075-6\_9},
+tex.url\_orig: https://doi.org/10.1007/978-3-319-62075-6\_9
+{QID}: Q51230023},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {CohlSYG17},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/CohlSYGGSMBC17},
-	oldkey = {Cohl2017},
-	owner = {Moritz},
-	url_orig = {https://doi.org/10.1007/978-3-319-62075-6_9},
 }
 
 @book{Schubotz17,
 	title = {Augmenting Mathematical Formulae for More Effective Querying \& Efficient Presentation},
 	isbn = {978-3-7450-6208-3},
 	url = {https://www.epubli.de/preview/publication/64471},
+	doi = {10.14279/depositonce-6034},
 	publisher = {Epubli Verlag, Berlin},
 	author = {Schubotz, Moritz},
 	date = {2017},
-	doi = {10.14279/depositonce-6034},
 	note = {tex.oldkey: dis
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2},
+	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, no-doi},
 
 	oldkey = {dis},
-	owner = {Moritz},
 }
 
 @unpublished{Schubotz16CICM,
@@ -908,16 +1397,15 @@ tex.owner: Moritz},
 	author = {Schubotz, Moritz},
 	urldate = {2016-10-03},
 	date = {2016-07-25},
-	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2},
+	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, no-doi},
 
 	jabref-groups = {phd-m},
-	oldkey = {schubotz16implCd},
-	owner = {Moritz},
 }
 
 @report{Schubotz16NTCIRData,
 	title = {Identifier Gold Standard for {NTCIR} 11 Math Wikipedia Dataset},
 	url = {https://depositonce.tu-berlin.de/handle/11303/6571},
+	doi = {10.14279/depositonce-6064},
 	abstract = {Mathematical formulae are essential in science, but face challenges of ambiguity, due to the use of a small number of identifiers to represent an immense number of concepts. Corresponding to word sense disambiguation in Natural Language Processing, we disambiguate mathematical identifiers. By regarding formulae and natural text as one monolithic information source, we are able to extract the semantics of identifiers in a process we term Mathematical Language Processing ({MLP}). As scientific communities tend to establish standard (identifier) notations, we use the document domain to infer the actual meaning of an identifier. Therefore, we adapt the software development concept of namespaces to mathematical notation. Thus, we learn namespace definitions by clustering the {MLP} results and mapping those clusters to subject classification schemata. In addition, this gives fundamental insights into the usage of mathematical notations in science, technology, engineering and mathematics. Our gold standard based evaluation shows that {MLP} extracts relevant identifier-definitions. Moreover, we discover that identifier namespaces improve the performance of automated identifier-definition extraction, and elevate it to a level that cannot be achieved within the document context alone.},
 	author = {Schubotz, Moritz},
 	editora = {{Technische Universität Berlin} and Howard, S. Cohl},
@@ -925,17 +1413,13 @@ tex.owner: Moritz},
 	urldate = {2020-04-11},
 	date = {2016-07-18},
 	langid = {english},
-	doi = {10.14279/depositonce-6064},
 	note = {tex.ids: 11303\_6571, Schubotz16NTCIRData
 tex.oldkey: {dataIdentifierGold}16
 tex.owner: Moritz
 tex.publisher: Technische Universität Berlin},
-	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2},
+	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, no-doi},
 
 	ids = {11303_6571, Schubotz16NTCIRData},
-	oldkey = {dataIdentifierGold16},
-	owner = {Moritz},
-	publisher = {Technische Universität Berlin},
 }
 
 @inproceedings{SchubotzGLC16,
@@ -960,17 +1444,11 @@ tex.oldkey: Schubotz16
 tex.owner: Moritz
 tex.preprint: https://ag-gipp.github.io/bib/preprints/schubotz16.pdf
 tex.topic: mathir
-place: Pisa, Italy},
+place: Pisa, Italy
+{QID}: Q29526894},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, {MIR}, {MLP}, definitions, identifiers, jabref\_imp1\_clean, mathematical information retrieval, mathematical knowledge management, mathematical language processing, mathematics, mathoid, mathosphere, namespace discovery, old\_tex\_field\_preprint, wikipedia},
 
 	ids = {SchubotzGLC16a, disSigir16},
-	core = {A*},
-	jabref-groups = {phd-m},
-	numpages = {10},
-	oldkey = {Schubotz16},
-	owner = {Moritz},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schubotz16.pdf},
-	topic = {mathir},
 }
 
 @inproceedings{SchwarzerSMB16,
@@ -991,14 +1469,11 @@ Our results show that the citation-based measures {CPA} and {CoCit} have complem
 tex.core: A*
 tex.oldkey: Schwarzer2016
 tex.preprint: https://ag-gipp.github.io/bib/preprints/schwarzer2016.pdf
-tex.topic: rec},
+tex.topic: rec
+{QID}: Q29475439},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
 
 	ids = {SchwarzerSMB16a},
-	core = {A*},
-	oldkey = {Schwarzer2016},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schwarzer2016.pdf},
-	topic = {rec},
 }
 
 @inproceedings{SchubotzMLG16,
@@ -1018,17 +1493,11 @@ tex.maintitle: Exploring the one-brain-barrier
 tex.oldkey: Schubotz2016b
 tex.owner: Moritz
 tex.preprint: https://ag-gipp.github.io/bib/preprints/schubotz2016b.pdf
-tex.topic: mathir},
+tex.topic: mathir
+{QID}: Q122926694},
 	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
 
 	ids = {SchubotzMLG16a, SchubotzMLG16b},
-	biburl = {https://dblp.org/rec/bib/conf/ntcir/SchubotzMLG16},
-	jabref-groups = {phd-m},
-	maintitle = {Exploring the one-brain-barrier},
-	oldkey = {Schubotz2016b},
-	owner = {Moritz},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schubotz2016b.pdf},
-	topic = {mathir},
 }
 
 @inproceedings{SchubotzVC16,
@@ -1047,14 +1516,11 @@ tex.topic: mathir},
 tex.biburl: https://dblp.org/rec/bib/conf/cikm/{SchubotzVC}16
 tex.jabref-groups: phd-m
 tex.oldkey: {disCicm}16Units
-tex.owner: Moritz},
+tex.owner: Moritz
+{QID}: Q122926695},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {SchubotzVC16},
-	biburl = {https://dblp.org/rec/bib/conf/cikm/SchubotzVC16},
-	jabref-groups = {phd-m},
-	oldkey = {disCicm16Units},
-	owner = {Moritz},
 }
 
 @inproceedings{SchubotzS16,
@@ -1075,16 +1541,11 @@ tex.homepage: https://github.com/wikimedia/mathoid/
 tex.jabref-groups: phd-m
 tex.oldkey: {disCicm}16Mathpipe
 tex.owner: Moritz
-tex.preprint: http://pure-oai.bham.ac.uk/ws/files/31196373/Schubotz$_{\textrm{S}}$exton$_{\textrm{S}}$mooth$_{\textrm{T}}$ransition$_{\textrm{C}}${EUR}$_{\textrm{P}}$roceedings.pdf},
+tex.preprint: http://pure-oai.bham.ac.uk/ws/files/31196373/Schubotz$_{\textrm{S}}$exton$_{\textrm{S}}$mooth$_{\textrm{T}}$ransition$_{\textrm{C}}${EUR}$_{\textrm{P}}$roceedings.pdf
+{QID}: Q122926690},
 	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {SchubotzS16},
-	biburl = {https://dblp.org/rec/bib/conf/cikm/SchubotzS16},
-	homepage = {https://github.com/wikimedia/mathoid/},
-	jabref-groups = {phd-m},
-	oldkey = {disCicm16Mathpipe},
-	owner = {Moritz},
-	preprint = {http://pure-oai.bham.ac.uk/ws/files/31196373/Schubotz<sub>S</sub>exton<sub>S</sub>mooth<sub>T</sub>ransition<sub>C</sub>EUR<sub>P</sub>roceedings.pdf},
 }
 
 @inproceedings{CohlSMS15,
@@ -1104,15 +1565,11 @@ tex.biburl: http://dblp.uni-trier.de/rec/bib/conf/mkm/{CohlSMSZMD}15
 tex.jabref-groups: phd-m
 tex.oldkey: Cohl2015
 tex.owner: Moritz
-tex.preprint: https://arxiv.org/pdf/1505.01431.pdf},
+tex.preprint: https://arxiv.org/pdf/1505.01431.pdf
+{QID}: Q29528717},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {CohlSMS15a},
-	biburl = {http://dblp.uni-trier.de/rec/bib/conf/mkm/CohlSMSZMD15},
-	jabref-groups = {phd-m},
-	oldkey = {Cohl2015},
-	owner = {Moritz},
-	preprint = {https://arxiv.org/pdf/1505.01431.pdf},
 }
 
 @inproceedings{SchubotzYMC15,
@@ -1135,17 +1592,31 @@ tex.jabref-groups: phd-m
 tex.numpages: 4
 tex.oldkey: {disSigir}15
 tex.owner: Moritz
-tex.preprint: https://www2.seas.gwu.edu/ ayoussef/papers/Challenges\%20of\%20Mathematical\%20Information\%20Retrieval\%20in\%20the\%20NTCIR-11-{SIGIR}2015.pdf},
+tex.preprint: https://www2.seas.gwu.edu/ ayoussef/papers/Challenges\%20of\%20Mathematical\%20Information\%20Retrieval\%20in\%20the\%20NTCIR-11-{SIGIR}2015.pdf
+{QID}: Q29528701},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, {LaTeXML}, {MIR}, {NTCIR}, benchmark, dataset, jabref\_imp2, math information retrieval, math search, {mathML}, mathoid, old\_tex\_field\_preprint, task, wikipedia},
 
 	ids = {SchubotzYMC15},
-	biburl = {http://dblp.uni-trier.de/rec/bib/conf/sigir/SchubotzYMC15},
-	core = {A*},
-	jabref-groups = {phd-m},
-	numpages = {4},
-	oldkey = {disSigir15},
-	owner = {Moritz},
-	preprint = {https://www2.seas.gwu.edu/ ayoussef/papers/Challenges%20of%20Mathematical%20Information%20Retrieval%20in%20the%20NTCIR-11-SIGIR2015.pdf},
+}
+
+@inproceedings{PagelS14,
+	title = {Mathematical Language Processing Project},
+	volume = {1186},
+	url = {http://ceur-ws.org/Vol-1186/paper-23.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	booktitle = {Joint Proceedings of the {MathUI}, {OpenMath} and {ThEdu} Workshops and Work in Progress track at {CICM} co-located with Conferences on Intelligent Computer Mathematics ({CICM} 2014), Coimbra, Portugal, July 7-11, 2014.},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Pagel, Robert and Schubotz, Moritz},
+	editor = {England, Matthew and Davenport, James H. and Kohlhase, Andrea and Kohlhase, Michael and Libbrecht, Paul and Neuper, Walther and Quaresma, Pedro and Sexton, Alan P. and Sojka, Petr and Urban, Josef and Watt, Stephen M.},
+	date = {2014},
+	note = {tex.ids: {PagelS}14a
+tex.biburl: https://dblp.org/rec/bib/conf/mkm/{PagelS}14
+tex.jabref-groups: phd-m
+tex.oldkey: Pagel2014
+tex.owner: Moritz},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, cicm, conference, jabref\_imp2, no-doi, old\_tex\_field\_preprint, peerreview, wip, ⛔ No {DOI} found},
+
+	ids = {PagelS14a},
 }
 
 @inproceedings{AizawaKOS14,
@@ -1162,13 +1633,9 @@ tex.biburl: https://dblp.org/rec/bib/conf/ntcir/{AizawaKOS}14
 tex.jabref-groups: {GuidiReview}, phd-m
 tex.oldkey: Aizawa2014
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, {NTCIR}, conference, content, information access to mathematical, jabref\_imp2, mathml, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, {NTCIR}, conference, content, information access to mathematical, jabref\_imp2, mathml, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
 	ids = {AizawaKOS14a},
-	biburl = {https://dblp.org/rec/bib/conf/ntcir/AizawaKOS14},
-	jabref-groups = {GuidiReview, phd-m},
-	oldkey = {Aizawa2014},
-	owner = {Moritz},
 }
 
 @inproceedings{SchubotzYMC14,
@@ -1187,38 +1654,33 @@ tex.jabref-groups: {GuidiReview}, phd-m
 tex.maintitle: Evaluation of similarity-measure factors for formulae
 tex.oldkey: {disNtcir}11Sim
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
 	ids = {SchubotzYMC14},
-	biburl = {http://dblp.uni-trier.de/rec/bib/conf/ntcir/SchubotzYMCL14},
-	jabref-groups = {GuidiReview, phd-m},
-	maintitle = {Evaluation of similarity-measure factors for formulae},
-	oldkey = {disNtcir11Sim},
-	owner = {Moritz},
 }
 
-@inproceedings{PagelS14,
-	title = {Mathematical Language Processing Project},
-	volume = {1186},
-	url = {http://ceur-ws.org/Vol-1186/paper-23.pdf},
-	series = {{CEUR} Workshop Proceedings},
-	booktitle = {Joint Proceedings of the {MathUI}, {OpenMath} and {ThEdu} Workshops and Work in Progress track at {CICM} co-located with Conferences on Intelligent Computer Mathematics ({CICM} 2014), Coimbra, Portugal, July 7-11, 2014.},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Pagel, Robert and Schubotz, Moritz},
-	editor = {England, Matthew and Davenport, James H. and Kohlhase, Andrea and Kohlhase, Michael and Libbrecht, Paul and Neuper, Walther and Quaresma, Pedro and Sexton, Alan P. and Sojka, Petr and Urban, Josef and Watt, Stephen M.},
+@incollection{SchubotzW14,
+	title = {Mathoid: Robust, Scalable, Fast and Accessible Math Rendering for Wikipedia},
+	volume = {8543},
+	doi = {10.1007/978-3-319-08434-3_17},
+	series = {Lecture Notes in Computer Science},
+	pages = {224--235},
+	booktitle = {Intelligent Computer Mathematics - International Conference, {CICM} 2014, Coimbra, Portugal, July 7-11, 2014. Proceedings},
+	publisher = {Springer},
+	author = {Schubotz, Moritz and Wicke, Gabriel},
+	editor = {Watt, Stephen M. and Davenport, James H. and Sexton, Alan P. and Sojka, Petr and Urban, Josef},
 	date = {2014},
-	note = {tex.ids: {PagelS}14a
-tex.biburl: https://dblp.org/rec/bib/conf/mkm/{PagelS}14
+	note = {tex.ids: {SchubotzW}14a
+tex.biburl: https://dblp.org/rec/bib/conf/mkm/{SchubotzW}14
+tex.homepage: https://github.com/wikimedia/mathoid/
 tex.jabref-groups: phd-m
-tex.oldkey: Pagel2014
-tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, cicm, conference, jabref\_imp2, old\_tex\_field\_preprint, peerreview, wip, ⛔ No {DOI} found},
+tex.oldkey: Schubotz2014
+tex.owner: Moritz
+tex.preprint: https://arxiv.org/pdf/1404.6179.pdf
+{seriesTitle}: Lecture Notes in Computer Science},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, no-doi, old\_tex\_field\_preprint},
 
-	ids = {PagelS14a},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/PagelS14},
-	jabref-groups = {phd-m},
-	oldkey = {Pagel2014},
-	owner = {Moritz},
+	ids = {SchubotzW14a},
 }
 
 @inproceedings{CohlMSS14,
@@ -1237,45 +1699,11 @@ tex.biburl: https://dblp.org/rec/bib/conf/mkm/{CohlMSSW}14
 tex.jabref-groups: phd-m
 tex.oldkey: Cohl2014
 tex.owner: Moritz
-tex.preprint: https://arxiv.org/pdf/1404.6519.pdf},
+tex.preprint: https://arxiv.org/pdf/1404.6519.pdf
+{QID}: Q60456614},
 	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, cicm, conference, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {CohlMSS14a},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/CohlMSSW14},
-	jabref-groups = {phd-m},
-	oldkey = {Cohl2014},
-	owner = {Moritz},
-	preprint = {https://arxiv.org/pdf/1404.6519.pdf},
-}
-
-@incollection{SchubotzW14,
-	title = {Mathoid: Robust, Scalable, Fast and Accessible Math Rendering for Wikipedia},
-	volume = {8543},
-	series = {Lecture Notes in Computer Science},
-	pages = {224--235},
-	booktitle = {Intelligent Computer Mathematics - International Conference, {CICM} 2014, Coimbra, Portugal, July 7-11, 2014. Proceedings},
-	publisher = {Springer},
-	author = {Schubotz, Moritz and Wicke, Gabriel},
-	editor = {Watt, Stephen M. and Davenport, James H. and Sexton, Alan P. and Sojka, Petr and Urban, Josef},
-	date = {2014},
-	doi = {10.1007/978-3-319-08434-3_17},
-	note = {tex.ids: {SchubotzW}14a
-tex.biburl: https://dblp.org/rec/bib/conf/mkm/{SchubotzW}14
-tex.homepage: https://github.com/wikimedia/mathoid/
-tex.jabref-groups: phd-m
-tex.oldkey: Schubotz2014
-tex.owner: Moritz
-tex.preprint: https://arxiv.org/pdf/1404.6179.pdf
-{seriesTitle}: Lecture Notes in Computer Science},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
-
-	ids = {SchubotzW14a},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/SchubotzW14},
-	homepage = {https://github.com/wikimedia/mathoid/},
-	jabref-groups = {phd-m},
-	oldkey = {Schubotz2014},
-	owner = {Moritz},
-	preprint = {https://arxiv.org/pdf/1404.6179.pdf},
 }
 
 @inproceedings{SchubotzLM13,
@@ -1296,14 +1724,9 @@ tex.jabref-groups: {GuidiReview}, phd-m
 tex.maintitle: Querying large collections of mathematical publications
 tex.oldkey: Schubotz2013
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, conference, jabref\_imp2, math search, mathml, ntcir, old\_tex\_field\_preprint, peerreview, query language, stratosphere, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, conference, jabref\_imp2, math search, mathml, no-doi, ntcir, old\_tex\_field\_preprint, peerreview, query language, stratosphere, ⛔ No {DOI} found},
 
 	ids = {SchubotzLM13a},
-	biburl = {http://dblp.uni-trier.de/rec/bib/conf/ntcir/SchubotzLM13},
-	jabref-groups = {GuidiReview, phd-m},
-	maintitle = {Querying large collections of mathematical publications},
-	oldkey = {Schubotz2013},
-	owner = {Moritz},
 }
 
 @inproceedings{LeichASH13,
@@ -1319,12 +1742,11 @@ tex.owner: Moritz},
 	date = {2013},
 	note = {tex.ids: {LeichASH}13
 tex.biburl: http://dblp.uni-trier.de/rec/bib/conf/btw/{LeichASHRM}13
-tex.oldkey: Leich2013},
+tex.oldkey: Leich2013
+{QID}: Q122926693},
 	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {LeichASH13},
-	biburl = {http://dblp.uni-trier.de/rec/bib/conf/btw/LeichASHRM13},
-	oldkey = {Leich2013},
 }
 
 @article{Schubotz12CICM,
@@ -1344,17 +1766,12 @@ tex.jabref-groups: phd-m
 tex.oldkey: Schubotz2012
 tex.owner: Moritz
 tex.oldkey: corneli17
-tex.owner: Moritz},
+tex.owner: Moritz
+{QID}: Q122926676
+{QID}: Q51228252},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, arxiv, cicm, conference, jabref\_imp2, old\_tex\_field\_preprint},
 
 	ids = {Schubotz12},
-	arxivid = {1304.5475},
-	biburl = {http://dblp.uni-trier.de/rec/bib/journals/corr/abs-1304-5475},
-	jabref-groups = {phd-m},
-	oldkey = {Schubotz2012},
-	owner = {Moritz},
-	oldkey = {corneli17},
-	owner = {Moritz},
 }
 
 @online{Schubotz12FSE,
@@ -1366,11 +1783,9 @@ tex.owner: Moritz},
 	note = {tex.jabref-groups: phd-m
 tex.oldkey: hp
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, no-doi, ⛔ No {DOI} found},
 
 	jabref-groups = {phd-m},
-	oldkey = {hp},
-	owner = {Moritz},
 }
 
 @software{Schubotz12MathSearch,
@@ -1382,35 +1797,32 @@ tex.owner: Moritz},
 	note = {tex.jabref-groups: phd-m
 tex.oldkey: {MathSearch}
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, no-doi, ⛔ No {DOI} found},
 
 	jabref-groups = {phd-m},
-	oldkey = {MathSearch},
-	owner = {Moritz},
 }
 
 @article{SchubotzB11,
 	title = {Random Backaction in Tunneling of Single Electrons Through Nanostructures},
 	volume = {84},
-	issn = {1098-0121},
+	issn = {1098-0121, 1550-235X},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.84.075340},
 	doi = {10.1103/physrevb.84.075340},
 	pages = {1--8},
 	number = {7},
 	journaltitle = {Physical Review B},
+	shortjournal = {Phys. Rev. B},
 	author = {Schubotz, Moritz and Brandes, Tobias},
 	date = {2011-08},
-	note = {tex.ids: {SchubotzB}11a
+	langid = {english},
+	note = {tex.ids= {SchubotzB}11a
 tex.jabref-groups: phd-m
 tex.oldkey: Schubotz11
 tex.owner: Moritz
-tex.preprint: https://arxiv.org/pdf/1105.4422.pdf},
+tex.preprint: https://arxiv.org/pdf/1105.4422.pdf
+{QID}: Q51226635},
 	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, arxiv, jabref\_imp2, journal, old\_tex\_field\_preprint, peerreview},
 
-	ids = {SchubotzB11a},
-	jabref-groups = {phd-m},
-	oldkey = {Schubotz11},
-	owner = {Moritz},
-	preprint = {https://arxiv.org/pdf/1105.4422.pdf},
 }
 
 @thesis{Schubotz11,
@@ -1426,11 +1838,7 @@ tex.jabref-groups: phd-m
 tex.oldkey: Schubotz11fse
 tex.owner: Moritz
 tex.pubstate: unpublished},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, no-doi, old\_tex\_field\_preprint},
 
 	ids = {Schubotz11a},
-	jabref-groups = {phd-m},
-	oldkey = {Schubotz11fse},
-	owner = {Moritz},
-	pubstate = {unpublished},
 }
