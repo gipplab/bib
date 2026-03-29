@@ -111,20 +111,6 @@ Each contribtion was presented in a slot of 5 minutes (bold = pesenter). The pan
 
 }
 
-@article{MietchenS25,
-	title = {Analyzing the reproducibility of research-related Jupyter notebooks at scale},
-	issn = {1617-5468},
-	url = {https://dl.gi.de/handle/20.500.12116/45813},
-	doi = {10.18420/SE2025-07},
-	abstract = {We address computational reproducibility of publication-associated Jupyter notebooks at 3 levels: (i) using fully automated workflows, we analyzed the computational reproducibility of Jupyter notebooks associated with publications indexed in the biomedical literature repository {PubMed} Central. We identified such notebooks by mining the article’s full text, trying to locate them on {GitHub}, and attempting to rerun them in an environment as close to the original as possible. We documented reproduction success and exceptions and explored relationships between notebook reproducibility and variables related to the notebooks or publications. (ii) This study represents a reproducibility attempt in and of itself, using essentially the same methodology twice on {PubMed} Central over the course of 2 years, during which the corpus of Jupyter notebooks from articles indexed in {PubMed} Central has grown in a highly dynamic fashion. (iii) We imported the corpus into a knowledge graph with a public {SPARQL} endpoint that allows for fine-grained exploration of notebooks individually or in aggregation (e.g. by topic, by journal or by error type). In this talk, we zoom in on common problems and practices, highlight trends, and discuss potential improvements to Jupyter-related workflows associated with biomedical publications.},
-	author = {Mietchen, Daniel and Samuel, Sheeba},
-	urldate = {2026-02-06},
-	date = {2025},
-	langid = {english},
-	keywords = {!ms\_author, Computational reproducibility, {FAIR} data, {GitHub}, Jupyter notebooks, Knowledge Graph, {PubMed} Central, Python, {SPARQL}},
-
-}
-
 @misc{NeumannLSF25,
 	title = {Optimizing Small Transformer-Based Language Models for Multi-Label Sentiment Analysis in Short Texts},
 	rights = {Creative Commons Attribution 4.0 International},
@@ -136,6 +122,20 @@ Each contribtion was presented in a slot of 5 minutes (bold = pesenter). The pan
 	urldate = {2026-02-06},
 	date = {2025},
 	keywords = {!ms\_author, Computation and Language (cs.{CL}), {FOS}: Computer and information sciences, Information Retrieval (cs.{IR}), Machine Learning (cs.{LG})},
+
+}
+
+@article{MietchenS25,
+	title = {Analyzing the reproducibility of research-related Jupyter notebooks at scale},
+	issn = {1617-5468},
+	url = {https://dl.gi.de/handle/20.500.12116/45813},
+	doi = {10.18420/SE2025-07},
+	abstract = {We address computational reproducibility of publication-associated Jupyter notebooks at 3 levels: (i) using fully automated workflows, we analyzed the computational reproducibility of Jupyter notebooks associated with publications indexed in the biomedical literature repository {PubMed} Central. We identified such notebooks by mining the article’s full text, trying to locate them on {GitHub}, and attempting to rerun them in an environment as close to the original as possible. We documented reproduction success and exceptions and explored relationships between notebook reproducibility and variables related to the notebooks or publications. (ii) This study represents a reproducibility attempt in and of itself, using essentially the same methodology twice on {PubMed} Central over the course of 2 years, during which the corpus of Jupyter notebooks from articles indexed in {PubMed} Central has grown in a highly dynamic fashion. (iii) We imported the corpus into a knowledge graph with a public {SPARQL} endpoint that allows for fine-grained exploration of notebooks individually or in aggregation (e.g. by topic, by journal or by error type). In this talk, we zoom in on common problems and practices, highlight trends, and discuss potential improvements to Jupyter-related workflows associated with biomedical publications.},
+	author = {Mietchen, Daniel and Samuel, Sheeba},
+	urldate = {2026-02-06},
+	date = {2025},
+	langid = {english},
+	keywords = {!ms\_author, Computational reproducibility, {FAIR} data, {GitHub}, Jupyter notebooks, Knowledge Graph, {PubMed} Central, Python, {SPARQL}},
 
 }
 
@@ -580,6 +580,25 @@ tex.core: A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/
 	topic = {mathir},
 }
 
+@incollection{DeifußISG21,
+	location = {Glückstadt},
+	title = {procd: A privacy-preserving robust implementation to discover contacts in social networks},
+	volume = {74},
+	url = {https://epub.uni-regensburg.de/44954/},
+	doi = {10.5283/EPUB.44954},
+	series = {Schriften zur informationswissenschaft},
+	abstract = {Current instant messengers store the users? phone book contacts typically unencrypted or hashed on a central server. In case of a server?s corruption, all contacts are either directly available in plaintext or can be unmasked using a simple dictionary attack. To solve this problem, we present procd [p?o?st], a python implementation for privacy preserving contact discovery. procd is a trustless solution that requires neither plaintext numbers nor hashes of single phone numbers to retrieve contacts. Instead, we transfer hashed combinations of multiple phone numbers, which increases the effort for dictionary attacks to an unfeasible level using today?s hardware.},
+	pages = {363--368},
+	booktitle = {Information between data and knowledge},
+	publisher = {Proceedings of the 16th International Symposium of Information Science ({ISI} 2021)},
+	author = {Deifuß, Fabian and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	note = {tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
+	keywords = {!ci, !ci\_author, !ms\_author, decentralized\_open\_science, no-doi, private contact discovery, private information retrieval, private set intersection, secure multiparty computation},
+
+	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
+}
+
 @incollection{HamborgMSS21,
 	title = {{NewsDeps}: Visualizing the Origin of Information in News Articles},
 	isbn = {978-3-658-32957-0},
@@ -610,6 +629,20 @@ tex.core: A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/
 
 }
 
+@inproceedings{vonTottlebenISG21,
+	location = {New York, {NY}, {USA}},
+	title = {Academic Storage Cluster},
+	doi = {10.1109/jcdl52503.2021.00034},
+	abstract = {Decentralized storage is still rarely used in an academic and educational environment, although it offers better availability than conventional systems. It still happens that data is not available at a certain time due to heavy load or maintenance on the university servers. In such cases, a decentralized solution can help keep the data available and distribute the load among several peers. In our experiment, we created a cluster of containers in Docker to evaluate a private {IPFS} cluster for an academic data store focusing on availability, {GET}/{PUT} performance, and storage needs. As sample data, we used {PDF} files to analyze the data transport in our peer-to-peer network with Wireshark. We found that a bandwidth of at least 100 kbps is required for {IPFS} to function but recommend at least 1000 kbps for smooth operation. Also, the hard disk and memory size should be adapted to the data. Other limiting factors such as {CPU} processing power and delay in the internet connection did not affect the operation of the {IPFS} cluster.},
+	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2021},
+	publisher = {Association for Computing Machinery},
+	author = {von Tottleben, Alexander and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
+	date = {2021},
+	note = {{QID}: Q122926700},
+	keywords = {!ci, !ci\_author, !ms\_author, decentralized\_open\_science},
+
+}
+
 @inproceedings{TrautweinSG21a,
 	title = {Leveraging Node Heterogeneity to Improve Content Discovery and Content Retrieval in Peer-To-Peer Networks},
 	isbn = {978-1-4503-9133-7},
@@ -635,39 +668,6 @@ tex.core: A;Core Rank A;http://portal.core.edu.au/conf-ranks/806/
 	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
 	date = {2021},
 	keywords = {!ms\_author, no-doi, ⛔ No {DOI} found},
-
-}
-
-@incollection{DeifußISG21,
-	location = {Glückstadt},
-	title = {procd: A privacy-preserving robust implementation to discover contacts in social networks},
-	volume = {74},
-	url = {https://epub.uni-regensburg.de/44954/},
-	doi = {10.5283/EPUB.44954},
-	series = {Schriften zur informationswissenschaft},
-	abstract = {Current instant messengers store the users? phone book contacts typically unencrypted or hashed on a central server. In case of a server?s corruption, all contacts are either directly available in plaintext or can be unmasked using a simple dictionary attack. To solve this problem, we present procd [p?o?st], a python implementation for privacy preserving contact discovery. procd is a trustless solution that requires neither plaintext numbers nor hashes of single phone numbers to retrieve contacts. Instead, we transfer hashed combinations of multiple phone numbers, which increases the effort for dictionary attacks to an unfeasible level using today?s hardware.},
-	pages = {363--368},
-	booktitle = {Information between data and knowledge},
-	publisher = {Proceedings of the 16th International Symposium of Information Science ({ISI} 2021)},
-	author = {Deifuß, Fabian and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
-	date = {2021},
-	note = {tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
-	keywords = {!ci, !ci\_author, !ms\_author, decentralized\_open\_science, no-doi, private contact discovery, private information retrieval, private set intersection, secure multiparty computation},
-
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/deifuss2021.pdf},
-}
-
-@inproceedings{vonTottlebenISG21,
-	location = {New York, {NY}, {USA}},
-	title = {Academic Storage Cluster},
-	doi = {10.1109/jcdl52503.2021.00034},
-	abstract = {Decentralized storage is still rarely used in an academic and educational environment, although it offers better availability than conventional systems. It still happens that data is not available at a certain time due to heavy load or maintenance on the university servers. In such cases, a decentralized solution can help keep the data available and distribute the load among several peers. In our experiment, we created a cluster of containers in Docker to evaluate a private {IPFS} cluster for an academic data store focusing on availability, {GET}/{PUT} performance, and storage needs. As sample data, we used {PDF} files to analyze the data transport in our peer-to-peer network with Wireshark. We found that a bandwidth of at least 100 kbps is required for {IPFS} to function but recommend at least 1000 kbps for smooth operation. Also, the hard disk and memory size should be adapted to the data. Other limiting factors such as {CPU} processing power and delay in the internet connection did not affect the operation of the {IPFS} cluster.},
-	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2021},
-	publisher = {Association for Computing Machinery},
-	author = {von Tottleben, Alexander and Ihle, Cornelius and Schubotz, Moritz and Gipp, Bela},
-	date = {2021},
-	note = {{QID}: Q122926700},
-	keywords = {!ci, !ci\_author, !ms\_author, decentralized\_open\_science},
 
 }
 
@@ -806,6 +806,34 @@ tex.topic: mathir
 	topic = {mathir},
 }
 
+@inproceedings{IhleSMG20,
+	location = {New York, {NY}, {USA}},
+	title = {A first step towards content protecting plagiarism detection},
+	isbn = {978-1-4503-7585-6},
+	url = {https://doi.org/10.1145/3383583.3398620},
+	doi = {10.1145/3383583.3398620},
+	series = {{JCDL} '20},
+	abstract = {Plagiarism detection systems are essential tools for safeguarding academic and educational integrity. However, today's systems require disclosing the full content of the input documents and the document collection to which the input documents are compared. Moreover, the systems are centralized and under the control of individual, typically commercial providers. This situation raises procedural and legal concerns regarding the confidentiality of sensitive data, which can limit or prohibit the use of plagiarism detection services. To eliminate these weaknesses of current systems, we seek to devise a plagiarism detection approach that does not require a centralized provider nor exposing any content as cleartext. This paper presents the initial results of our research. Specifically, we employ Private Set Intersection to devise a content-protecting variant of the citation-based similarity measure Bibliographic Coupling implemented in our plagiarism detection system {HyPlag}. Our evaluation shows that the content-protecting method achieves the same detection effectiveness as the original method while making common attacks to disclose the protected content practically infeasible. Our future work will extend this successful proof-of-concept by devising plagiarism detection methods that can analyze the entire content of documents without disclosing it as cleartext.},
+	pages = {341--344},
+	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2020},
+	publisher = {Association for Computing Machinery},
+	author = {Ihle, Cornelius and Schubotz, Moritz and Meuschke, Norman and Gipp, Bela},
+	date = {2020},
+	note = {tex.ids: {IhleSMG}20a
+tex.oldkey: Ihle2020
+tex.topic: pd
+tex.core: A*;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/
+tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf
+{QID}: Q122926697},
+	keywords = {!bg, !bg\_author, !ci, !ci\_author, !ms, !ms\_author, !nm, !nm\_author, \#nosource, decentralized\_open\_science, jabref\_imp1\_clean, plagiarism detection, private computation, similarity detection},
+
+	ids = {IhleSMG20a},
+	oldkey = {Ihle2020},
+	topic = {pd},
+	core = {A*;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/},
+	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf},
+}
+
 @inproceedings{GreinerPetterSAG20,
 	location = {Braunschweig, Germany},
 	title = {Making Presentation Math Computable: Proposing a Context Sensitive Approach for Translating {LaTeX} to Computer Algebra Systems},
@@ -848,34 +876,6 @@ As a contribution to improve this workflow, we propose a context-sensitive appro
 	date = {2020},
 	keywords = {!ms\_author, no-doi, ⛔ No {DOI} found},
 
-}
-
-@inproceedings{IhleSMG20,
-	location = {New York, {NY}, {USA}},
-	title = {A first step towards content protecting plagiarism detection},
-	isbn = {978-1-4503-7585-6},
-	url = {https://doi.org/10.1145/3383583.3398620},
-	doi = {10.1145/3383583.3398620},
-	series = {{JCDL} '20},
-	abstract = {Plagiarism detection systems are essential tools for safeguarding academic and educational integrity. However, today's systems require disclosing the full content of the input documents and the document collection to which the input documents are compared. Moreover, the systems are centralized and under the control of individual, typically commercial providers. This situation raises procedural and legal concerns regarding the confidentiality of sensitive data, which can limit or prohibit the use of plagiarism detection services. To eliminate these weaknesses of current systems, we seek to devise a plagiarism detection approach that does not require a centralized provider nor exposing any content as cleartext. This paper presents the initial results of our research. Specifically, we employ Private Set Intersection to devise a content-protecting variant of the citation-based similarity measure Bibliographic Coupling implemented in our plagiarism detection system {HyPlag}. Our evaluation shows that the content-protecting method achieves the same detection effectiveness as the original method while making common attacks to disclose the protected content practically infeasible. Our future work will extend this successful proof-of-concept by devising plagiarism detection methods that can analyze the entire content of documents without disclosing it as cleartext.},
-	pages = {341--344},
-	booktitle = {Proceedings of the {ACM}/{IEEE} joint conference on digital libraries in 2020},
-	publisher = {Association for Computing Machinery},
-	author = {Ihle, Cornelius and Schubotz, Moritz and Meuschke, Norman and Gipp, Bela},
-	date = {2020},
-	note = {tex.ids: {IhleSMG}20a
-tex.oldkey: Ihle2020
-tex.topic: pd
-tex.core: A*;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/
-tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf
-{QID}: Q122926697},
-	keywords = {!bg, !bg\_author, !ci, !ci\_author, !ms, !ms\_author, !nm, !nm\_author, \#nosource, decentralized\_open\_science, jabref\_imp1\_clean, plagiarism detection, private computation, similarity detection},
-
-	ids = {IhleSMG20a},
-	oldkey = {Ihle2020},
-	topic = {pd},
-	core = {A*;Core Rank A*;http://portal.core.edu.au/conf-ranks/2085/},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/ihle2020.pdf},
 }
 
 @inproceedings{WortnerSBL19,
@@ -956,49 +956,6 @@ tex.topic: mathir
 	topic = {mathir},
 }
 
-@inproceedings{GreinerPetterRSA19,
-	location = {Paris, France},
-	title = {Why Machines Cannot Learn Mathematics, Yet},
-	volume = {2414},
-	url = {http://ceur-ws.org/Vol-2414/paper14.pdf},
-	abstract = {Nowadays, Machine Learning ({ML}) is seen as the universal solution to improve the effectiveness of information retrieval ({IR}) methods. However, while mathematics is a precise and accurate science, it is usually expressed by less accurate and imprecise descriptions. Generally, mathematical documents communicate their knowledge with an ambiguous, context-dependent, and non-formal language. In this work, we apply text embedding techniques to the {arXiv} collection of {STEM} documents and explore how these are unable to properly understand mathematics from that corpus, while proposing alternative to mitigate such situation.},
-	eventtitle = {{BIRNDL}@{SIGIR}},
-	booktitle = {Proceedings of the 4th Joint Workshop on Bibliometric-Enhanced Information Retrieval and Natural Language Processing for Digital Libraries ({BIRNDL}@{SIGIR})},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Greiner-Petter, André and Ruas, Terry and Schubotz, Moritz and Aizawa, Akiko and Grosky, William I. and Gipp, Bela},
-	date = {2019},
-	note = {tex.ids= {GreinerPetter}2019b, {GreinerPetterRSA}19
-tex.oldkey: {GreinerPetter}2019a
-tex.topic: mathir
-tex.url\_orig: http://ceur-ws.org/Vol-2414/paper14.pdf},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
-
-	oldkey = {GreinerPetter2019a},
-	topic = {mathir},
-	url_orig = {http://ceur-ws.org/Vol-2414/paper14.pdf},
-}
-
-@article{HulekMST19,
-	title = {Mathematical Research Data – an Analysis Through {zbMATH} References.},
-	volume = {113},
-	issn = {1027-488X},
-	url = {https://www.ems-ph.org/journals/show_pdf.php?issn=1027-488X&vol=9&iss=113&rank=14},
-	doi = {10.4171/news/113/14},
-	pages = {54--57},
-	journaltitle = {European Mathematical Society. Newsletter},
-	author = {Hulek, Klaus and Müller, Fabian and Schubotz, Moritz and Teschke, Olaf},
-	date = {2019},
-	note = {tex.biburl: https://zbmath.org/bibtex/07111212.bib
-tex.oldkey: Hulek19
-tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich
-{QID}: Q122926701},
-	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
-
-	biburl = {https://zbmath.org/bibtex/07111212.bib},
-	oldkey = {Hulek19},
-	publisher = {European Mathematical Society (EMS) Publishing House, Zurich},
-}
-
 @article{LeibleSSG19,
 	title = {A Review on Blockchain Technology and Blockchain Projects Fostering Open Science},
 	volume = {2},
@@ -1021,6 +978,48 @@ tex.topic: blockchain
 	oldkey = {Leible2019},
 	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/leible2019.pdf},
 	topic = {blockchain},
+}
+
+@article{SchubotzT19,
+	title = {Four Decades of {TeX} at {zbMATH}.},
+	volume = {112},
+	issn = {1027-488X},
+	url = {http://www.ems-ph.org/journals/show_pdf.php?issn=1027-488x&vol=6&iss=112&rank=15},
+	doi = {10.4171/news/112/15},
+	pages = {50--52},
+	journaltitle = {European Mathematical Society Newsletter},
+	author = {Schubotz, Moritz and Teschke, Olaf},
+	date = {2019},
+	note = {tex.biburl: https://zbmath.org/bibtex/07065264.bib
+tex.oldkey: Schubotz2019b
+tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich
+{QID}: Q122926696},
+	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+
+	biburl = {https://zbmath.org/bibtex/07065264.bib},
+	oldkey = {Schubotz2019b},
+	publisher = {European Mathematical Society (EMS) Publishing House, Zurich},
+}
+
+@article{HulekMST19,
+	title = {Mathematical Research Data – an Analysis Through {zbMATH} References.},
+	volume = {113},
+	issn = {1027-488X},
+	url = {https://www.ems-ph.org/journals/show_pdf.php?issn=1027-488X&vol=9&iss=113&rank=14},
+	doi = {10.4171/news/113/14},
+	pages = {54--57},
+	journaltitle = {European Mathematical Society. Newsletter},
+	author = {Hulek, Klaus and Müller, Fabian and Schubotz, Moritz and Teschke, Olaf},
+	date = {2019},
+	note = {tex.biburl: https://zbmath.org/bibtex/07111212.bib
+tex.oldkey: Hulek19
+tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich
+{QID}: Q122926701},
+	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+
+	biburl = {https://zbmath.org/bibtex/07111212.bib},
+	oldkey = {Hulek19},
+	publisher = {European Mathematical Society (EMS) Publishing House, Zurich},
 }
 
 @inproceedings{ScharpfMSB19,
@@ -1053,25 +1052,26 @@ tex.topic: mathir
 	topic = {mathir},
 }
 
-@article{SchubotzT19,
-	title = {Four Decades of {TeX} at {zbMATH}.},
-	volume = {112},
-	issn = {1027-488X},
-	url = {http://www.ems-ph.org/journals/show_pdf.php?issn=1027-488x&vol=6&iss=112&rank=15},
-	doi = {10.4171/news/112/15},
-	pages = {50--52},
-	journaltitle = {European Mathematical Society Newsletter},
-	author = {Schubotz, Moritz and Teschke, Olaf},
+@inproceedings{GreinerPetterRSA19,
+	location = {Paris, France},
+	title = {Why Machines Cannot Learn Mathematics, Yet},
+	volume = {2414},
+	url = {http://ceur-ws.org/Vol-2414/paper14.pdf},
+	abstract = {Nowadays, Machine Learning ({ML}) is seen as the universal solution to improve the effectiveness of information retrieval ({IR}) methods. However, while mathematics is a precise and accurate science, it is usually expressed by less accurate and imprecise descriptions. Generally, mathematical documents communicate their knowledge with an ambiguous, context-dependent, and non-formal language. In this work, we apply text embedding techniques to the {arXiv} collection of {STEM} documents and explore how these are unable to properly understand mathematics from that corpus, while proposing alternative to mitigate such situation.},
+	eventtitle = {{BIRNDL}@{SIGIR}},
+	booktitle = {Proceedings of the 4th Joint Workshop on Bibliometric-Enhanced Information Retrieval and Natural Language Processing for Digital Libraries ({BIRNDL}@{SIGIR})},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Greiner-Petter, André and Ruas, Terry and Schubotz, Moritz and Aizawa, Akiko and Grosky, William I. and Gipp, Bela},
 	date = {2019},
-	note = {tex.biburl: https://zbmath.org/bibtex/07065264.bib
-tex.oldkey: Schubotz2019b
-tex.publisher: European Mathematical Society ({EMS}) Publishing House, Zurich
-{QID}: Q122926696},
-	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+	note = {tex.ids= {GreinerPetter}2019b, {GreinerPetterRSA}19
+tex.oldkey: {GreinerPetter}2019a
+tex.topic: mathir
+tex.url\_orig: http://ceur-ws.org/Vol-2414/paper14.pdf},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
-	biburl = {https://zbmath.org/bibtex/07065264.bib},
-	oldkey = {Schubotz2019b},
-	publisher = {European Mathematical Society (EMS) Publishing House, Zurich},
+	oldkey = {GreinerPetter2019a},
+	topic = {mathir},
+	url_orig = {http://ceur-ws.org/Vol-2414/paper14.pdf},
 }
 
 @inproceedings{ScharpfSCG19,
@@ -1099,6 +1099,23 @@ tex.topic: mathir},
 	topic = {mathir},
 }
 
+@article{SchubotzBHG18,
+	title = {Repurposing Open Source Tools for Open Science: A Practical Guide},
+	url = {https://zenodo.org/record/2453415/files/bc4openScience.pdf?download=1},
+	doi = {10.5281/zenodo.2453415},
+	author = {Schubotz, Moritz and Breitinger, Corinna and Hepp, Thomas and Gipp, Bela},
+	date = {2018-11},
+	note = {tex.biburl: https://zenodo.org/record/2453415/export/hx\#.{XCJhJ}8Yo8aw
+tex.oldkey: Schubotz2018d
+tex.url\_orig: https://doi.org/10.5281/zenodo.2453415
+{QID}: Q122926675},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
+
+	biburl = {https://zenodo.org/record/2453415/export/hx#.XCJhJ8Yo8aw},
+	oldkey = {Schubotz2018d},
+	url_orig = {https://doi.org/10.5281/zenodo.2453415},
+}
+
 @inproceedings{LeibleSSG18,
 	title = {Fostering Open Science by Using Blockchain Technology},
 	url = {https://zenodo.org/record/2454725/files/Blockchain-For-Science%20Poster-1.0-final.pdf?download=1},
@@ -1116,21 +1133,24 @@ tex.url\_orig: https://doi.org/10.5281/zenodo.2454725
 	url_orig = {https://doi.org/10.5281/zenodo.2454725},
 }
 
-@article{SchubotzBHG18,
-	title = {Repurposing Open Source Tools for Open Science: A Practical Guide},
-	url = {https://zenodo.org/record/2453415/files/bc4openScience.pdf?download=1},
-	doi = {10.5281/zenodo.2453415},
-	author = {Schubotz, Moritz and Breitinger, Corinna and Hepp, Thomas and Gipp, Bela},
-	date = {2018-11},
-	note = {tex.biburl: https://zenodo.org/record/2453415/export/hx\#.{XCJhJ}8Yo8aw
-tex.oldkey: Schubotz2018d
-tex.url\_orig: https://doi.org/10.5281/zenodo.2453415
-{QID}: Q122926675},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
+@inproceedings{SchubotzSDN18,
+	location = {Fort Worth, {USA}},
+	title = {Introducing {MathQA}  - a Math-Aware Question Answering System},
+	doi = {10.1108/idd-06-2018-0022},
+	booktitle = {Proceedings of the Annual International {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL}), Workshop on Knowledge Discovery},
+	author = {Schubotz, Moritz and Scharpf, Philipp and Dudhat, Kaushal and Nagar, Yash and Hamborg, Felix and Gipp, Bela},
+	date = {2018-06},
+	note = {tex.biburl: https://www.emeraldinsight.com/action/{showCitFormats}?doi=10.1108\%2FIDD-06-2018-0022
+tex.oldkey: Schubotz2018a
+tex.preprint: https://www.emeraldinsight.com/eprint/{FXthtRDDEGcMVzInHphu}/full
+tex.topic: mathir
+{QID}: Q105592656},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
 
-	biburl = {https://zenodo.org/record/2453415/export/hx#.XCJhJ8Yo8aw},
-	oldkey = {Schubotz2018d},
-	url_orig = {https://doi.org/10.5281/zenodo.2453415},
+	biburl = {https://www.emeraldinsight.com/action/showCitFormats?doi=10.1108%2FIDD-06-2018-0022},
+	oldkey = {Schubotz2018a},
+	preprint = {https://www.emeraldinsight.com/eprint/FXthtRDDEGcMVzInHphu/full},
+	topic = {mathir},
 }
 
 @inproceedings{MeuschkeSSG18,
@@ -1163,26 +1183,6 @@ tex.topic: pd
 	oldkey = {Meuschke2018a},
 	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/meuschke2018a.pdf},
 	topic = {pd},
-}
-
-@inproceedings{SchubotzSDN18,
-	location = {Fort Worth, {USA}},
-	title = {Introducing {MathQA}  - a Math-Aware Question Answering System},
-	doi = {10.1108/idd-06-2018-0022},
-	booktitle = {Proceedings of the Annual International {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL}), Workshop on Knowledge Discovery},
-	author = {Schubotz, Moritz and Scharpf, Philipp and Dudhat, Kaushal and Nagar, Yash and Hamborg, Felix and Gipp, Bela},
-	date = {2018-06},
-	note = {tex.biburl: https://www.emeraldinsight.com/action/{showCitFormats}?doi=10.1108\%2FIDD-06-2018-0022
-tex.oldkey: Schubotz2018a
-tex.preprint: https://www.emeraldinsight.com/eprint/{FXthtRDDEGcMVzInHphu}/full
-tex.topic: mathir
-{QID}: Q105592656},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, old\_tex\_field\_preprint},
-
-	biburl = {https://www.emeraldinsight.com/action/showCitFormats?doi=10.1108%2FIDD-06-2018-0022},
-	oldkey = {Schubotz2018a},
-	preprint = {https://www.emeraldinsight.com/eprint/FXthtRDDEGcMVzInHphu/full},
-	topic = {mathir},
 }
 
 @inproceedings{SchubotzGSM18,
@@ -1218,29 +1218,50 @@ tex.url\_orig: http://doi.acm.org/10.1145/3197026.3197058
 	url_orig = {http://doi.acm.org/10.1145/3197026.3197058},
 }
 
-@inproceedings{PetersenSG18,
-	location = {Hagenberg, Austria},
-	title = {Towards Formula Translation using Recursive Neural Networks},
-	volume = {2307},
-	url = {http://ceur-ws.org/Vol-2307/WiP3.pdf},
-	series = {{CEUR} Workshop Proceedings},
-	booktitle = {Joint Proceedings of the {CME}-{EI}, {FMM}, {CAAT}, {FVPS}, M3SRD, {OpenMath} Workshops, Doctoral Program and Work in Progress at the Conference on Intelligent Computer Mathematics 2018 co-located with the 11th Conference on Intelligent Computer Mathematics ({CICM} 2018), Hagenberg, Austria, August 13-17, 2018},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Petersen, Felix and Schubotz, Moritz and Gipp, Bela},
-	editor = {Hasan, Osman and Youssef, Abdou and Naumowicz, Adam and Farmer, William M. and Kaliszyk, Cezary and Gallois-Wong, Diane and Rabe, Florian and Reis, Gabriel Dos and Passmore, Grant O. and Davenport, James H. and Pfeiffer, Markus and Kohlhase, Michael and Autexier, Serge and Tahar, Sofiène and Koprucki, Thomas and Siddique, Umair and Neuper, Walther and Windsteiger, Wolfgang and Schreiner, Wolfgang and Sperber, Wolfram and Kovács, Zoltán},
-	urldate = {2021-09-23},
+@inproceedings{HamborgLSH18,
+	title = {Giveme5W: Main Event Retrieval from News Articles by Extraction of the Five Journalistic W Questions},
+	volume = {10766},
+	url = {https://doi.org/10.1007/978-3-319-78105-1_39},
+	doi = {10.1007/978-3-319-78105-1_39},
+	series = {Lecture notes in computer science},
+	pages = {356--366},
+	booktitle = {Transforming Digital Worlds - 13th International Conference, {iConference} 2018, Sheffield, Uk, March 25-28, 2018, Proceedings},
+	publisher = {Springer},
+	author = {Hamborg, Felix and Lachnit, Soeren and Schubotz, Moritz and Hepp, Thomas and Gipp, Bela},
+	editor = {Chowdhury, Gobinda and {McLeod}, Julie and Gillet, Valerie J. and Willett, Peter},
 	date = {2018},
-	note = {tex.ids= {PetersenSG}18
-tex.biburl: https://dblp.org/rec/bib/journals/corr/abs-1811-04234
-tex.oldkey: Petersen2018
-tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/petersen2018.pdf
-tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	note = {tex.biburl: https://dblp.org/rec/bib/conf/iconference/{HamborgLSHG}18
+tex.oldkey: Hamborg2018a
+tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018.pdf
+tex.topic: newsanalysis
+{QID}: Q51231294},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
 
-	biburl = {https://dblp.org/rec/bib/journals/corr/abs-1811-04234},
-	oldkey = {Petersen2018},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/petersen2018.pdf},
-	topic = {mathir},
+	biburl = {https://dblp.org/rec/bib/conf/iconference/HamborgLSHG18},
+	oldkey = {Hamborg2018a},
+	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018.pdf},
+	topic = {newsanalysis},
+}
+
+@article{HeckS18,
+	title = {{DiViDu} - an Open Source Solution for Dual Task Experiments with Integrated Divided Visual Field Paradigm},
+	volume = {6},
+	url = {https://doi.org/10.5334/jors.199},
+	doi = {10.5334/jors.199},
+	journaltitle = {Journal of Open Research Software},
+	author = {Heck, Nina and Schubotz, Moritz},
+	date = {2018},
+	note = {tex.ids: {HeckS}18
+tex.biburl: https://kops.uni-konstanz.de/handle/123456789/42726
+tex.oldkey: Heck2018
+tex.publisher: Ubiquity Press, Ltd.
+{QID}: Q51741144},
+	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+
+	ids = {HeckS18},
+	biburl = {https://kops.uni-konstanz.de/handle/123456789/42726},
+	oldkey = {Heck2018},
+	publisher = {Ubiquity Press, Ltd.},
 }
 
 @incollection{GreinerPetterSCG18,
@@ -1270,74 +1291,28 @@ tex.url\_orig: https://doi.org/10.1007/978-3-319-96812-4\_9
 	url_orig = {https://doi.org/10.1007/978-3-319-96812-4_9},
 }
 
-@article{HeckS18,
-	title = {{DiViDu} - an Open Source Solution for Dual Task Experiments with Integrated Divided Visual Field Paradigm},
-	volume = {6},
-	url = {https://doi.org/10.5334/jors.199},
-	doi = {10.5334/jors.199},
-	journaltitle = {Journal of Open Research Software},
-	author = {Heck, Nina and Schubotz, Moritz},
+@inproceedings{HamborgBSL18,
+	title = {Extraction of Main Event Descriptors from News Articles by Answering the Journalistic Five W and One H Questions},
+	url = {http://doi.acm.org/10.1145/3197026.3203899},
+	doi = {10.1145/3197026.3203899},
+	pages = {339--340},
+	booktitle = {Proceedings of the 18th Annual International {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL}) Fort Worth, {TX}, {USA}, June 03-07, 2018},
+	publisher = {{ACM}},
+	author = {Hamborg, Felix and Breitinger, Corinna and Schubotz, Moritz and Lachnit, Soeren and Gipp, Bela},
+	editor = {Chen, Jiangping and Gonçalves, Marcos André and Allen, Jeff M. and Fox, Edward A. and Kan, Min-Yen and Petras, Vivien},
 	date = {2018},
-	note = {tex.ids: {HeckS}18
-tex.biburl: https://kops.uni-konstanz.de/handle/123456789/42726
-tex.oldkey: Heck2018
-tex.publisher: Ubiquity Press, Ltd.
-{QID}: Q51741144},
-	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
-
-	ids = {HeckS18},
-	biburl = {https://kops.uni-konstanz.de/handle/123456789/42726},
-	oldkey = {Heck2018},
-	publisher = {Ubiquity Press, Ltd.},
-}
-
-@inproceedings{ScharpfSG18,
-	title = {Representing Mathematical Formulae in Content {MathML} Using Wikidata},
-	volume = {2132},
-	url = {http://ceur-ws.org/Vol-2132/paper5.pdf},
-	series = {{CEUR} Workshop Proceedings},
-	eventtitle = {{BIRNDL}@{SIGIR}},
-	pages = {46--59},
-	booktitle = {Proceedings of the 3rd Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (\{{BIRNDL}\} 2018) co-located with the 41st International \{{ACM}\} \{{SIGIR}\} Conference on Research and Development in Information Retrieval (\{{SIGIR}\} 2018)},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
-	editor = {Mayr, Philipp and Chandrasekaran, Muthu Kumar and Jaidka, Kokil},
-	date = {2018},
-	note = {tex.ids= {ScharpfSG}18a
-tex.biburl: https://dblp.org/rec/bib/conf/sigir/{ScharpfSG}18
-tex.oldkey: Scharpf2018
-tex.preprint: https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf
-tex.topic: mathir},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
-
-	biburl = {https://dblp.org/rec/bib/conf/sigir/ScharpfSG18},
-	oldkey = {Scharpf2018},
-	preprint = {https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf},
-	topic = {mathir},
-}
-
-@inproceedings{HamborgLSH18,
-	title = {Giveme5W: Main Event Retrieval from News Articles by Extraction of the Five Journalistic W Questions},
-	volume = {10766},
-	url = {https://doi.org/10.1007/978-3-319-78105-1_39},
-	doi = {10.1007/978-3-319-78105-1_39},
-	series = {Lecture notes in computer science},
-	pages = {356--366},
-	booktitle = {Transforming Digital Worlds - 13th International Conference, {iConference} 2018, Sheffield, Uk, March 25-28, 2018, Proceedings},
-	publisher = {Springer},
-	author = {Hamborg, Felix and Lachnit, Soeren and Schubotz, Moritz and Hepp, Thomas and Gipp, Bela},
-	editor = {Chowdhury, Gobinda and {McLeod}, Julie and Gillet, Valerie J. and Willett, Peter},
-	date = {2018},
-	note = {tex.biburl: https://dblp.org/rec/bib/conf/iconference/{HamborgLSHG}18
-tex.oldkey: Hamborg2018a
-tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018.pdf
+	note = {tex.biburl: https://dblp.uni-trier.de/rec/bibtex/conf/jcdl/{HamborgBSLG}18
+tex.core: A*
+tex.oldkey: Hamborg2018
+tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018a.pdf
 tex.topic: newsanalysis
-{QID}: Q51231294},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
+{QID}: Q122926689},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
 
-	biburl = {https://dblp.org/rec/bib/conf/iconference/HamborgLSHG18},
-	oldkey = {Hamborg2018a},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018.pdf},
+	biburl = {https://dblp.uni-trier.de/rec/bibtex/conf/jcdl/HamborgBSLG18},
+	core = {A*},
+	oldkey = {Hamborg2018},
+	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018a.pdf},
 	topic = {newsanalysis},
 }
 
@@ -1379,31 +1354,6 @@ tex.url\_orig: https://doi.org/10.1007/978-3-319-96812-4₄
 	biburl = {https://dblp.uni-trier.de/rec/bibtex/conf/mkm/CohlGS18},
 	oldkey = {Cohl2018},
 	url_orig = {https://doi.org/10.1007/978-3-319-96812-4₄},
-}
-
-@inproceedings{HamborgBSL18,
-	title = {Extraction of Main Event Descriptors from News Articles by Answering the Journalistic Five W and One H Questions},
-	url = {http://doi.acm.org/10.1145/3197026.3203899},
-	doi = {10.1145/3197026.3203899},
-	pages = {339--340},
-	booktitle = {Proceedings of the 18th Annual International {ACM}/{IEEE} Joint Conference on Digital Libraries ({JCDL}) Fort Worth, {TX}, {USA}, June 03-07, 2018},
-	publisher = {{ACM}},
-	author = {Hamborg, Felix and Breitinger, Corinna and Schubotz, Moritz and Lachnit, Soeren and Gipp, Bela},
-	editor = {Chen, Jiangping and Gonçalves, Marcos André and Allen, Jeff M. and Fox, Edward A. and Kan, Min-Yen and Petras, Vivien},
-	date = {2018},
-	note = {tex.biburl: https://dblp.uni-trier.de/rec/bibtex/conf/jcdl/{HamborgBSLG}18
-tex.core: A*
-tex.oldkey: Hamborg2018
-tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018a.pdf
-tex.topic: newsanalysis
-{QID}: Q122926689},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !fh, !fh\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, jabref\_imp2, old\_tex\_field\_preprint},
-
-	biburl = {https://dblp.uni-trier.de/rec/bibtex/conf/jcdl/HamborgBSLG18},
-	core = {A*},
-	oldkey = {Hamborg2018},
-	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/hamborg2018a.pdf},
-	topic = {newsanalysis},
 }
 
 @inproceedings{Schubotz18a,
@@ -1452,6 +1402,56 @@ tex.topic: blockchain
 	topic = {blockchain},
 }
 
+@inproceedings{ScharpfSG18,
+	title = {Representing Mathematical Formulae in Content {MathML} Using Wikidata},
+	volume = {2132},
+	url = {http://ceur-ws.org/Vol-2132/paper5.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	eventtitle = {{BIRNDL}@{SIGIR}},
+	pages = {46--59},
+	booktitle = {Proceedings of the 3rd Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (\{{BIRNDL}\} 2018) co-located with the 41st International \{{ACM}\} \{{SIGIR}\} Conference on Research and Development in Information Retrieval (\{{SIGIR}\} 2018)},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Scharpf, Philipp and Schubotz, Moritz and Gipp, Bela},
+	editor = {Mayr, Philipp and Chandrasekaran, Muthu Kumar and Jaidka, Kokil},
+	date = {2018},
+	note = {tex.ids= {ScharpfSG}18a
+tex.biburl: https://dblp.org/rec/bib/conf/sigir/{ScharpfSG}18
+tex.oldkey: Scharpf2018
+tex.preprint: https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf
+tex.topic: mathir},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+
+	biburl = {https://dblp.org/rec/bib/conf/sigir/ScharpfSG18},
+	oldkey = {Scharpf2018},
+	preprint = {https://ag-gipp.github.io/bib/preprints/scharpf2018.pdf},
+	topic = {mathir},
+}
+
+@inproceedings{PetersenSG18,
+	location = {Hagenberg, Austria},
+	title = {Towards Formula Translation using Recursive Neural Networks},
+	volume = {2307},
+	url = {http://ceur-ws.org/Vol-2307/WiP3.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	booktitle = {Joint Proceedings of the {CME}-{EI}, {FMM}, {CAAT}, {FVPS}, M3SRD, {OpenMath} Workshops, Doctoral Program and Work in Progress at the Conference on Intelligent Computer Mathematics 2018 co-located with the 11th Conference on Intelligent Computer Mathematics ({CICM} 2018), Hagenberg, Austria, August 13-17, 2018},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Petersen, Felix and Schubotz, Moritz and Gipp, Bela},
+	editor = {Hasan, Osman and Youssef, Abdou and Naumowicz, Adam and Farmer, William M. and Kaliszyk, Cezary and Gallois-Wong, Diane and Rabe, Florian and Reis, Gabriel Dos and Passmore, Grant O. and Davenport, James H. and Pfeiffer, Markus and Kohlhase, Michael and Autexier, Serge and Tahar, Sofiène and Koprucki, Thomas and Siddique, Umair and Neuper, Walther and Windsteiger, Wolfgang and Schreiner, Wolfgang and Sperber, Wolfram and Kovács, Zoltán},
+	urldate = {2021-09-23},
+	date = {2018},
+	note = {tex.ids= {PetersenSG}18
+tex.biburl: https://dblp.org/rec/bib/journals/corr/abs-1811-04234
+tex.oldkey: Petersen2018
+tex.preprint: https://www.gipp.com/wp-content/papercite-data/pdf/petersen2018.pdf
+tex.topic: mathir},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !ms, !ms\_author, !ms\_cv, !ms\_preprint, {DFG}1259-1, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+
+	biburl = {https://dblp.org/rec/bib/journals/corr/abs-1811-04234},
+	oldkey = {Petersen2018},
+	preprint = {https://www.gipp.com/wp-content/papercite-data/pdf/petersen2018.pdf},
+	topic = {mathir},
+}
+
 @inproceedings{MeuschkeSHS17,
 	location = {Singapore},
 	title = {Analyzing Mathematical Content to Detect Academic Plagiarism},
@@ -1485,6 +1485,33 @@ tex.topic: pd
 	topic = {pd},
 }
 
+@inproceedings{SchwarzerBSM17,
+	title = {Citolytics: A Link-based Recommender System for Wikipedia},
+	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
+	isbn = {978-1-4503-4652-8},
+	doi = {10.1145/3109859.3109981},
+	shorttitle = {Citolytics},
+	abstract = {We present Citolytics - a novel link-based recommendation system for Wikipedia articles. In a preliminary study, Citolytics achieved promising results compared to the widely used text-based approach of Apache Lucene's {MoreLikeThis} ({MLT}). In this demo paper, we describe how we plan to integrate Citolytics into the Wikipedia infrastructure by using Elasticsearch and Apache Flink to serve recommendations for Wikipedia articles. Additionally, we propose a large-scale online evaluation design using the Wikipedia Android app. Working with Wikipedia data has several unique advantages. First, the availability of a very large user sample contributes to statistically significant results. Second, the openness of Wikipedia's architecture allows making our source code and evaluation data public, thus benefiting other researchers. If link-based recommendations show promise in our online evaluation, a deployment of the presented system within Wikipedia would have a far-reaching impact on Wikipedia's more than 30 million users.},
+	pages = {360--361},
+	booktitle = {Proceedings of the 11th {ACM} Conference on Recommender Systems ({RecSys})},
+	publisher = {{ACM}},
+	author = {Schwarzer, Malte and Breitinger, Corinna and Schubotz, Moritz and Meuschke, Norman and Gipp, Bela},
+	date = {2017-08},
+	note = {tex.ids: {SchwarzerBSM}17a
+tex.biburl: https://dblp.org/rec/bib/conf/recsys/{SchwarzerBSMG}17
+tex.oldkey: Schwarzer2017
+tex.preprint: https://ag-gipp.github.io/bib/preprints/schwarzer2017.pdf
+tex.topic: rec
+{QID}: Q51236544},
+	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
+
+	ids = {SchwarzerBSM17a},
+	biburl = {https://dblp.org/rec/bib/conf/recsys/SchwarzerBSMG17},
+	oldkey = {Schwarzer2017},
+	preprint = {https://ag-gipp.github.io/bib/preprints/schwarzer2017.pdf},
+	topic = {rec},
+}
+
 @incollection{SchubotzKMH17,
 	location = {Cham},
 	title = {Evaluating and Improving the Extraction of Mathematical Identifier Definitions},
@@ -1514,33 +1541,6 @@ tex.topic: mathir},
 	oldkey = {Schubotz2017},
 	preprint = {https://ag-gipp.github.io/bib/preprints/schubotz2017.pdf},
 	topic = {mathir},
-}
-
-@inproceedings{SchwarzerBSM17,
-	title = {Citolytics: A Link-based Recommender System for Wikipedia},
-	rights = {Creative Commons Attribution 4.0 International License ({CC}-{BY})},
-	isbn = {978-1-4503-4652-8},
-	doi = {10.1145/3109859.3109981},
-	shorttitle = {Citolytics},
-	abstract = {We present Citolytics - a novel link-based recommendation system for Wikipedia articles. In a preliminary study, Citolytics achieved promising results compared to the widely used text-based approach of Apache Lucene's {MoreLikeThis} ({MLT}). In this demo paper, we describe how we plan to integrate Citolytics into the Wikipedia infrastructure by using Elasticsearch and Apache Flink to serve recommendations for Wikipedia articles. Additionally, we propose a large-scale online evaluation design using the Wikipedia Android app. Working with Wikipedia data has several unique advantages. First, the availability of a very large user sample contributes to statistically significant results. Second, the openness of Wikipedia's architecture allows making our source code and evaluation data public, thus benefiting other researchers. If link-based recommendations show promise in our online evaluation, a deployment of the presented system within Wikipedia would have a far-reaching impact on Wikipedia's more than 30 million users.},
-	pages = {360--361},
-	booktitle = {Proceedings of the 11th {ACM} Conference on Recommender Systems ({RecSys})},
-	publisher = {{ACM}},
-	author = {Schwarzer, Malte and Breitinger, Corinna and Schubotz, Moritz and Meuschke, Norman and Gipp, Bela},
-	date = {2017-08},
-	note = {tex.ids: {SchwarzerBSM}17a
-tex.biburl: https://dblp.org/rec/bib/conf/recsys/{SchwarzerBSMG}17
-tex.oldkey: Schwarzer2017
-tex.preprint: https://ag-gipp.github.io/bib/preprints/schwarzer2017.pdf
-tex.topic: rec
-{QID}: Q51236544},
-	keywords = {!bg, !bg\_author, !bg\_preprint, !cb, !cb\_author, !ms, !ms\_author, !ms\_cv, !ms\_preprint, !nm, !nm\_author, !nm\_preprint, jabref\_imp1\_clean, old\_tex\_field\_preprint},
-
-	ids = {SchwarzerBSM17a},
-	biburl = {https://dblp.org/rec/bib/conf/recsys/SchwarzerBSMG17},
-	oldkey = {Schwarzer2017},
-	preprint = {https://ag-gipp.github.io/bib/preprints/schwarzer2017.pdf},
-	topic = {rec},
 }
 
 @incollection{SchubotzMHC17,
@@ -1622,24 +1622,6 @@ tex.topic: wiki
 	topic = {wiki},
 }
 
-@inproceedings{CorneliS17,
-	title = {math.wikipedia.org: A vision for a collaborative semi-formal, language independent math(s) encyclopedia},
-	url = {https://www.research.ed.ac.uk/portal/files/32938085/corneli2017math.pdf},
-	booktitle = {Conference on Artificial Intelligence and Theorem Proving},
-	author = {Corneli, Joe and Schubotz, Moritz},
-	date = {2017},
-	note = {tex.ids: {CorneliS}17
-tex.biburl: https://www.research.ed.ac.uk/portal/en/publications/mathwikipediaorg-a-vision-for-a-collaborative-semiformal-language-independent-maths-encyclopedia(9588c61f-5234-4f9d-a036-c7c3daac9307).bibtex?download=true
-tex.oldkey: Corneli2017
-tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
-
-	ids = {CorneliS17},
-	biburl = {https://www.research.ed.ac.uk/portal/en/publications/mathwikipediaorg-a-vision-for-a-collaborative-semiformal-language-independent-maths-encyclopedia(9588c61f-5234-4f9d-a036-c7c3daac9307).bibtex?download=true},
-	oldkey = {Corneli2017},
-	owner = {Moritz},
-}
-
 @inproceedings{CohlSYG17,
 	title = {Semantic Preserving Bijective Mappings of Mathematical Formulae Between Document Preparation Systems and Computer Algebra Systems},
 	volume = {10383},
@@ -1680,6 +1662,24 @@ tex.owner: Moritz},
 	keywords = {!ms, !ms\_author, \#nosource, jabref\_imp2, no-doi},
 
 	oldkey = {dis},
+	owner = {Moritz},
+}
+
+@inproceedings{CorneliS17,
+	title = {math.wikipedia.org: A vision for a collaborative semi-formal, language independent math(s) encyclopedia},
+	url = {https://www.research.ed.ac.uk/portal/files/32938085/corneli2017math.pdf},
+	booktitle = {Conference on Artificial Intelligence and Theorem Proving},
+	author = {Corneli, Joe and Schubotz, Moritz},
+	date = {2017},
+	note = {tex.ids: {CorneliS}17
+tex.biburl: https://www.research.ed.ac.uk/portal/en/publications/mathwikipediaorg-a-vision-for-a-collaborative-semiformal-language-independent-maths-encyclopedia(9588c61f-5234-4f9d-a036-c7c3daac9307).bibtex?download=true
+tex.oldkey: Corneli2017
+tex.owner: Moritz},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+
+	ids = {CorneliS17},
+	biburl = {https://www.research.ed.ac.uk/portal/en/publications/mathwikipediaorg-a-vision-for-a-collaborative-semiformal-language-independent-maths-encyclopedia(9588c61f-5234-4f9d-a036-c7c3daac9307).bibtex?download=true},
+	oldkey = {Corneli2017},
 	owner = {Moritz},
 }
 
@@ -1817,33 +1817,6 @@ tex.topic: mathir
 	topic = {mathir},
 }
 
-@inproceedings{SchubotzVC16,
-	title = {Getting the Units Right},
-	volume = {1785},
-	url = {http://ceur-ws.org/Vol-1785/W45.pdf},
-	doi = {10.13140/rg.2.1.2508.0561},
-	series = {{CEUR} workshop proceedings},
-	pages = {146--156},
-	booktitle = {Joint Proceedings of the {FM}4M, {MathUI}, and {ThEdu} Workshops, Doctoral Program, and Work in Progress at the Conference on Intelligent Computer Mathematics 2016 co-located with the 9th Conference on Intelligent Computer Mathematics ({CICM} 2016), Bialystok, Poland, July 25-29, 2016.},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Schubotz, Moritz and Veenhuis, David and Cohl, Howard S.},
-	editor = {Kohlhase, Andrea and Libbrecht, Paul and Miller, Bruce R. and Naumowicz, Adam and Neuper, Walther and Quaresma, Pedro and Tompa, Frank Wm. and Suda, Martin},
-	date = {2016},
-	note = {tex.ids: {SchubotzVC}16
-tex.biburl: https://dblp.org/rec/bib/conf/cikm/{SchubotzVC}16
-tex.jabref-groups: phd-m
-tex.oldkey: {disCicm}16Units
-tex.owner: Moritz
-{QID}: Q122926695},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
-
-	ids = {SchubotzVC16},
-	biburl = {https://dblp.org/rec/bib/conf/cikm/SchubotzVC16},
-	jabref-groups = {phd-m},
-	oldkey = {disCicm16Units},
-	owner = {Moritz},
-}
-
 @inproceedings{SchubotzS16,
 	title = {A Smooth Transition to Modern Mathoid-Based Math Rendering in Wikipedia with Automatic Visual Regression Testing},
 	volume = {1785},
@@ -1873,6 +1846,33 @@ tex.preprint: http://pure-oai.bham.ac.uk/ws/files/31196373/Schubotz$_{\textrm{S}
 	oldkey = {disCicm16Mathpipe},
 	owner = {Moritz},
 	preprint = {http://pure-oai.bham.ac.uk/ws/files/31196373/Schubotz<sub>S</sub>exton<sub>S</sub>mooth<sub>T</sub>ransition<sub>C</sub>EUR<sub>P</sub>roceedings.pdf},
+}
+
+@inproceedings{SchubotzVC16,
+	title = {Getting the Units Right},
+	volume = {1785},
+	url = {http://ceur-ws.org/Vol-1785/W45.pdf},
+	doi = {10.13140/rg.2.1.2508.0561},
+	series = {{CEUR} workshop proceedings},
+	pages = {146--156},
+	booktitle = {Joint Proceedings of the {FM}4M, {MathUI}, and {ThEdu} Workshops, Doctoral Program, and Work in Progress at the Conference on Intelligent Computer Mathematics 2016 co-located with the 9th Conference on Intelligent Computer Mathematics ({CICM} 2016), Bialystok, Poland, July 25-29, 2016.},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Schubotz, Moritz and Veenhuis, David and Cohl, Howard S.},
+	editor = {Kohlhase, Andrea and Libbrecht, Paul and Miller, Bruce R. and Naumowicz, Adam and Neuper, Walther and Quaresma, Pedro and Tompa, Frank Wm. and Suda, Martin},
+	date = {2016},
+	note = {tex.ids: {SchubotzVC}16
+tex.biburl: https://dblp.org/rec/bib/conf/cikm/{SchubotzVC}16
+tex.jabref-groups: phd-m
+tex.oldkey: {disCicm}16Units
+tex.owner: Moritz
+{QID}: Q122926695},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, jabref\_imp2, old\_tex\_field\_preprint},
+
+	ids = {SchubotzVC16},
+	biburl = {https://dblp.org/rec/bib/conf/cikm/SchubotzVC16},
+	jabref-groups = {phd-m},
+	oldkey = {disCicm16Units},
+	owner = {Moritz},
 }
 
 @inproceedings{SchubotzYMC15,
@@ -1938,6 +1938,34 @@ tex.preprint: https://arxiv.org/pdf/1505.01431.pdf
 	preprint = {https://arxiv.org/pdf/1505.01431.pdf},
 }
 
+@inproceedings{CohlMSS14,
+	title = {Digital Repository of Mathematical Formulae},
+	volume = {8543},
+	doi = {10.1007/978-3-319-08434-3_30},
+	series = {Lecture Notes in Computer Science},
+	pages = {419--422},
+	booktitle = {Intelligent Computer Mathematics - International Conference, {CICM} 2014, Coimbra, Portugal, July 7-11, 2014. Proceedings},
+	publisher = {Springer},
+	author = {Cohl, Howard S. and {McClain}, Marjorie A. and Saunders, Bonita V. and Schubotz, Moritz and Williams, Janelle C.},
+	editor = {Watt, Stephen M. and Davenport, James H. and Sexton, Alan P. and Sojka, Petr and Urban, Josef},
+	date = {2014},
+	note = {tex.ids: {CohlMSS}14a
+tex.biburl: https://dblp.org/rec/bib/conf/mkm/{CohlMSSW}14
+tex.jabref-groups: phd-m
+tex.oldkey: Cohl2014
+tex.owner: Moritz
+tex.preprint: https://arxiv.org/pdf/1404.6519.pdf
+{QID}: Q60456614},
+	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, cicm, conference, jabref\_imp2, old\_tex\_field\_preprint},
+
+	ids = {CohlMSS14a},
+	biburl = {https://dblp.org/rec/bib/conf/mkm/CohlMSSW14},
+	jabref-groups = {phd-m},
+	oldkey = {Cohl2014},
+	owner = {Moritz},
+	preprint = {https://arxiv.org/pdf/1404.6519.pdf},
+}
+
 @incollection{SchubotzW14,
 	title = {Mathoid: Robust, Scalable, Fast and Accessible Math Rendering for Wikipedia},
 	volume = {8543},
@@ -1968,54 +1996,27 @@ tex.preprint: https://arxiv.org/pdf/1404.6179.pdf
 	preprint = {https://arxiv.org/pdf/1404.6179.pdf},
 }
 
-@inproceedings{CohlMSS14,
-	title = {Digital Repository of Mathematical Formulae},
-	volume = {8543},
-	doi = {10.1007/978-3-319-08434-3_30},
-	series = {Lecture Notes in Computer Science},
-	pages = {419--422},
-	booktitle = {Intelligent Computer Mathematics - International Conference, {CICM} 2014, Coimbra, Portugal, July 7-11, 2014. Proceedings},
-	publisher = {Springer},
-	author = {Cohl, Howard S. and {McClain}, Marjorie A. and Saunders, Bonita V. and Schubotz, Moritz and Williams, Janelle C.},
-	editor = {Watt, Stephen M. and Davenport, James H. and Sexton, Alan P. and Sojka, Petr and Urban, Josef},
+@inproceedings{PagelS14,
+	title = {Mathematical Language Processing Project},
+	volume = {1186},
+	url = {http://ceur-ws.org/Vol-1186/paper-23.pdf},
+	series = {{CEUR} Workshop Proceedings},
+	booktitle = {Joint Proceedings of the {MathUI}, {OpenMath} and {ThEdu} Workshops and Work in Progress track at {CICM} co-located with Conferences on Intelligent Computer Mathematics ({CICM} 2014), Coimbra, Portugal, July 7-11, 2014.},
+	publisher = {{CEUR}-{WS}.org},
+	author = {Pagel, Robert and Schubotz, Moritz},
+	editor = {England, Matthew and Davenport, James H. and Kohlhase, Andrea and Kohlhase, Michael and Libbrecht, Paul and Neuper, Walther and Quaresma, Pedro and Sexton, Alan P. and Sojka, Petr and Urban, Josef and Watt, Stephen M.},
 	date = {2014},
-	note = {tex.ids: {CohlMSS}14a
-tex.biburl: https://dblp.org/rec/bib/conf/mkm/{CohlMSSW}14
+	note = {tex.ids: {PagelS}14a
+tex.biburl: https://dblp.org/rec/bib/conf/mkm/{PagelS}14
 tex.jabref-groups: phd-m
-tex.oldkey: Cohl2014
-tex.owner: Moritz
-tex.preprint: https://arxiv.org/pdf/1404.6519.pdf
-{QID}: Q60456614},
-	keywords = {!ms, !ms\_author, !ms\_cv, \#nosource, cicm, conference, jabref\_imp2, old\_tex\_field\_preprint},
-
-	ids = {CohlMSS14a},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/CohlMSSW14},
-	jabref-groups = {phd-m},
-	oldkey = {Cohl2014},
-	owner = {Moritz},
-	preprint = {https://arxiv.org/pdf/1404.6519.pdf},
-}
-
-@inproceedings{AizawaKOS14,
-	title = {{NTCIR}-11 Math-2 Task Overview},
-	url = {http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/NTCIR/OVERVIEW/01-NTCIR11-OV-MATH-AizawaA.pdf},
-	abstract = {This paper presents an overview of the {NTCIR}-11 Math-2 Task, which is specifically dedicated to information access to mathematical content. In particular, the paper summarizes the task design, analysis of the submitted runs, and the main approaches deployed by the participating groups. It also contains an introduction to the optional free Wikipediasubtask, a newly introduced mathematical retrieval task using Wikipedia articles.},
-	pages = {88--98},
-	booktitle = {Proceedings of the 11th {NTCIR} Conference on Evaluation of Information Access Technologies, {NTCIR}-11, National Center of Sciences, Tokyo, Japan, December 9-12, 2014},
-	publisher = {National Institute of Informatics ({NII})},
-	author = {Aizawa, Akiko and Kohlhase, Michael and Ounis, Iadh and Schubotz, Moritz},
-	date = {2014},
-	note = {tex.ids: {AizawaKOS}14a
-tex.biburl: https://dblp.org/rec/bib/conf/ntcir/{AizawaKOS}14
-tex.jabref-groups: {GuidiReview}, phd-m
-tex.oldkey: Aizawa2014
+tex.oldkey: Pagel2014
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, {NTCIR}, conference, content, information access to mathematical, jabref\_imp2, mathml, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, cicm, conference, jabref\_imp2, no-doi, old\_tex\_field\_preprint, peerreview, wip, ⛔ No {DOI} found},
 
-	ids = {AizawaKOS14a},
-	biburl = {https://dblp.org/rec/bib/conf/ntcir/AizawaKOS14},
-	jabref-groups = {GuidiReview, phd-m},
-	oldkey = {Aizawa2014},
+	ids = {PagelS14a},
+	biburl = {https://dblp.org/rec/bib/conf/mkm/PagelS14},
+	jabref-groups = {phd-m},
+	oldkey = {Pagel2014},
 	owner = {Moritz},
 }
 
@@ -2045,27 +2046,26 @@ tex.owner: Moritz},
 	owner = {Moritz},
 }
 
-@inproceedings{PagelS14,
-	title = {Mathematical Language Processing Project},
-	volume = {1186},
-	url = {http://ceur-ws.org/Vol-1186/paper-23.pdf},
-	series = {{CEUR} Workshop Proceedings},
-	booktitle = {Joint Proceedings of the {MathUI}, {OpenMath} and {ThEdu} Workshops and Work in Progress track at {CICM} co-located with Conferences on Intelligent Computer Mathematics ({CICM} 2014), Coimbra, Portugal, July 7-11, 2014.},
-	publisher = {{CEUR}-{WS}.org},
-	author = {Pagel, Robert and Schubotz, Moritz},
-	editor = {England, Matthew and Davenport, James H. and Kohlhase, Andrea and Kohlhase, Michael and Libbrecht, Paul and Neuper, Walther and Quaresma, Pedro and Sexton, Alan P. and Sojka, Petr and Urban, Josef and Watt, Stephen M.},
+@inproceedings{AizawaKOS14,
+	title = {{NTCIR}-11 Math-2 Task Overview},
+	url = {http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/NTCIR/OVERVIEW/01-NTCIR11-OV-MATH-AizawaA.pdf},
+	abstract = {This paper presents an overview of the {NTCIR}-11 Math-2 Task, which is specifically dedicated to information access to mathematical content. In particular, the paper summarizes the task design, analysis of the submitted runs, and the main approaches deployed by the participating groups. It also contains an introduction to the optional free Wikipediasubtask, a newly introduced mathematical retrieval task using Wikipedia articles.},
+	pages = {88--98},
+	booktitle = {Proceedings of the 11th {NTCIR} Conference on Evaluation of Information Access Technologies, {NTCIR}-11, National Center of Sciences, Tokyo, Japan, December 9-12, 2014},
+	publisher = {National Institute of Informatics ({NII})},
+	author = {Aizawa, Akiko and Kohlhase, Michael and Ounis, Iadh and Schubotz, Moritz},
 	date = {2014},
-	note = {tex.ids: {PagelS}14a
-tex.biburl: https://dblp.org/rec/bib/conf/mkm/{PagelS}14
-tex.jabref-groups: phd-m
-tex.oldkey: Pagel2014
+	note = {tex.ids: {AizawaKOS}14a
+tex.biburl: https://dblp.org/rec/bib/conf/ntcir/{AizawaKOS}14
+tex.jabref-groups: {GuidiReview}, phd-m
+tex.oldkey: Aizawa2014
 tex.owner: Moritz},
-	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, cicm, conference, jabref\_imp2, no-doi, old\_tex\_field\_preprint, peerreview, wip, ⛔ No {DOI} found},
+	keywords = {!ms, !ms\_author, !ms\_cv, !ms\_preprint, \#nosource, {NTCIR}, conference, content, information access to mathematical, jabref\_imp2, mathml, no-doi, old\_tex\_field\_preprint, ⛔ No {DOI} found},
 
-	ids = {PagelS14a},
-	biburl = {https://dblp.org/rec/bib/conf/mkm/PagelS14},
-	jabref-groups = {phd-m},
-	oldkey = {Pagel2014},
+	ids = {AizawaKOS14a},
+	biburl = {https://dblp.org/rec/bib/conf/ntcir/AizawaKOS14},
+	jabref-groups = {GuidiReview, phd-m},
+	oldkey = {Aizawa2014},
 	owner = {Moritz},
 }
 
